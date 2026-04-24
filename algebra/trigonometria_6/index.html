@@ -1,0 +1,707 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra en particular">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../trigonometria_5/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Trigonometria 6 - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#problemas-de-trigonometria" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trigonometria 6
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="problemas-de-trigonometria">Problemas de Trigonometría</h1>
+<p><strong>Problema 1:</strong> Si <span class="arithmatex">\(\tan(\theta) = \frac{4}{5}\)</span> y <span class="arithmatex">\(\theta\)</span> está en el tercer cuadrante, determine <span class="arithmatex">\(\cos(\theta)\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Dado que $\tan(\theta) = \frac{4}{5}$ y el ángulo está en el tercer cuadrante, sabemos que tanto el seno como el coseno son negativos.
+Utilizamos la identidad fundamental que relaciona la secante con la tangente:
+$$\sec^2(\theta) = 1 + \tan^2(\theta)$$
+Sustituyendo el valor dado:
+$$\sec^2(\theta) = 1 + \left(\frac{4}{5}\right)^2 = 1 + \frac{16}{25} = \frac{41}{25}$$
+Como $\cos(\theta)$ es el recíproco de la secante, invertimos la fracción:
+$$\cos^2(\theta) = \frac{25}{41}$$
+Al extraer la raíz cuadrada, y considerando el signo negativo del tercer cuadrante:
+$$\cos(\theta) = -\frac{5}{\sqrt{41}} = -\frac{5\sqrt{41}}{41}$$
+</details>
+
+<p><strong>Problema 2:</strong> Si <span class="arithmatex">\(\sec(\theta) = -\frac{3}{2}\)</span> y <span class="arithmatex">\(\theta\)</span> está en el segundo cuadrante, determine <span class="arithmatex">\(\sin(\theta)\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Sabemos que el coseno es el recíproco de la secante:
+$$\cos(\theta) = \frac{1}{\sec(\theta)} = -\frac{2}{3}$$
+En el segundo cuadrante, la función seno es positiva. Utilizamos la identidad pitagórica fundamental $\sin^2(\theta) + \cos^2(\theta) = 1$:
+$$\sin^2(\theta) = 1 - \cos^2(\theta)$$
+Sustituyendo el valor del coseno:
+$$\sin^2(\theta) = 1 - \left(-\frac{2}{3}\right)^2 = 1 - \frac{4}{9} = \frac{5}{9}$$
+Extrayendo la raíz cuadrada y eligiendo el valor positivo:
+$$\sin(\theta) = \frac{\sqrt{5}}{3}$$
+</details>
+
+<p><strong>Problema 3:</strong> Si <span class="arithmatex">\(\theta\)</span> está en el tercer cuadrante, escriba <span class="arithmatex">\(\csc(\theta)\)</span> en función de <span class="arithmatex">\(\cot(\theta)\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Utilizamos la identidad pitagórica que relaciona cosecante y cotangente:
+$$\csc^2(\theta) = 1 + \cot^2(\theta)$$
+Para despejar $\csc(\theta)$, sacamos raíz cuadrada en ambos lados. Como $\theta$ está en el tercer cuadrante, la función seno es negativa, y por tanto, su recíproco $\csc(\theta)$ también es negativo:
+$$\csc(\theta) = -\sqrt{1 + \cot^2(\theta)}$$
+</details>
+
+<p><strong>Problema 4:</strong> Si <span class="arithmatex">\(ABC\)</span> es rectángulo en <span class="arithmatex">\(C\)</span> tal que <span class="arithmatex">\(\cot(\alpha) = \frac{25}{4}\)</span> y <span class="arithmatex">\(c = 17\)</span>, determine el valor del cateto <span class="arithmatex">\(b\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+En un triángulo rectángulo en $C$, los catetos son $a$ y $b$ (opuestos a los vértices $A$ y $B$ respectivamente). La cotangente del ángulo $\alpha$ (en el vértice $A$) es la razón entre el cateto adyacente y el opuesto:
+$$\cot(\alpha) = \frac{b}{a} = \frac{25}{4}$$
+Podemos expresar los catetos como $b = 25k$ y $a = 4k$, donde $k$ es una constante de proporcionalidad positiva.
+Aplicando el Teorema de Pitágoras:
+$$c^2 = a^2 + b^2$$
+$$17^2 = (4k)^2 + (25k)^2$$
+$$289 = 16k^2 + 625k^2 = 641k^2$$
+Despejando $k^2$:
+$$k^2 = \frac{289}{641} \implies k = \frac{17}{\sqrt{641}}$$
+Finalmente, hallamos el valor del cateto $b$:
+$$b = 25k = 25 \left(\frac{17}{\sqrt{641}}\right) = \frac{425}{\sqrt{641}} = \frac{425\sqrt{641}}{641}$$
+</details>
+
+<p><strong>Problema 5:</strong> Si <span class="arithmatex">\(\sin(\alpha) = -\frac{1}{3}\)</span> y <span class="arithmatex">\(\tan(\alpha) &gt; 0\)</span>, determine el valor exacto de <span class="arithmatex">\(\sec(\alpha) - \cot(\alpha)\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Como $\sin(\alpha) < 0$ y $\tan(\alpha) > 0$, el ángulo $\alpha$ se encuentra en el tercer cuadrante, donde el coseno también es negativo.
+Hallamos el coseno usando la identidad pitagórica:
+$$\cos(\alpha) = -\sqrt{1 - \sin^2(\alpha)} = -\sqrt{1 - \left(-\frac{1}{3}\right)^2} = -\sqrt{1 - \frac{1}{9}} = -\sqrt{\frac{8}{9}} = -\frac{2\sqrt{2}}{3}$$
+Calculamos $\sec(\alpha)$:
+$$\sec(\alpha) = \frac{1}{\cos(\alpha)} = -\frac{3}{2\sqrt{2}} = -\frac{3\sqrt{2}}{4}$$
+Calculamos $\cot(\alpha)$:
+$$\cot(\alpha) = \frac{\cos(\alpha)}{\sin(\alpha)} = \frac{-\frac{2\sqrt{2}}{3}}{-\frac{1}{3}} = 2\sqrt{2}$$
+Evaluamos la expresión solicitada:
+$$\sec(\alpha) - \cot(\alpha) = -\frac{3\sqrt{2}}{4} - 2\sqrt{2} = -\frac{3\sqrt{2}}{4} - \frac{8\sqrt{2}}{4} = -\frac{11\sqrt{2}}{4}$$
+</details>
+
+<p><strong>Problema 6:</strong> Si <span class="arithmatex">\(\theta\)</span> está en el cuarto cuadrante, exprese <span class="arithmatex">\(\cos(\theta)\)</span> en función de <span class="arithmatex">\(\csc(\theta)\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+En el cuarto cuadrante, el coseno es positivo y el seno es negativo.
+Sabemos que:
+$$\cos(\theta) = \sqrt{1 - \sin^2(\theta)}$$
+Dado que $\sin(\theta) = \frac{1}{\csc(\theta)}$, sustituimos en la expresión:
+$$\cos(\theta) = \sqrt{1 - \left(\frac{1}{\csc(\theta)}\right)^2} = \sqrt{1 - \frac{1}{\csc^2(\theta)}}$$
+Podemos simplificar sumando las fracciones dentro de la raíz:
+$$\cos(\theta) = \sqrt{\frac{\csc^2(\theta) - 1}{\csc^2(\theta)}} = \frac{\sqrt{\csc^2(\theta) - 1}}{|\csc(\theta)|}$$
+Como en el cuarto cuadrante la cosecante es negativa, $|\csc(\theta)| = -\csc(\theta)$, resultando en:
+$$\cos(\theta) = -\frac{\sqrt{\csc^2(\theta) - 1}}{\csc(\theta)}$$
+</details>
+
+<p><strong>Problema 7:</strong> En un triángulo rectángulo <span class="arithmatex">\(ABC\)</span> recto en <span class="arithmatex">\(C\)</span>, se cumple que <span class="arithmatex">\(\tan(A) = 2.4\)</span>. Si el perímetro del triángulo es <span class="arithmatex">\(120\)</span> cm, determine la longitud de la hipotenusa <span class="arithmatex">\(c\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+La tangente del ángulo $A$ se define como el cateto opuesto sobre el cateto adyacente:
+$$\tan(A) = \frac{a}{b} = 2.4 = \frac{24}{10} = \frac{12}{5}$$
+Podemos expresar los catetos en función de una constante $k$: $a = 12k$ y $b = 5k$.
+La hipotenusa $c$ se halla con el Teorema de Pitágoras:
+$$c = \sqrt{a^2 + b^2} = \sqrt{(12k)^2 + (5k)^2} = \sqrt{144k^2 + 25k^2} = \sqrt{169k^2} = 13k$$
+El perímetro es la suma de los tres lados:
+$$a + b + c = 12k + 5k + 13k = 30k$$
+Igualando al perímetro dado:
+$$30k = 120 \implies k = 4$$
+Por lo tanto, la hipotenusa $c$ mide:
+$$c = 13k = 13(4) = 52 \text{ cm}$$
+</details>
+
+<p><strong>Problema 8:</strong> Si <span class="arithmatex">\(\csc(\beta) = -\frac{5}{3}\)</span> y <span class="arithmatex">\(\beta\)</span> no pertenece al cuarto cuadrante, determine el valor exacto de <span class="arithmatex">\(\frac{\tan(\beta) - \cos(\beta)}{\sin(\beta)}\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Como $\csc(\beta) = -\frac{5}{3}$, entonces $\sin(\beta) = -\frac{3}{5}$. El seno es negativo en el tercer y cuarto cuadrante, y el problema indica que $\beta$ no está en el cuarto cuadrante, por lo que $\beta$ se ubica en el tercer cuadrante.
+En el tercer cuadrante, el coseno es negativo:
+$$\cos(\beta) = -\sqrt{1 - \sin^2(\beta)} = -\sqrt{1 - \frac{9}{25}} = -\sqrt{\frac{16}{25}} = -\frac{4}{5}$$
+La tangente es positiva:
+$$\tan(\beta) = \frac{\sin(\beta)}{\cos(\beta)} = \frac{-\frac{3}{5}}{-\frac{4}{5}} = \frac{3}{4}$$
+Evaluamos la expresión:
+$$\frac{\tan(\beta) - \cos(\beta)}{\sin(\beta)} = \frac{\frac{3}{4} - \left(-\frac{4}{5}\right)}{-\frac{3}{5}} = \frac{\frac{3}{4} + \frac{4}{5}}{-\frac{3}{5}}$$
+Sumamos el numerador:
+$$\frac{3}{4} + \frac{4}{5} = \frac{15 + 16}{20} = \frac{31}{20}$$
+Finalmente, resolvemos la división principal:
+$$\frac{\frac{31}{20}}{-\frac{3}{5}} = \frac{31}{20} \cdot \left(-\frac{5}{3}\right) = -\frac{155}{60} = -\frac{31}{12}$$
+</details>
+
+<p><strong>Problema 9:</strong> Exprese la cantidad <span class="arithmatex">\(\frac{1}{\sqrt{1 - \cos^2(\gamma)}}\)</span> en función de <span class="arithmatex">\(\tan(\gamma)\)</span> sabiendo que <span class="arithmatex">\(\gamma\)</span> está en el segundo cuadrante.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+Sabemos por la identidad pitagórica que $1 - \cos^2(\gamma) = \sin^2(\gamma)$, por lo tanto:
+$$\frac{1}{\sqrt{1 - \cos^2(\gamma)}} = \frac{1}{\sqrt{\sin^2(\gamma)}} = \frac{1}{|\sin(\gamma)|}$$
+En el segundo cuadrante, $\sin(\gamma) > 0$, de modo que $|\sin(\gamma)| = \sin(\gamma)$:
+$$\frac{1}{\sin(\gamma)} = \csc(\gamma)$$
+Utilizamos la identidad que relaciona cosecante y cotangente:
+$$\csc^2(\gamma) = 1 + \cot^2(\gamma) = 1 + \frac{1}{\tan^2(\gamma)} = \frac{\tan^2(\gamma) + 1}{\tan^2(\gamma)}$$
+Tomamos raíz cuadrada en ambos lados para encontrar $\csc(\gamma)$:
+$$\csc(\gamma) = \frac{\sqrt{\tan^2(\gamma) + 1}}{|\tan(\gamma)|}$$
+En el segundo cuadrante, $\tan(\gamma) < 0$, así que $|\tan(\gamma)| = -\tan(\gamma)$. Por tanto:
+$$\csc(\gamma) = -\frac{\sqrt{\tan^2(\gamma) + 1}}{\tan(\gamma)}$$
+</details>
+
+<p><strong>Problema 10:</strong> En un triángulo <span class="arithmatex">\(ABC\)</span> rectángulo en <span class="arithmatex">\(C\)</span>, la altura <span class="arithmatex">\(h_c\)</span> trazada sobre la hipotenusa mide <span class="arithmatex">\(12\)</span> y <span class="arithmatex">\(\cot(A) = \frac{3}{4}\)</span>. Determine la longitud del cateto <span class="arithmatex">\(b\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+A partir de $\cot(A) = \frac{b}{a} = \frac{3}{4}$, podemos expresar los lados como $b = 3k$, $a = 4k$, y la hipotenusa será:
+$$c = \sqrt{a^2 + b^2} = \sqrt{16k^2 + 9k^2} = 5k$$
+El área del triángulo rectángulo se puede calcular de dos formas: usando los catetos o la hipotenusa con su altura correspondiente:
+$$\text{Área} = \frac{a \cdot b}{2} = \frac{c \cdot h_c}{2}$$
+Igualando ambas expresiones y reemplazando con nuestros valores en función de $k$:
+$$a \cdot b = c \cdot h_c$$
+$$(4k)(3k) = (5k)(12)$$
+$$12k^2 = 60k$$
+Dado que $k > 0$, dividimos por $12k$:
+$$k = 5$$
+Finalmente, calculamos el valor del cateto $b$:
+$$b = 3k = 3(5) = 15$$
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

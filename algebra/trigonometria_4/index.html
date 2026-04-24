@@ -1,0 +1,770 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra en particular">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../trigonometria_3/">
+      
+      
+        <link rel="next" href="../trigonometria_5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Trigonometria 4 - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ecuaciones-trigonometricas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trigonometria 4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ecuaciones-trigonometricas">Ecuaciones trigonométricas</h1>
+<p>Determine todas las soluciones de las siguientes ecuaciones.</p>
+<p>Problema 1: <span class="arithmatex">\( \displaystyle 8 \sin(x) + 15 \cos(x) = 17 \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Para resolver esta ecuación lineal en seno y coseno, dividimos toda la ecuación por \( \sqrt{8^2 + 15^2} = \sqrt{64 + 225} = \sqrt{289} = 17 \):
+\[ \frac{8}{17} \sin(x) + \frac{15}{17} \cos(x) = 1 \]
+Podemos definir un ángulo \( \alpha \) tal que \( \cos(\alpha) = \frac{15}{17} \) y \( \sin(\alpha) = \frac{8}{17} \).
+Sustituyendo esto en la ecuación, obtenemos:
+\[ \sin(x)\sin(\alpha) + \cos(x)\cos(\alpha) = 1 \]
+Aplicando la identidad del coseno de la diferencia:
+\[ \cos(x - \alpha) = 1 \]
+Sabemos que el coseno es igual a 1 cuando el ángulo es un múltiplo entero de \( 2\pi \). Así:
+\[ x - \alpha = 2k\pi \]
+\[ x = \alpha + 2k\pi, \quad k \in \mathbb{Z} \]
+Donde \( \alpha = \arccos\left(\frac{15}{17}\right) \).
+
+</details>
+
+<p>Problema 2: <span class="arithmatex">\( \displaystyle 2 \cos(x) + 3 = 2 \sec(x) \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Expresamos la secante en términos de coseno:
+\[ 2 \cos(x) + 3 = \frac{2}{\cos(x)} \]
+Multiplicamos toda la ecuación por \( \cos(x) \) (asumiendo \( \cos(x) \neq 0 \)):
+\[ 2 \cos^2(x) + 3 \cos(x) = 2 \]
+\[ 2 \cos^2(x) + 3 \cos(x) - 2 = 0 \]
+Factorizamos la ecuación cuadrática en \( \cos(x) \):
+\[ (2 \cos(x) - 1)(\cos(x) + 2) = 0 \]
+Esto nos da dos posibilidades:
+1. \( \cos(x) + 2 = 0 \implies \cos(x) = -2 \) (No tiene solución real, ya que \( -1 \leq \cos(x) \leq 1 \)).
+2. \( 2 \cos(x) - 1 = 0 \implies \cos(x) = \frac{1}{2} \).
+
+Las soluciones para \( \cos(x) = \frac{1}{2} \) son:
+\[ x = \pm \frac{\pi}{3} + 2k\pi, \quad k \in \mathbb{Z} \]
+
+</details>
+
+<p>Problema 3: <span class="arithmatex">\( \displaystyle \csc(x) - \cot(x) = \tan(x) \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Expresamos todas las funciones en términos de seno y coseno:
+\[ \frac{1}{\sin(x)} - \frac{\cos(x)}{\sin(x)} = \frac{\sin(x)}{\cos(x)} \]
+\[ \frac{1 - \cos(x)}{\sin(x)} = \frac{\sin(x)}{\cos(x)} \]
+Multiplicamos de forma cruzada (con la restricción de que \( \sin(x) \neq 0 \) y \( \cos(x) \neq 0 \)):
+\[ \cos(x)(1 - \cos(x)) = \sin^2(x) \]
+Usamos la identidad \( \sin^2(x) = 1 - \cos^2(x) \):
+\[ \cos(x)(1 - \cos(x)) = (1 - \cos(x))(1 + \cos(x)) \]
+Pasamos todo a un solo lado y factorizamos:
+\[ \cos(x)(1 - \cos(x)) - (1 - \cos(x))(1 + \cos(x)) = 0 \]
+\[ (1 - \cos(x)) [\cos(x) - (1 + \cos(x))] = 0 \]
+\[ (1 - \cos(x))(-1) = 0 \]
+De aquí deducimos que \( 1 - \cos(x) = 0 \implies \cos(x) = 1 \).
+Sin embargo, si \( \cos(x) = 1 \), entonces \( \sin(x) = 0 \). 
+Al revisar nuestras restricciones originales, \( \sin(x) \neq 0 \) porque hace que la cosecante y la cotangente sean indefinidas. Por lo tanto, esta ecuación **no tiene solución** (Conjunto vacío \( \emptyset \)).
+
+</details>
+
+<p>Problema 4: <span class="arithmatex">\( \displaystyle \sin(5x) - \sin(3x) = \sin(x) \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Aplicamos la fórmula de transformación de resta a producto para \( \sin(5x) - \sin(3x) \):
+\[ 2 \sin\left(\frac{5x - 3x}{2}\right) \cos\left(\frac{5x + 3x}{2}\right) = \sin(x) \]
+\[ 2 \sin(x) \cos(4x) = \sin(x) \]
+Igualamos a cero y factorizamos:
+\[ 2 \sin(x) \cos(4x) - \sin(x) = 0 \]
+\[ \sin(x) (2 \cos(4x) - 1) = 0 \]
+Tenemos dos casos:
+1. \( \sin(x) = 0 \implies x = k\pi \).
+2. \( 2 \cos(4x) - 1 = 0 \implies \cos(4x) = \frac{1}{2} \).
+
+Para el segundo caso:
+\[ 4x = \pm \frac{\pi}{3} + 2k\pi \implies x = \pm \frac{\pi}{12} + \frac{k\pi}{2}, \quad k \in \mathbb{Z} \]
+
+</details>
+
+<p>Problema 5: <span class="arithmatex">\( \displaystyle \sqrt{3} \sin(x) - \cos(x) = 1 \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Dividimos la ecuación por \( \sqrt{(\sqrt{3})^2 + (-1)^2} = \sqrt{3 + 1} = 2 \):
+\[ \frac{\sqrt{3}}{2} \sin(x) - \frac{1}{2} \cos(x) = \frac{1}{2} \]
+Reconocemos que \( \cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2} \) y \( \sin\left(\frac{\pi}{6}\right) = \frac{1}{2} \):
+\[ \sin(x) \cos\left(\frac{\pi}{6}\right) - \cos(x) \sin\left(\frac{\pi}{6}\right) = \frac{1}{2} \]
+Usando la identidad del seno de la diferencia:
+\[ \sin\left(x - \frac{\pi}{6}\right) = \frac{1}{2} \]
+Las soluciones para el seno igual a \( 1/2 \) son:
+\[ x - \frac{\pi}{6} = \frac{\pi}{6} + 2k\pi \implies x = \frac{2\pi}{6} + 2k\pi \implies x = \frac{\pi}{3} + 2k\pi \]
+\[ x - \frac{\pi}{6} = \frac{5\pi}{6} + 2k\pi \implies x = \pi + 2k\pi \]
+Donde \( k \in \mathbb{Z} \).
+
+</details>
+
+<p>Problema 6: <span class="arithmatex">\( \displaystyle 2 \sin^2(x) + 3 \cos(x) - 3 = 0 \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Sustituimos \( \sin^2(x) \) por \( 1 - \cos^2(x) \):
+\[ 2(1 - \cos^2(x)) + 3 \cos(x) - 3 = 0 \]
+\[ 2 - 2 \cos^2(x) + 3 \cos(x) - 3 = 0 \]
+\[ -2 \cos^2(x) + 3 \cos(x) - 1 = 0 \]
+Multiplicamos por -1 para facilitar la factorización:
+\[ 2 \cos^2(x) - 3 \cos(x) + 1 = 0 \]
+Factorizamos:
+\[ (2 \cos(x) - 1)(\cos(x) - 1) = 0 \]
+Esto nos da dos soluciones posibles para el coseno:
+1. \( \cos(x) = 1 \implies x = 2k\pi \).
+2. \( \cos(x) = \frac{1}{2} \implies x = \pm \frac{\pi}{3} + 2k\pi \).
+
+Donde \( k \in \mathbb{Z} \).
+
+</details>
+
+<p>Problema 7: <span class="arithmatex">\( \displaystyle \tan(x) + \sec(x) = \sqrt{3} \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Expresamos en función de seno y coseno:
+\[ \frac{\sin(x)}{\cos(x)} + \frac{1}{\cos(x)} = \sqrt{3} \]
+\[ \frac{\sin(x) + 1}{\cos(x)} = \sqrt{3} \]
+\[ \sin(x) + 1 = \sqrt{3} \cos(x) \]
+\[ \sqrt{3} \cos(x) - \sin(x) = 1 \]
+Dividimos por 2:
+\[ \frac{\sqrt{3}}{2} \cos(x) - \frac{1}{2} \sin(x) = \frac{1}{2} \]
+Usamos la identidad del coseno de la suma, recordando que \( \cos\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{2} \) y \( \sin\left(\frac{\pi}{6}\right) = \frac{1}{2} \):
+\[ \cos(x) \cos\left(\frac{\pi}{6}\right) - \sin(x) \sin\left(\frac{\pi}{6}\right) = \frac{1}{2} \]
+\[ \cos\left(x + \frac{\pi}{6}\right) = \frac{1}{2} \]
+Obtenemos dos conjuntos de soluciones:
+1. \( x + \frac{\pi}{6} = \frac{\pi}{3} + 2k\pi \implies x = \frac{\pi}{6} + 2k\pi \)
+2. \( x + \frac{\pi}{6} = -\frac{\pi}{3} + 2k\pi \implies x = -\frac{\pi}{2} + 2k\pi \)
+
+Verificamos en el dominio original (\( \cos(x) \neq 0 \)):
+Si \( x = -\frac{\pi}{2} + 2k\pi \), entonces \( \cos(x) = 0 \), lo cual indefine la secante y la tangente.
+Por lo tanto, la única solución válida es:
+\[ x = \frac{\pi}{6} + 2k\pi, \quad k \in \mathbb{Z} \]
+
+</details>
+
+<p>Problema 8: <span class="arithmatex">\( \displaystyle \cos(x) + \cos(2x) + \cos(3x) = 0 \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Agrupamos los extremos para aplicar la transformación de suma a producto:
+\[ (\cos(3x) + \cos(x)) + \cos(2x) = 0 \]
+Aplicamos la identidad \( \cos(A) + \cos(B) = 2 \cos\left(\frac{A+B}{2}\right) \cos\left(\frac{A-B}{2}\right) \):
+\[ 2 \cos\left(\frac{3x+x}{2}\right) \cos\left(\frac{3x-x}{2}\right) + \cos(2x) = 0 \]
+\[ 2 \cos(2x) \cos(x) + \cos(2x) = 0 \]
+Factorizamos \( \cos(2x) \):
+\[ \cos(2x) (2 \cos(x) + 1) = 0 \]
+Esto nos deja con dos casos:
+1. \( \cos(2x) = 0 \implies 2x = \frac{\pi}{2} + k\pi \implies x = \frac{\pi}{4} + \frac{k\pi}{2} \).
+2. \( 2 \cos(x) + 1 = 0 \implies \cos(x) = -\frac{1}{2} \implies x = \pm \frac{2\pi}{3} + 2k\pi \).
+
+Donde \( k \in \mathbb{Z} \).
+
+</details>
+
+<p>Problema 9: <span class="arithmatex">\( \displaystyle \sin^4(x) - \cos^4(x) = \frac{1}{2} \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Factorizamos la diferencia de cuadrados:
+\[ (\sin^2(x) - \cos^2(x))(\sin^2(x) + \cos^2(x)) = \frac{1}{2} \]
+Usamos la identidad pitagórica \( \sin^2(x) + \cos^2(x) = 1 \):
+\[ \sin^2(x) - \cos^2(x) = \frac{1}{2} \]
+Multiplicamos por -1 y reconocemos la identidad del ángulo doble \( \cos(2x) = \cos^2(x) - \sin^2(x) \):
+\[ -(\cos^2(x) - \sin^2(x)) = \frac{1}{2} \]
+\[ -\cos(2x) = \frac{1}{2} \implies \cos(2x) = -\frac{1}{2} \]
+Las soluciones son:
+\[ 2x = \pm \frac{2\pi}{3} + 2k\pi \]
+Dividiendo por 2:
+\[ x = \pm \frac{\pi}{3} + k\pi, \quad k \in \mathbb{Z} \]
+
+</details>
+
+<p>Problema 10: <span class="arithmatex">\( \displaystyle \tan(2x) + 2 \sin(x) = 0 \)</span></p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+Expresamos la tangente como seno sobre coseno y aplicamos ángulo doble:
+\[ \frac{\sin(2x)}{\cos(2x)} + 2 \sin(x) = 0 \]
+\[ \frac{2 \sin(x) \cos(x)}{\cos(2x)} + 2 \sin(x) = 0 \]
+Factorizamos \( 2 \sin(x) \):
+\[ 2 \sin(x) \left( \frac{\cos(x)}{\cos(2x)} + 1 \right) = 0 \]
+Sumamos las fracciones:
+\[ 2 \sin(x) \left( \frac{\cos(x) + \cos(2x)}{\cos(2x)} \right) = 0 \]
+Usamos la identidad \( \cos(2x) = 2\cos^2(x) - 1 \):
+\[ 2 \sin(x) \left( \frac{2\cos^2(x) + \cos(x) - 1}{\cos(2x)} \right) = 0 \]
+Factorizamos el trinomio cuadrático \( 2\cos^2(x) + \cos(x) - 1 = (2\cos(x) - 1)(\cos(x) + 1) \):
+De aquí, para que la expresión sea cero (y asegurando \( \cos(2x) \neq 0 \)):
+1. \( \sin(x) = 0 \implies x = k\pi \).
+2. \( 2\cos(x) - 1 = 0 \implies \cos(x) = \frac{1}{2} \implies x = \pm \frac{\pi}{3} + 2k\pi \).
+3. \( \cos(x) + 1 = 0 \implies \cos(x) = -1 \implies x = \pi + 2k\pi \) (Estas ya están incluidas en el caso \( x = k\pi \)).
+
+Comprobamos con el dominio:
+- Si \( x = k\pi \), \( \cos(2k\pi) = 1 \neq 0 \).
+- Si \( x = \pm \frac{\pi}{3} \), \( \cos\left(\pm \frac{2\pi}{3}\right) = -\frac{1}{2} \neq 0 \).
+Ambas soluciones son completamente válidas:
+\[ x = k\pi \quad \text{o} \quad x = \pm \frac{\pi}{3} + 2k\pi, \quad k \in \mathbb{Z} \]
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

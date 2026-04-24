@@ -1,0 +1,764 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra en particular">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+        <link rel="next" href="../trigonometria_2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Trigonometria 1 - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reduccion-al-primer-cuadrante" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Trigonometria 1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="reduccion-al-primer-cuadrante">Reducción al primer cuadrante</h1>
+<p>Colección de problemas.</p>
+<hr />
+<h1 id="calculo-y-simplificacion-de-expresiones-trigonometricas">Cálculo y Simplificación de Expresiones Trigonométricas</h1>
+<hr />
+<p><strong>Problema 1:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\cos \left( \frac{7\pi}{6} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Para reducir al primer cuadrante, identificamos en qué cuadrante se encuentra el ángulo. Sabemos que \(\frac{7\pi}{6} = \pi + \frac{\pi}{6}\), lo cual ubica al ángulo en el tercer cuadrante.
+
+En el tercer cuadrante, la función coseno es negativa. Aplicando la propiedad de reducción:
+
+$$\cos\left(\pi + \frac{\pi}{6}\right) = -\cos\left(\frac{\pi}{6}\right)$$
+
+Evaluando el ángulo conocido del primer cuadrante:
+
+$$-\cos\left(\frac{\pi}{6}\right) = -\frac{\sqrt{3}}{2}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 2:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\tan \left( \frac{5\pi}{3} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Expresamos el ángulo en relación con el eje X. Notamos que \(\frac{5\pi}{3} = 2\pi - \frac{\pi}{3}\), lo que lo sitúa en el cuarto cuadrante.
+
+En el cuarto cuadrante, la función tangente es negativa. Aplicando la propiedad correspondiente:
+
+$$\tan\left(2\pi - \frac{\pi}{3}\right) = -\tan\left(\frac{\pi}{3}\right)$$
+
+Calculando el valor exacto:
+
+$$-\tan\left(\frac{\pi}{3}\right) = -\sqrt{3}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 3:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\cot \left( \frac{13\pi}{4} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+El ángulo \(\frac{13\pi}{4}\) es mayor a un giro completo (\(2\pi\)). Primero eliminamos los giros enteros:
+
+$$\frac{13\pi}{4} = \frac{8\pi}{4} + \frac{5\pi}{4} = 2\pi + \frac{5\pi}{4}$$
+
+El ángulo coterminal es \(\frac{5\pi}{4}\). Ahora lo ubicamos respecto al eje X: \(\frac{5\pi}{4} = \pi + \frac{\pi}{4}\) (tercer cuadrante).
+
+En el tercer cuadrante, la cotangente es positiva:
+
+$$\cot\left(\pi + \frac{\pi}{4}\right) = \cot\left(\frac{\pi}{4}\right) = 1$$
+
+</details>
+
+<hr />
+<p><strong>Problema 4:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\csc \left( \frac{17\pi}{6} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Primero buscamos el ángulo coterminal en la primera vuelta, restando múltiplos de \(2\pi\):
+
+$$\frac{17\pi}{6} = \frac{12\pi}{6} + \frac{5\pi}{6} = 2\pi + \frac{5\pi}{6}$$
+
+Trabajamos con \(\frac{5\pi}{6}\), el cual está en el segundo cuadrante, ya que \(\frac{5\pi}{6} = \pi - \frac{\pi}{6}\).
+
+En el segundo cuadrante, la función cosecante es positiva (igual que el seno):
+
+$$\csc\left(\pi - \frac{\pi}{6}\right) = \csc\left(\frac{\pi}{6}\right) = 2$$
+
+</details>
+
+<hr />
+<p><strong>Problema 5:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\operatorname{sen} \left( -\frac{4\pi}{3} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Primero utilizamos la propiedad de paridad. La función seno es impar, por lo tanto:
+
+$$\operatorname{sen}\left(-\frac{4\pi}{3}\right) = -\operatorname{sen}\left(\frac{4\pi}{3}\right)$$
+
+Ubicamos el ángulo \(\frac{4\pi}{3}\) en el tercer cuadrante (\(\pi + \frac{\pi}{3}\)). En este cuadrante, el seno es negativo:
+
+$$-\operatorname{sen}\left(\pi + \frac{\pi}{3}\right) = -\left(-\operatorname{sen}\left(\frac{\pi}{3}\right)\right) = \operatorname{sen}\left(\frac{\pi}{3}\right)$$
+
+Evaluando:
+
+$$\operatorname{sen}\left(\frac{\pi}{3}\right) = \frac{\sqrt{3}}{2}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 6:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\sec \left( -\frac{7\pi}{4} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Aplicamos paridad. La función secante (al igual que el coseno) es par, por lo tanto absorbe el signo negativo:
+
+$$\sec\left(-\frac{7\pi}{4}\right) = \sec\left(\frac{7\pi}{4}\right)$$
+
+El ángulo \(\frac{7\pi}{4}\) se encuentra en el cuarto cuadrante y se puede escribir como \(2\pi - \frac{\pi}{4}\). La secante es positiva en este cuadrante:
+
+$$\sec\left(2\pi - \frac{\pi}{4}\right) = \sec\left(\frac{\pi}{4}\right) = \sqrt{2}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 7:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\cos \left( \frac{31\pi}{3} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Dividimos para encontrar la cantidad de giros completos:
+
+$$\frac{31\pi}{3} = 10\pi + \frac{\pi}{3}$$
+
+Dado que \(10\pi\) representa 5 giros completos, el ángulo coterminal es directamente \(\frac{\pi}{3}\), el cual ya está en el primer cuadrante.
+
+$$\cos\left(10\pi + \frac{\pi}{3}\right) = \cos\left(\frac{\pi}{3}\right) = \frac{1}{2}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 8:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\tan \left( \frac{25\pi}{6} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Encontramos el ángulo coterminal restando múltiplos pares de \(\pi\):
+
+$$\frac{25\pi}{6} = \frac{24\pi}{6} + \frac{\pi}{6} = 4\pi + \frac{\pi}{6}$$
+
+Como \(4\pi\) son dos vueltas completas, nos quedamos con \(\frac{\pi}{6}\).
+
+$$\tan\left(4\pi + \frac{\pi}{6}\right) = \tan\left(\frac{\pi}{6}\right) = \frac{\sqrt{3}}{3}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 9:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\operatorname{sen} \left( -\frac{11\pi}{4} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Por paridad (el seno es impar), extraemos el signo negativo:
+
+$$-\operatorname{sen}\left(\frac{11\pi}{4}\right)$$
+
+Reducimos el ángulo restando una vuelta (\(2\pi = \frac{8\pi}{4}\)):
+
+$$\frac{11\pi}{4} = 2\pi + \frac{3\pi}{4}$$
+
+El ángulo es coterminal con \(\frac{3\pi}{4}\) (segundo cuadrante). En el segundo cuadrante, el seno es positivo:
+
+$$-\operatorname{sen}\left(2\pi + \frac{3\pi}{4}\right) = -\operatorname{sen}\left(\frac{3\pi}{4}\right)$$
+
+Reducimos al primer cuadrante \(\frac{3\pi}{4} = \pi - \frac{\pi}{4}\):
+
+$$-\operatorname{sen}\left(\pi - \frac{\pi}{4}\right) = -\operatorname{sen}\left(\frac{\pi}{4}\right) = -\frac{\sqrt{2}}{2}$$
+
+</details>
+
+<hr />
+<p><strong>Problema 10:</strong>
+Haciendo uso de propiedades de las funciones trigonométricas, calcule el valor de:</p>
+<div class="arithmatex">\[\csc \left( \frac{53\pi}{6} \right)\]</div>
+<details>
+<summary><b>Ver Desarrollo</b></summary>
+
+Extraemos los giros completos buscando el múltiplo par de \(\pi\) más cercano a \(\frac{53}{6}\). Sabemos que \(6 \times 8 = 48\), por lo que separamos el ángulo así:
+
+$$\frac{53\pi}{6} = \frac{48\pi}{6} + \frac{5\pi}{6} = 8\pi + \frac{5\pi}{6}$$
+
+Dado que \(8\pi\) corresponde a 4 giros completos, el ángulo coterminal es \(\frac{5\pi}{6}\).
+
+Este ángulo se ubica en el segundo cuadrante y se puede escribir como \(\pi - \frac{\pi}{6}\). La cosecante en el segundo cuadrante es positiva:
+
+$$\csc\left(8\pi + \frac{5\pi}{6}\right) = \csc\left(\frac{5\pi}{6}\right) = \csc\left(\pi - \frac{\pi}{6}\right)$$
+
+Reduciendo al primer cuadrante y evaluando:
+
+$$\csc\left(\frac{\pi}{6}\right) = 2$$
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
