@@ -1,0 +1,1232 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra en particular">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../productorias/">
+      
+      
+        <link rel="next" href="../trigonometria_1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Teorema del binomio - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#teorema-del-binomio" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Teorema del binomio
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1-termino-independiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1: Término independiente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2-coeficiente-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2: Coeficiente específico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3-igualdad-de-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3: Igualdad de coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4-producto-de-polinomio-por-binomio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4: Producto de polinomio por binomio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-5-parametro-con-termino-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5: Parámetro con término central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6-ecuacion-con-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6: Ecuación con coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7-terminos-con-raices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7: Términos con raíces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-8-progresion-en-los-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8: Progresión en los coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-9-producto-con-trinomio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9: Producto con trinomio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10-suma-de-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10: Suma de coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-11-razon-entre-terminos-consecutivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11: Razón entre términos consecutivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-12-termino-central-de-grado-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12: Término central de grado específico
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1-termino-independiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1: Término independiente
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2-coeficiente-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2: Coeficiente específico
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3-igualdad-de-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3: Igualdad de coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4-producto-de-polinomio-por-binomio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4: Producto de polinomio por binomio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-5-parametro-con-termino-central" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5: Parámetro con término central
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6-ecuacion-con-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6: Ecuación con coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7-terminos-con-raices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7: Términos con raíces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-8-progresion-en-los-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8: Progresión en los coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-9-producto-con-trinomio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9: Producto con trinomio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10-suma-de-coeficientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10: Suma de coeficientes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-11-razon-entre-terminos-consecutivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11: Razón entre términos consecutivos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-12-termino-central-de-grado-especifico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12: Término central de grado específico
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="teorema-del-binomio">Teorema del Binomio</h1>
+<p>Esta sección contiene problemas resueltos sobre el Teorema del Binomio de Newton, aplicando la fórmula del término general, propiedades de los coeficientes binomiales y sumas de coeficientes.</p>
+<hr />
+<h3 id="problema-1-termino-independiente">Problema 1: Término independiente</h3>
+<p>Determine el término independiente de <span class="arithmatex">\(x\)</span> en el desarrollo de:</p>
+<div class="arithmatex">\[\left(x^2 - \dfrac{2}{x^3}\right)^{10}.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Identificar elementos: Buscamos el término donde el exponente de \(x\) sea 0. El término general \(T_{k+1}\) se define como:
+   \( T_{k+1} = \binom{n}{k} a^{n-k} b^k \)
+
+   Con \(a = x^2\), \(b = -2x^{-3}\) y \(n = 10\).
+
+2. Plantear término general:
+   $$T_{k+1} = \binom{10}{k} (x^2)^{10-k} (-2x^{-3})^k.$$
+
+   $$T_{k+1} = \binom{10}{k} x^{20-2k} (-2)^k x^{-3k} = \binom{10}{k} (-2)^k x^{20-5k}.$$
+
+3. Igualar exponente a cero:
+   \( 20 - 5k = 0 \implies 5k = 20 \implies k = 4 \).
+
+4. Calcular valor numérico:
+
+   $$T_5 = \binom{10}{4} (-2)^4 = 210 \cdot 16 = 3360.$$
+
+   Resultado: \(3360\).
+</details>
+
+<hr />
+<h3 id="problema-2-coeficiente-especifico">Problema 2: Coeficiente específico</h3>
+<p>Determine el coeficiente de <span class="arithmatex">\(x^7\)</span> en el desarrollo del binomio:</p>
+<div class="arithmatex">\[\left(3x - \dfrac{1}{x^2}\right)^{13}.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Término general: Aplicamos la fórmula con \(a = 3x\), \(b = -x^{-2}\) y \(n = 13\):
+
+   $$T_{k+1} = \binom{13}{k} (3x)^{13-k} (-x^{-2})^k.$$
+
+   $$T_{k+1} = \binom{13}{k} 3^{13-k} (-1)^k x^{13-3k}.$$
+
+2. Buscar exponente 7:
+
+   \( 13 - 3k = 7 \implies 3k = 6 \implies k = 2 \).
+
+3. Sustituir para hallar el coeficiente:
+
+   $$\text{Coeficiente} = \binom{13}{2} 3^{11} (-1)^2 = 78 \cdot 177147 = 13,817,466.$$
+
+   Resultado: \(13,817,466\).
+</details>
+
+<hr />
+<h3 id="problema-3-igualdad-de-coeficientes">Problema 3: Igualdad de coeficientes</h3>
+<p>En el desarrollo de <span class="arithmatex">\( (3x + 4)^{15} \)</span>, los coeficientes de los términos que contienen <span class="arithmatex">\(x^k\)</span> y <span class="arithmatex">\(x^{k+1}\)</span> son exactamente iguales. Determine el valor de <span class="arithmatex">\(k\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Definir coeficientes: El coeficiente de \(x^r\) es \( C_r = \binom{15}{r} 3^r 4^{15-r} \).
+
+2. Plantear igualdad: \( C_k = C_{k+1} \).
+
+   $$\binom{15}{k} 3^k 4^{15-k} = \binom{15}{k+1} 3^{k+1} 4^{14-k}.$$
+
+3. Simplificar: Dividimos por \(3^k\) y \(4^{14-k}\):
+
+   $$\binom{15}{k} \cdot 4 = \binom{15}{k+1} \cdot 3.$$
+
+4. Desarrollar combinaciones:
+
+   $$\frac{4}{k!(15-k)!} = \frac{3}{(k+1)!(14-k)!} \implies \frac{4}{15-k} = \frac{3}{k+1}.$$
+
+   $$ 4(k+1) = 3(15-k) \implies 4k+4 = 45-3k \implies 7k = 41 .$$
+
+
+   Resultado: \(k = 41/7\).
+</details>
+
+<hr />
+<h3 id="problema-4-producto-de-polinomio-por-binomio">Problema 4: Producto de polinomio por binomio</h3>
+<p>Determine el coeficiente de <span class="arithmatex">\(x^8\)</span> en el desarrollo de la expresión:</p>
+<div class="arithmatex">\[\left(1 - \dfrac{2}{x}\right)(1 + x)^{12}.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Distribuir el producto: \( 1 \cdot (1+x)^{12} - \frac{2}{x} \cdot (1+x)^{12} \).
+
+2. Analizar términos con \(x^8\):
+
+   - Del primer bloque: necesitamos \(x^8\), su coeficiente es \( \binom{12}{8} \).
+
+   - Del segundo bloque: como hay un \(1/x\), necesitamos el término con \(x^9\) del binomio: \( -2 \cdot \binom{12}{9} \).
+
+3. Calcular suma:
+
+   $$\text{Coef} = \binom{12}{8} - 2\binom{12}{9} = 495 - 2(220) = 55.$$
+
+   Resultado: \(55\).
+</details>
+
+<hr />
+<h3 id="problema-5-parametro-con-termino-central">Problema 5: Parámetro con término central</h3>
+<p>Determine el valor del parámetro <span class="arithmatex">\(a &gt; 0\)</span> de modo que el coeficiente del término central en el desarrollo de <span class="arithmatex">\( \left(x + \frac{a}{x}\right)^{10} \)</span> sea igual a <span class="arithmatex">\(252\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Identificar término central: Con \(n = 10\), hay 11 términos. El central es el sexto (\(k = 5\)).
+
+   $$T_6 = \binom{10}{5} x^5 \left(\frac{a}{x}\right)^5 = \binom{10}{5} a^5.$$
+
+2. Igualar al valor dado: Sabemos que \( \binom{10}{5} = 252 \).
+
+   $$252 \cdot a^5 = 252 \implies a^5 = 1.$$
+
+   Resultado: \(a = 1\).
+</details>
+
+<hr />
+<h3 id="problema-6-ecuacion-con-coeficientes">Problema 6: Ecuación con coeficientes</h3>
+<p>Si en el desarrollo de <span class="arithmatex">\( \left(x^2 + \frac{a}{x}\right)^{12} \)</span>, el coeficiente de <span class="arithmatex">\(x^{12}\)</span> es el cuádruple del coeficiente de <span class="arithmatex">\(x^9\)</span>, determine el valor del parámetro <span class="arithmatex">\(a\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Término general:
+
+   $$ T_{k+1} = \binom{12}{k} (x^2)^{12-k} (a x^{-1})^k = \binom{12}{k} a^k x^{24-3k}.$$
+
+2. Identificar \(k\) para cada grado:
+
+   - Para \(x^{12}\): \( 24-3k = 12 \implies k = 4 \). luego el coeficiente es: 
+
+       $$ \binom{12}{4} a^4.$$ 
+
+   - Para \(x^9\): \( 24-3k = 9 \implies k = 5 \). luego el coeficiente es: 
+
+       $$ \binom{12}{5} a^5.$$
+
+3. Resolver ecuación:
+
+   $$\binom{12}{4} a^4 = 4 \cdot \binom{12}{5} a^5 \implies 495 a^4 = 3168 a^5.$$
+
+   De donde obtenemos como resultado:
+
+   $$a = 495/3168 = 5/32.$$
+
+
+</details>
+
+<hr />
+<h3 id="problema-7-terminos-con-raices">Problema 7: Términos con raíces</h3>
+<p>Determine el término que no contiene <span class="arithmatex">\(x\)</span> en el desarrollo de:</p>
+<div class="arithmatex">\[\left(\sqrt{x} + \dfrac{3}{x^2}\right)^{15}.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Reescribir: \( a = x^{1/2} \), \( b = 3x^{-2} \).
+
+2. Exponente de \(x\):
+
+   $$\frac{15-k}{2} - 2k = 0 \implies 15 - 5k = 0 \implies k = 3.$$
+
+3. Calcular término:
+
+   $$T_4 = \binom{15}{3} (\sqrt{x})^{12} (3x^{-2})^3 = 455 \cdot 1 \cdot 27 = 12285.$$
+
+   Resultado: \(12285\).
+</details>
+
+<hr />
+<h3 id="problema-8-progresion-en-los-coeficientes">Problema 8: Progresión en los coeficientes</h3>
+<p>Los coeficientes del segundo, tercer y cuarto término en el desarrollo de <span class="arithmatex">\( (1+x)^n \)</span> están en progresión aritmética. Determine el valor de <span class="arithmatex">\(n\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Coeficientes: \( \binom{n}{1}, \binom{n}{2}, \binom{n}{3} \).
+
+2. Propiedad P.A.: \( 2 \cdot \binom{n}{2} = \binom{n}{1} + \binom{n}{3} \).
+
+3. Desarrollar:
+
+   $$n(n-1) = n + \frac{n(n-1)(n-2)}{6} \implies 6(n-1) = 6 + (n-1)(n-2).$$
+
+   \( n^2 - 9n + 14 = 0 \implies (n-7)(n-2) = 0 \).
+
+   Como existe cuarto término, \(n \ge 3\).
+
+   Resultado: \(n = 7\).
+</details>
+
+<hr />
+<h3 id="problema-9-producto-con-trinomio">Problema 9: Producto con trinomio</h3>
+<p>Determine el coeficiente del término que contiene <span class="arithmatex">\(x^5\)</span> en el desarrollo de:</p>
+<div class="arithmatex">\[(x^2 + 2x + 1)(x - 1)^{10}.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+ 1. Simplificar: La expresión es \( (x+1)^2 (x-1)^{10} \).
+
+ 2. Distribución:
+   - De \(x^2\): necesitamos \(x^3\) de:
+
+    $$(x-1)^{10} \to \binom{10}{3} (-1)^7 = -120.$$
+
+   - De \(2x\): necesitamos \(x^4\) de:
+
+    $$(x-1)^{10} \to 2 \cdot \binom{10}{4} (-1)^6 = 420.$$
+
+   - De \(1\): necesitamos \(x^5\) de:
+
+  $$(x-1)^{10} \to \binom{10}{5} (-1)^5 = -252 .$$
+
+ 3. Finalemente sumamos para obtener el resultado pedido: 
+
+     $$ -120 + 420 - 252 = 48 .$$
+
+</details>
+
+<hr />
+<h3 id="problema-10-suma-de-coeficientes">Problema 10: Suma de coeficientes</h3>
+<p>Determine el valor del parámetro <span class="arithmatex">\(c\)</span> sabiendo que la suma de todos los coeficientes en el desarrollo del binomio <span class="arithmatex">\( (cx^2 - 3)^{11} \)</span> es igual a <span class="arithmatex">\(-1\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+  1. Suma de coeficientes: Se obtiene evaluando en \(x = 1\).
+
+  2. Ecuación:
+
+   $$(c(1)^2 - 3)^{11} = -1 \implies (c-3)^{11} = -1.$$
+
+   $$ c - 3 = -1 \implies c = 2.$$
+
+
+</details>
+
+<hr />
+<h3 id="problema-11-razon-entre-terminos-consecutivos">Problema 11: Razón entre términos consecutivos</h3>
+<p>En el desarrollo de <span class="arithmatex">\( (2x + y)^n \)</span>, el coeficiente del tercer término es al coeficiente del cuarto término como <span class="arithmatex">\(1\)</span> es a <span class="arithmatex">\(2\)</span>. Determine el valor de <span class="arithmatex">\(n\)</span>.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Coeficientes:
+
+   $$ C_3 = \binom{n}{2} 2^{n-2},          C_4 = \binom{n}{3} 2^{n-3}.$$
+
+2. Relación: \( \frac{C_3}{C_4} = \frac{1}{2} \implies 2 C_3 = C_4 \).
+
+   $$2 \frac{n(n-1)}{2} 2^{n-2} = \frac{n(n-1)(n-2)}{6} 2^{n-3}.$$
+
+3. Simplificar: 
+
+  $$ 4 = \frac{n-2}{6} \implies 24 = n - 2 .$$
+
+   Resultado: \(n = 26\). 
+</details>
+
+<hr />
+<h3 id="problema-12-termino-central-de-grado-especifico">Problema 12: Término central de grado específico</h3>
+<p>El desarrollo del binomio <span class="arithmatex">\( \left(2x^3 - \frac{1}{x}\right)^{2n} \)</span> tiene un término central cuyo grado relativo a <span class="arithmatex">\(x\)</span> es <span class="arithmatex">\(8\)</span>. Calcule <span class="arithmatex">\(n\)</span> y su coeficiente.</p>
+<details>
+<summary>Ver Desarrollo</summary>
+
+ 1. Término central: Es \(T_{n+1}\).
+
+   $$T_{n+1} = \binom{2n}{n} (2x^3)^n (-x^{-1})^n = \binom{2n}{n} 2^n (-1)^n x^{2n}.$$
+
+ 2. Grado: \( 2n = 8 \implies n = 4 \).
+
+ 3. Coeficiente:
+   $$\binom{8}{4} (-2)^4 = 70 \cdot 16 = 1120.$$
+
+   Resultado:
+    $$n = 4,           Coef: 1120.$$
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

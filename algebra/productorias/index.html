@@ -1,0 +1,1158 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra en particular">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../sumatorias_2/">
+      
+      
+        <link rel="next" href="../binomio/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Productorias - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#guia-de-ejercicios-productorias" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Productorias
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="guia-de-ejercicios-productorias">Guía de Ejercicios: Productorias</h1>
+<p>En esta sección se presentan problemas resueltos sobre productorias, aplicando propiedades de potencias, cambios de índice, propiedades telescópicas y factoriales.</p>
+<hr />
+<h3 id="problema-1">Problema 1</h3>
+<p>Determine el valor exacto de la expresión:</p>
+<div class="arithmatex">\[\prod_{k=1}^{100} 5^k.\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Utilizamos la propiedad de potencias de igual base: \( \prod a^{f(k)} = a^{\sum f(k)} \).
+
+   $$\prod_{k=1}^{100} 5^k = 5^{\sum_{k=1}^{100} k}$$
+
+2. Aplicamos la fórmula de la suma de los primeros \( n \) naturales \( \frac{n(n+1)}{2} \):
+
+   $$\sum_{k=1}^{100} k = \frac{100 \cdot 101}{2} = 5050.$$
+
+   Resultado: \( 5^{5050} \).
+</details>
+
+<hr />
+<h3 id="problema-2">Problema 2</h3>
+<p>Simplifique la productoria:</p>
+<div class="arithmatex">\[\prod_{k=4}^{250} (k-3)\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Realizamos un cambio de índice definiendo \( j = k - 3 \):
+   - Si \( k = 4 \), entonces \( j = 1 \).
+   - Si \( k = 250 \), entonces \( j = 247 \).
+
+2. La expresión se transforma en:
+
+   $$\prod_{j=1}^{247} j.$$
+
+3. Por definición de factorial, el producto de los primeros \( n \) naturales es \( n! \).
+
+   Resultado: \( 247! \).
+</details>
+
+<hr />
+<h3 id="problema-3">Problema 3</h3>
+<p>Calcule el valor de:</p>
+<div class="arithmatex">\[\prod_{i=10}^{200} \dfrac{(i+2)^3}{(i+1)^3}\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Agrupamos la potencia y aplicamos la propiedad telescópica:
+
+   $$\prod_{i=10}^{200} \left( \frac{i+2}{i+1} \right)^3 = \left( \prod_{i=10}^{200} \frac{i+2}{i+1} \right)^3.$$
+
+2. Expandiendo los términos internos (telescópica):
+
+   $$\frac{12}{11} \cdot \frac{13}{12} \cdot \dots \cdot \frac{202}{201} = \frac{202}{11}.$$
+
+3. Elevamos el resultado al cubo:
+
+    $$ \left( \frac{202}{11} \right)^3 .$$
+</details>
+
+<hr />
+<h3 id="problema-4">Problema 4</h3>
+<p>Dada la productoria para <span class="arithmatex">\( n \in \mathbb{N} \)</span>:</p>
+<div class="arithmatex">\[\prod_{j=n}^{2n} \left(1 - \dfrac{1}{j+1}\right)\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Primero simplificamos el argumento:
+
+   $$1 - \frac{1}{j+1} = \frac{j+1-1}{j+1} = \frac{j}{j+1}.$$
+
+2. Ahora aplicamos la propiedad telescópica desde \( n \) hasta \( 2n \):
+
+   $$\frac{n}{n+1} \cdot \frac{n+1}{n+2} \cdot \dots \cdot \frac{2n}{2n+1}.$$
+
+3. Cancelando términos intermedios obtenemos el primer numerador y el último denominador:
+
+   $$ \frac{n}{2n+1} .$$
+</details>
+
+<hr />
+<h3 id="problema-6">Problema 6</h3>
+<p>Determine el valor numérico de:</p>
+<div class="arithmatex">\[\prod_{k=2}^{50} \dfrac{k^2 - 1}{k^2}\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Factorizamos el numerador como diferencia de cuadrados:
+
+   $$\prod_{k=2}^{50} \frac{(k-1)(k+1)}{k \cdot k} = \left( \prod_{k=2}^{50} \frac{k-1}{k} \right) \cdot \left( \prod_{k=2}^{50} \frac{k+1}{k} \right).$$
+
+2. Ambas partes son telescópicas:
+   - Parte 1: \( \frac{1}{2} \cdot \frac{2}{3} \cdot \dots \cdot \frac{49}{50} = \frac{1}{50} \).
+   - Parte 2: \( \frac{3}{2} \cdot \frac{4}{3} \cdot \dots \cdot \frac{51}{50} = \frac{51}{2} \).
+
+3. Multiplicando ambos resultados:
+
+   $$\frac{1}{50} \cdot \frac{51}{2} = \frac{51}{100} = 0.51.$$
+
+
+</details>
+
+<hr />
+<h3 id="problema-7">Problema 7</h3>
+<p>Calcule:</p>
+<div class="arithmatex">\[\prod_{k=1}^{80} 2^{3k-1}\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Aplicamos propiedad de potencias para llevarlo a una sumatoria en el exponente:
+
+   $$2^{\sum_{k=1}^{80} (3k-1)} = 2^{3\sum_{k=1}^{80} k - \sum_{k=1}^{80} 1}.$$
+
+2. Calculamos los componentes del exponente:
+   - \( 3 \cdot \frac{80 \cdot 81}{2} = 3 \cdot 3240 = 9720 \).
+   - \( \sum_{k=1}^{80} 1 = 80 \).
+
+3. Exponente final: \( 9720 - 80 = 9640 \).
+
+
+</details>
+
+<hr />
+<h3 id="problema-8">Problema 8</h3>
+<p>Simplifique:</p>
+<div class="arithmatex">\[\prod_{i=5}^{100} \dfrac{i-4}{i-3}\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Es una productoria telescópica simple. Expandimos para visualizar:
+
+   $$\frac{5-4}{5-3} \cdot \frac{6-4}{6-3} \cdot \dots \cdot \frac{100-4}{100-3} = \frac{1}{2} \cdot \frac{2}{3} \cdot \frac{3}{4} \cdot \dots \cdot \frac{96}{97}.$$
+
+2. Cancelando términos sucesivos, sobrevive el primer numerador y el último denominador.
+
+   Resultado: 
+
+      $$\frac{1}{97} .$$
+</details>
+
+<hr />
+<h3 id="problema-9">Problema 9</h3>
+<p>Determine el valor de la productoria doble:</p>
+<div class="arithmatex">\[\prod_{j=1}^{m} \prod_{i=1}^{n} a\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Resolvemos la productoria interna (constante \( a \) repetida \( n \) veces):
+
+   $$\prod_{i=1}^{n} a = a^n.$$
+
+2. Resolvemos la productoria externa sobre el resultado anterior (constante \( a^n \) repetida \( m \) veces), para obtener por resultado:
+
+   $$\prod_{j=1}^{m} a^n = (a^n)^m = a^{nm}.$$
+
+
+</details>
+
+<hr />
+<h3 id="problema-10">Problema 10</h3>
+<p>Reduzca la expresión:</p>
+<div class="arithmatex">\[\prod_{k=2}^{n} \left( \frac{k^3 - 1}{k^3 + 1} \right)\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Factorizamos usando diferencia y suma de cubos:
+
+   $$\prod_{k=2}^{n} \frac{(k-1)(k^2+k+1)}{(k+1)(k^2-k+1)}.$$
+
+2. Observamos que el término cuadrático es telescópico ya que \( (k+1)^2 - (k+1) + 1 = k^2+k+1 \). Separamos:
+
+   $$\left( \prod_{k=2}^{n} \frac{k-1}{k+1} \right) \cdot \left( \prod_{k=2}^{n} \frac{k^2+k+1}{k^2-k+1} \right).$$
+
+3. Resolviendo:
+   - Parte lineal: \( \frac{1 \cdot 2}{n(n+1)} \).
+   - Parte cuadrática: \( \frac{n^2+n+1}{2^2-2+1} = \frac{n^2+n+1}{3} \).
+
+   Finalmente el resultado es: 
+
+       $$ \dfrac{2(n^2+n+1)}{3n(n+1)} .$$
+</details>
+
+<hr />
+<h3 id="problema-11">Problema 11</h3>
+<p>Calcule:</p>
+<div class="arithmatex">\[\prod_{k=1}^{100} e^{(k+1)}\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Por propiedades de potencias, el producto se convierte en una suma en el exponente:
+
+   $$e^{\sum_{k=1}^{100} (k+1)}.$$
+
+2. Aplicamos la suma de una progresión aritmética:
+
+   $$\sum_{k=1}^{100} (k+1) = \frac{100}{2}(2 + 101) = 50 \cdot 103 = 5150.$$
+
+  Finalmente el resultado: 
+
+     $$ e^{5150} .$$
+</details>
+
+<hr />
+<h3 id="problema-12">Problema 12</h3>
+<p>Resuelva la productoria anidada:</p>
+<div class="arithmatex">\[\prod_{j=2}^{50} \prod_{k=1}^{j-1} \left( \frac{k+1}{k} \right)\]</div>
+<details>
+<summary>Ver Desarrollo</summary>
+
+1. Resolvemos la productoria interna (es telescópica):
+
+   $$\prod_{k=1}^{j-1} \frac{k+1}{k} = \frac{2}{1} \cdot \frac{3}{2} \cdot \dots \cdot \frac{j}{j-1} = j.$$
+
+2. Sustituimos en la productoria externa:
+
+   $$\prod_{j=2}^{50} j = 2 \cdot 3 \cdot \dots \cdot 50.$$
+
+3. Como el producto empieza en 2, podemos agregar el factor 1 sin alterar el valor para completar el factorial:
+
+
+4.   Con lo cual, obtenemos por resultado: \( 50! \).
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
