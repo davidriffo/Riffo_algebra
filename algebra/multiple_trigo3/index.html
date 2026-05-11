@@ -1,0 +1,1407 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../multiple_trigo2/">
+      
+      
+        <link rel="next" href="../multiple_trigo4/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Identidades trigonometricas - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-seleccion-multiple-identidades-trigonometricas-analisis-y-errores" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Identidades trigonometricas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Practica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Practica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer cuadrante y propiedades básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-completar-el-paso-faltante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Completar el paso faltante
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-identificar-el-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Identificar el error
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-completar-el-paso-faltante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Completar el paso faltante
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-identificar-el-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Identificar el error
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-seleccion-multiple-identidades-trigonometricas-analisis-y-errores">Ejercicios de Selección Múltiple: Identidades Trigonométricas (Análisis y Errores)</h1>
+<p>Resuelve los siguientes ejercicios y luego verifica tu respuesta. Si tienes dudas, puedes desplegar el desarrollo paso a paso.</p>
+<hr />
+<h2 id="parte-i-completar-el-paso-faltante">Parte I: Completar el paso faltante</h2>
+<p><strong>Instrucciones:</strong> En cada uno de los siguientes ejercicios se presenta el desarrollo de la demostración de una identidad trigonométrica. Identifica cuál de las alternativas corresponde correctamente al paso que se ha dejado en blanco.</p>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1</legend>
+
+  <p>En la demostración de la identidad $(1-\cot(t)+\csc(t))(\sec(t)-\tan(t)+1)=2$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Transformamos a senos y cosenos: $\left(1-\frac{\cos(t)}{\sin(t)}+\frac{1}{\sin(t)}\right)\left(\frac{1}{\cos(t)}-\frac{\sin(t)}{\cos(t)}+1\right)$</li>
+      <li><b>Paso 2:</b> Obtenemos denominadores comunes: $\left(\frac{\sin(t)-\cos(t)+1}{\sin(t)}\right)\left(\frac{1-\sin(t)+\cos(t)}{\cos(t)}\right)$</li>
+      <li><b>Paso 3: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 4:</b> Expandimos el numerador: $\frac{1 - (\sin^2(t) - 2\sin(t)\cos(t) + \cos^2(t))}{\sin(t)\cos(t)}$</li>
+      <li><b>Paso 5:</b> Aplicamos identidad pitagórica y simplificamos para obtener $2$.</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 3, al agrupar convenientemente y multiplicar las fracciones?</p>
+
+  <input type="radio" name="p1" id="p1a" value="correcta"> <label for="p1a">A) $\frac{1^2 - (\sin(t)-\cos(t))^2}{\sin(t)\cos(t)}$</label><br>
+  <input type="radio" name="p1" id="p1b" value="incorrecta"> <label for="p1b">B) $\frac{1^2 + (\sin(t)-\cos(t))^2}{\sin(t)\cos(t)}$</label><br>
+  <input type="radio" name="p1" id="p1c" value="incorrecta"> <label for="p1c">C) $\frac{\sin^2(t) - \cos^2(t) + 1}{\sin(t)\cos(t)}$</label><br>
+  <input type="radio" name="p1" id="p1d" value="incorrecta"> <label for="p1d">D) $\frac{(1-\sin(t))(1+\cos(t))}{\sin(t)\cos(t)}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p1', 'feedback_p1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Para pasar del Paso 2 al 4, agrupamos los términos del numerador. Notemos que el primer numerador es <span class="arithmatex">\((\sin(t) - \cos(t) + 1)\)</span> y el segundo es <span class="arithmatex">\((1 - (\sin(t) - \cos(t)))\)</span>. Al multiplicar, obtenemos una suma por su diferencia de la forma <span class="arithmatex">\((A+B)(A-B) = A^2 - B^2\)</span>, donde <span class="arithmatex">\(A=1\)</span> y <span class="arithmatex">\(B=(\sin(t)-\cos(t))\)</span>. Multiplicando los denominadores obtenemos <span class="arithmatex">\(\sin(t)\cos(t)\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2</legend>
+
+  <p>En la demostración de la identidad $\frac{1-\tan^2(t)}{1-\cot^2(t)}=-\tan^2(t)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> $\frac{1-\tan^2(t)}{1-\frac{1}{\tan^2(t)}}$</li>
+      <li><b>Paso 2:</b> $\frac{1-\tan^2(t)}{\frac{\tan^2(t)-1}{\tan^2(t)}}$</li>
+      <li><b>Paso 3: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 4:</b> $\frac{-( \tan^2(t)-1 )\tan^2(t)}{\tan^2(t)-1}$</li>
+      <li><b>Paso 5:</b> $-\tan^2(t)$</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 3 tras multiplicar por el recíproco del denominador?</p>
+
+  <input type="radio" name="p2" id="p2a" value="correcta"> <label for="p2a">A) $\frac{(1-\tan^2(t))\tan^2(t)}{\tan^2(t)-1}$</label><br>
+  <input type="radio" name="p2" id="p2b" value="incorrecta"> <label for="p2b">B) $\frac{1-\tan^2(t)}{\tan^2(t)-1}$</label><br>
+  <input type="radio" name="p2" id="p2c" value="incorrecta"> <label for="p2c">C) $\frac{1-\tan^4(t)}{\tan^2(t)-1}$</label><br>
+  <input type="radio" name="p2" id="p2d" value="incorrecta"> <label for="p2d">D) $(1-\tan^2(t))(\tan^2(t)-1)$</label><br><br>
+
+  <button onclick="verificarRespuesta('p2', 'feedback_p2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Para dividir las fracciones del Paso 2, multiplicamos el numerador principal, que es <span class="arithmatex">\((1-\tan^2(t))\)</span>, por el recíproco del denominador, que es <span class="arithmatex">\(\frac{\tan^2(t)}{\tan^2(t)-1}\)</span>. Al efectuar el producto, la expresión resultante es <span class="arithmatex">\(\frac{(1-\tan^2(t))\tan^2(t)}{\tan^2(t)-1}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3</legend>
+
+  <p>En la demostración de la identidad $\frac{\cos^2(t)(1+\tan^2(t))}{\cot(t)}=\tan(t)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Aplicamos identidad pitagórica: $\frac{\cos^2(t)\sec^2(t)}{\cot(t)}$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> Simplificamos el numerador: $\frac{1}{\cot(t)}$</li>
+      <li><b>Paso 4:</b> Aplicamos identidad recíproca: $\tan(t)$</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 2?</p>
+
+  <input type="radio" name="p3" id="p3a" value="correcta"> <label for="p3a">A) $\frac{\cos^2(t) \cdot \frac{1}{\cos^2(t)}}{\cot(t)}$</label><br>
+  <input type="radio" name="p3" id="p3b" value="incorrecta"> <label for="p3b">B) $\frac{\cos^2(t) \cdot \frac{1}{\sin^2(t)}}{\cot(t)}$</label><br>
+  <input type="radio" name="p3" id="p3c" value="incorrecta"> <label for="p3c">C) $\frac{\cos^2(t) + \sec^2(t)}{\cot(t)}$</label><br>
+  <input type="radio" name="p3" id="p3d" value="incorrecta"> <label for="p3d">D) $\frac{1}{\cos^2(t) \cdot \cot(t)}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p3', 'feedback_p3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>En el Paso 1 se obtuvo <span class="arithmatex">\(\sec^2(t)\)</span>. Por las identidades recíprocas, sabemos que <span class="arithmatex">\(\sec(t) = \frac{1}{\cos(t)}\)</span>, por lo tanto <span class="arithmatex">\(\sec^2(t) = \frac{1}{\cos^2(t)}\)</span>. Al sustituir esto, obtenemos el producto <span class="arithmatex">\(\cos^2(t) \cdot \frac{1}{\cos^2(t)}\)</span> en el numerador.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4</legend>
+
+  <p>En la demostración de la identidad $\tan^2(x)-\sec^2(x)=-1$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Expresamos la secante en términos de la tangente: $\tan^2(x) - (1 + \tan^2(x))$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> $-1$</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 2?</p>
+
+  <input type="radio" name="p4" id="p4a" value="correcta"> <label for="p4a">A) $\tan^2(x) - 1 - \tan^2(x)$</label><br>
+  <input type="radio" name="p4" id="p4b" value="incorrecta"> <label for="p4b">B) $\tan^2(x) - 1 + \tan^2(x)$</label><br>
+  <input type="radio" name="p4" id="p4c" value="incorrecta"> <label for="p4c">C) $1 - \tan^2(x) + \tan^2(x)$</label><br>
+  <input type="radio" name="p4" id="p4d" value="incorrecta"> <label for="p4d">D) $\tan^2(x) + 1 - \tan^2(x)$</label><br><br>
+
+  <button onclick="verificarRespuesta('p4', 'feedback_p4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Para eliminar el paréntesis en el Paso 1, debemos distribuir el signo negativo a ambos términos del binomio <span class="arithmatex">\((1 + \tan^2(x))\)</span>. Esto cambia los signos, resultando en <span class="arithmatex">\(-1 - \tan^2(x)\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5</legend>
+
+  <p>En la demostración de la identidad $\frac{\cot(x)}{\csc(x)-\sin(x)}=\sec(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> $\frac{\frac{\cos(x)}{\sin(x)}}{\frac{1}{\sin(x)} - \sin(x)}$</li>
+      <li><b>Paso 2:</b> $\frac{\frac{\cos(x)}{\sin(x)}}{\frac{1-\sin^2(x)}{\sin(x)}}$</li>
+      <li><b>Paso 3: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 4:</b> $\frac{\cos(x)\sin(x)}{\sin(x)\cos^2(x)}$</li>
+      <li><b>Paso 5:</b> $\frac{1}{\cos(x)} = \sec(x)$</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 3, al aplicar una identidad en el denominador?</p>
+
+  <input type="radio" name="p5" id="p5a" value="correcta"> <label for="p5a">A) $\frac{\frac{\cos(x)}{\sin(x)}}{\frac{\cos^2(x)}{\sin(x)}}$</label><br>
+  <input type="radio" name="p5" id="p5b" value="incorrecta"> <label for="p5b">B) $\frac{\frac{\cos(x)}{\sin(x)}}{\frac{-\cos^2(x)}{\sin(x)}}$</label><br>
+  <input type="radio" name="p5" id="p5c" value="incorrecta"> <label for="p5c">C) $\frac{\frac{\cos(x)}{\sin(x)}}{\frac{\sec^2(x)}{\sin(x)}}$</label><br>
+  <input type="radio" name="p5" id="p5d" value="incorrecta"> <label for="p5d">D) $\frac{\frac{\cos(x)}{\sin(x)}}{\cos^2(x)}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p5', 'feedback_p5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>En el Paso 2, tenemos el término <span class="arithmatex">\(1-\sin^2(x)\)</span> en el numerador del denominador complejo. Aplicando la identidad pitagórica <span class="arithmatex">\(\sin^2(x) + \cos^2(x) = 1\)</span>, sabemos que <span class="arithmatex">\(1-\sin^2(x) = \cos^2(x)\)</span>. Al hacer esta sustitución, llegamos al Paso 3.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6</legend>
+
+  <p>En la demostración de la identidad $\frac{1+\cos(x)}{1+\sec(x)}=\cos(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> $\frac{1+\cos(x)}{1+\frac{1}{\cos(x)}}$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> $(1+\cos(x)) \cdot \frac{\cos(x)}{\cos(x)+1}$</li>
+      <li><b>Paso 4:</b> $\cos(x)$</li>
+  </ul>
+  <p>¿Cuál es la expresión que falta en el Paso 2?</p>
+
+  <input type="radio" name="p6" id="p6a" value="correcta"> <label for="p6a">A) $\frac{1+\cos(x)}{\frac{\cos(x)+1}{\cos(x)}}$</label><br>
+  <input type="radio" name="p6" id="p6b" value="incorrecta"> <label for="p6b">B) $\frac{1+\cos(x)}{\frac{1}{\cos(x)}}$</label><br>
+  <input type="radio" name="p6" id="p6c" value="incorrecta"> <label for="p6c">C) $\frac{1+\cos(x)}{\cos(x)+1}$</label><br>
+  <input type="radio" name="p6" id="p6d" value="incorrecta"> <label for="p6d">D) $\frac{1+\cos(x)}{\frac{\cos(x)+1}{1}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p6', 'feedback_p6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>En el Paso 1, el denominador es <span class="arithmatex">\(1 + \frac{1}{\cos(x)}\)</span>. Para sumar estas expresiones, buscamos un denominador común: <span class="arithmatex">\(\frac{\cos(x)}{\cos(x)} + \frac{1}{\cos(x)} = \frac{\cos(x)+1}{\cos(x)}\)</span>. El numerador principal, <span class="arithmatex">\(1+\cos(x)\)</span>, se mantiene igual.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7</legend>
+
+  <p>En la demostración de la identidad $\frac{\sec^2(x)-1}{\sec^2(x)}=\sin^2(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Separamos en dos fracciones: $\frac{\sec^2(x)}{\sec^2(x)} - \frac{1}{\sec^2(x)}$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> $\sin^2(x)$</li>
+  </ul>
+  <p>¿Qué expresión corresponde al Paso 2?</p>
+
+  <input type="radio" name="p7" id="p7a" value="correcta"> <label for="p7a">A) $1 - \cos^2(x)$</label><br>
+  <input type="radio" name="p7" id="p7b" value="incorrecta"> <label for="p7b">B) $1 - \csc^2(x)$</label><br>
+  <input type="radio" name="p7" id="p7c" value="incorrecta"> <label for="p7c">C) $1 - \sin^2(x)$</label><br>
+  <input type="radio" name="p7" id="p7d" value="incorrecta"> <label for="p7d">D) $\sec(x) - \cos^2(x)$</label><br><br>
+
+  <button onclick="verificarRespuesta('p7', 'feedback_p7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Del Paso 1, la primera fracción <span class="arithmatex">\(\frac{\sec^2(x)}{\sec^2(x)}\)</span> se simplifica a <span class="arithmatex">\(1\)</span>. La segunda fracción, <span class="arithmatex">\(\frac{1}{\sec^2(x)}\)</span>, equivale a <span class="arithmatex">\(\cos^2(x)\)</span> mediante las identidades recíprocas. Esto resulta en la expresión <span class="arithmatex">\(1 - \cos^2(x)\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 8</legend>
+
+  <p>En la demostración de la identidad $\frac{1+\sin(x)}{\cos(x)}+\frac{\cos(x)}{1+\sin(x)}=2\sec(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Sumamos las fracciones: $\frac{(1+\sin(x))^2 + \cos^2(x)}{\cos(x)(1+\sin(x))}$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> Aplicamos identidad pitagórica: $\frac{1 + 2\sin(x) + 1}{\cos(x)(1+\sin(x))}$</li>
+      <li><b>Paso 4:</b> Factorizamos: $\frac{2(1+\sin(x))}{\cos(x)(1+\sin(x))}$</li>
+      <li><b>Paso 5:</b> $2\sec(x)$</li>
+  </ul>
+  <p>¿Cuál es la expresión correcta al desarrollar el binomio en el Paso 2?</p>
+
+  <input type="radio" name="p8" id="p8a" value="correcta"> <label for="p8a">A) $\frac{1 + 2\sin(x) + \sin^2(x) + \cos^2(x)}{\cos(x)(1+\sin(x))}$</label><br>
+  <input type="radio" name="p8" id="p8b" value="incorrecta"> <label for="p8b">B) $\frac{1 + \sin^2(x) + \cos^2(x)}{\cos(x)(1+\sin(x))}$</label><br>
+  <input type="radio" name="p8" id="p8c" value="incorrecta"> <label for="p8c">C) $\frac{1^2 + 2\sin(x)\cos(x) + \cos^2(x)}{\cos(x)(1+\sin(x))}$</label><br>
+  <input type="radio" name="p8" id="p8d" value="incorrecta"> <label for="p8d">D) $\frac{1 + 2\sin(x) + \sin(x)\cos(x)}{\cos(x)(1+\sin(x))}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p8', 'feedback_p8')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p8" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>En el Paso 1, tenemos el binomio al cuadrado <span class="arithmatex">\((1+\sin(x))^2\)</span> en el numerador. Al desarrollarlo con la fórmula <span class="arithmatex">\((a+b)^2 = a^2 + 2ab + b^2\)</span>, obtenemos <span class="arithmatex">\(1^2 + 2(1)(\sin(x)) + \sin^2(x) = 1 + 2\sin(x) + \sin^2(x)\)</span>. Al agregar el término <span class="arithmatex">\(+\cos^2(x)\)</span> finalizamos la expresión.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 9</legend>
+
+  <p>En la demostración de la identidad $\frac{2+\tan^2(x)}{\sec^2(x)}-1=\cos^2(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Transformamos el numerador usando una identidad pitagórica ($1+1+\tan^2(x)$): $\frac{1+\sec^2(x)}{\sec^2(x)} - 1$</li>
+      <li><b>Paso 2: [ ESPACIO EN BLANCO ]</b></li>
+      <li><b>Paso 3:</b> Simplificamos y aplicamos identidad recíproca: $\cos^2(x) + 1 - 1$</li>
+      <li><b>Paso 4:</b> $\cos^2(x)$</li>
+  </ul>
+  <p>¿Qué expresión debe ir en el Paso 2 al separar la fracción?</p>
+
+  <input type="radio" name="p9" id="p9a" value="correcta"> <label for="p9a">A) $\frac{1}{\sec^2(x)} + \frac{\sec^2(x)}{\sec^2(x)} - 1$</label><br>
+  <input type="radio" name="p9" id="p9b" value="incorrecta"> <label for="p9b">B) $\frac{1}{\sec^2(x)} + \sec^2(x) - 1$</label><br>
+  <input type="radio" name="p9" id="p9c" value="incorrecta"> <label for="p9c">C) $\frac{1 - \sec^2(x)}{\sec^2(x)} - 1$</label><br>
+  <input type="radio" name="p9" id="p9d" value="incorrecta"> <label for="p9d">D) $\frac{1}{\sec^2(x)} - \frac{\sec^2(x)}{\sec^2(x)} - 1$</label><br><br>
+
+  <button onclick="verificarRespuesta('p9', 'feedback_p9')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p9" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Para separar la fracción del Paso 1, dividimos cada término del numerador por el denominador común: <span class="arithmatex">\(\frac{1}{\sec^2(x)} + \frac{\sec^2(x)}{\sec^2(x)}\)</span>. El "<span class="arithmatex">\(-1\)</span>" original se mantiene intacto fuera de la fracción.</p>
+</details>
+<hr />
+<h2 id="parte-ii-identificar-el-error">Parte II: Identificar el error</h2>
+<p><strong>Instrucciones:</strong> En cada uno de los siguientes ejercicios se presenta el intento de demostración de una identidad trigonométrica realizado por un estudiante. Cada desarrollo contiene un <strong>error matemático</strong> en uno de sus pasos. Identifica en qué paso se cometió el primer error y cuál fue su naturaleza.</p>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1</legend>
+
+  <p>Un estudiante intenta demostrar la identidad $\frac{(\sec(x)-\tan(x))^2(1+\sin(x))}{1-\sin(x)}=1$ mediante el siguiente desarrollo:</p>
+  <ul>
+      <li><b>Paso 1:</b> Expresa en senos y cosenos: $\frac{\left(\frac{1}{\cos(x)}-\frac{\sin(x)}{\cos(x)}\right)^2(1+\sin(x))}{1-\sin(x)}$</li>
+      <li><b>Paso 2:</b> Resta las fracciones y eleva al cuadrado: $\frac{\left(\frac{1-\sin^2(x)}{\cos^2(x)}\right)(1+\sin(x))}{1-\sin(x)}$</li>
+      <li><b>Paso 3:</b> Aplica identidad pitagórica en el numerador: $\frac{\left(\frac{\cos^2(x)}{\cos^2(x)}\right)(1+\sin(x))}{1-\sin(x)}$</li>
+      <li><b>Paso 4:</b> Simplifica: $\frac{1+\sin(x)}{1-\sin(x)}$</li>
+  </ul>
+  <p>¿En qué paso cometió el estudiante su primer error?</p>
+
+  <input type="radio" name="e1" id="e1a" value="incorrecta"> <label for="e1a">A) En el Paso 1, al definir incorrectamente la función secante.</label><br>
+  <input type="radio" name="e1" id="e1b" value="correcta"> <label for="e1b">B) En el Paso 2, al asumir erróneamente que $(1-\sin(x))^2$ es equivalente a $1-\sin^2(x)$.</label><br>
+  <input type="radio" name="e1" id="e1c" value="incorrecta"> <label for="e1c">C) En el Paso 3, al sustituir $1-\sin^2(x)$ por $\cos^2(x)$, lo cual es un error de signo.</label><br>
+  <input type="radio" name="e1" id="e1d" value="incorrecta"> <label for="e1d">D) En el Paso 4, al simplificar la fracción perdiendo soluciones de la ecuación original.</label><br><br>
+
+  <button onclick="verificarRespuesta('e1', 'feedback_e1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error está en el Paso 2. Al restar las fracciones obtenemos <span class="arithmatex">\(\frac{1-\sin(x)}{\cos(x)}\)</span>. Al elevar este término al cuadrado, el numerador se convierte en el cuadrado de un binomio: <span class="arithmatex">\((1-\sin(x))^2\)</span>. El estudiante lo desarrolló incorrectamente como <span class="arithmatex">\(1^2 - \sin^2(x)\)</span> (diferencia de cuadrados), omitiendo el doble producto.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2</legend>
+
+  <p>Desarrollo para la identidad $(\tan(x)+\cot(x))\sin(x)\cos(x)=1$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Transforma a senos y cosenos: $\left(\frac{\sin(x)}{\cos(x)} + \frac{\cos(x)}{\sin(x)}\right)\sin(x)\cos(x)$</li>
+      <li><b>Paso 2:</b> Suma las fracciones del paréntesis: $\left(\frac{\sin(x)+\cos(x)}{\cos(x)+\sin(x)}\right)\sin(x)\cos(x)$</li>
+      <li><b>Paso 3:</b> Simplifica el cociente a 1: $1 \cdot \sin(x)\cos(x)$</li>
+      <li><b>Paso 4:</b> Concluye que el resultado es $\sin(x)\cos(x)$.</li>
+  </ul>
+  <p>¿En qué paso se encuentra el error analítico?</p>
+
+  <input type="radio" name="e2" id="e2a" value="incorrecta"> <label for="e2a">A) En el Paso 1, al utilizar identidades recíprocas en lugar de identidades pitagóricas.</label><br>
+  <input type="radio" name="e2" id="e2b" value="correcta"> <label for="e2b">B) En el Paso 2, al sumar fracciones sumando numeradores con numeradores y denominadores con denominadores.</label><br>
+  <input type="radio" name="e2" id="e2c" value="incorrecta"> <label for="e2c">C) En el Paso 3, al cancelar términos que se están sumando en lugar de multiplicando.</label><br>
+  <input type="radio" name="e2" id="e2d" value="incorrecta"> <label for="e2d">D) En el Paso 4, al no reconocer que $\sin(x)\cos(x)$ es una identidad de ángulo doble.</label><br><br>
+
+  <button onclick="verificarRespuesta('e2', 'feedback_e2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error ocurre en el Paso 2. Para sumar las fracciones <span class="arithmatex">\(\frac{\sin(x)}{\cos(x)} + \frac{\cos(x)}{\sin(x)}\)</span>, se debe encontrar un denominador común, que sería <span class="arithmatex">\(\sin(x)\cos(x)\)</span>. El resultado correcto es <span class="arithmatex">\(\frac{\sin^2(x) + \cos^2(x)}{\sin(x)\cos(x)}\)</span>. El estudiante sumó incorrectamente los numeradores y denominadores de forma directa.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3</legend>
+
+  <p>Desarrollo para la identidad $\frac{(1+\tan^2(x))(2\sin^2(x)-1)}{1-\tan^2(x)}=-1$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Aplica identidades pitagóricas en el numerador y denominador: $\frac{\sec^2(x)(2\sin^2(x)-1)}{\sec^2(x)}$</li>
+      <li><b>Paso 2:</b> Simplifica $\sec^2(x)$: $2\sin^2(x)-1$</li>
+      <li><b>Paso 3:</b> Factoriza un signo negativo: $-(1-2\sin^2(x))$</li>
+      <li><b>Paso 4:</b> Aplica identidad de ángulo doble: $-\cos(2x)$</li>
+  </ul>
+  <p>¿Cuál es el error cometido en este procedimiento?</p>
+
+  <input type="radio" name="e3" id="e3a" value="correcta"> <label for="e3a">A) En el Paso 1, al asumir que $1-\tan^2(x)$ es equivalente a $\sec^2(x)$.</label><br>
+  <input type="radio" name="e3" id="e3b" value="incorrecta"> <label for="e3b">B) En el Paso 2, al cancelar términos algebraicos que están multiplicando a una resta.</label><br>
+  <input type="radio" name="e3" id="e3c" value="incorrecta"> <label for="e3c">C) En el Paso 3, al alterar los signos internos del binomio durante la factorización.</label><br>
+  <input type="radio" name="e3" id="e3d" value="incorrecta"> <label for="e3d">D) En el Paso 4, al confundir la identidad de $\cos(2x)$ con la de $\sin(2x)$.</label><br><br>
+
+  <button onclick="verificarRespuesta('e3', 'feedback_e3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error está en el Paso 1. Si bien la identidad pitagórica correcta establece que <span class="arithmatex">\(1+\tan^2(x)=\sec^2(x)\)</span>, la expresión del denominador es <span class="arithmatex">\(1-\tan^2(x)\)</span>. Sustituir esta resta por <span class="arithmatex">\(\sec^2(x)\)</span> es matemáticamente falso.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4</legend>
+
+  <p>Desarrollo para $\frac{\sin(x)+\cos(x)}{1+\cot(x)}=\sin(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Transforma la cotangente: $\frac{\sin(x)+\cos(x)}{1+\frac{\cos(x)}{\sin(x)}}$</li>
+      <li><b>Paso 2:</b> Suma en el denominador: $\frac{\sin(x)+\cos(x)}{\frac{\sin(x)+\cos(x)}{\sin(x)}}$</li>
+      <li><b>Paso 3:</b> Resuelve la división de fracciones: $\frac{1}{\sin(x)}$</li>
+      <li><b>Paso 4:</b> Concluye aplicando identidad recíproca: $\csc(x)$</li>
+  </ul>
+  <p>¿En qué paso cometió el estudiante el error principal?</p>
+
+  <input type="radio" name="e4" id="e4a" value="incorrecta"> <label for="e4a">A) En el Paso 1, al utilizar $\frac{\cos(x)}{\sin(x)}$ en lugar de $\frac{1}{\tan(x)}$, complicando la expresión.</label><br>
+  <input type="radio" name="e4" id="e4b" value="incorrecta"> <label for="e4b">B) En el Paso 2, al no distribuir el numerador original sobre la suma del denominador.</label><br>
+  <input type="radio" name="e4" id="e4c" value="correcta"> <label for="e4c">C) En el Paso 3, al aplicar mal la regla de división de fracciones, invirtiendo la fracción incorrecta.</label><br>
+  <input type="radio" name="e4" id="e4d" value="incorrecta"> <label for="e4d">D) En el Paso 4, al definir erróneamente la recíproca del seno.</label><br><br>
+
+  <button onclick="verificarRespuesta('e4', 'feedback_e4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>En el Paso 3, al dividir las fracciones, el procedimiento correcto dicta multiplicar el numerador <span class="arithmatex">\((\sin(x)+\cos(x))\)</span> por el recíproco del denominador. Esto resulta en <span class="arithmatex">\((\sin(x)+\cos(x)) \cdot \frac{\sin(x)}{\sin(x)+\cos(x)}\)</span>. Al cancelar, el resultado correcto es <span class="arithmatex">\(\sin(x)\)</span>. El estudiante invirtió la fracción equivocada u operó mal y obtuvo <span class="arithmatex">\(\frac{1}{\sin(x)}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5</legend>
+
+  <p>Desarrollo para $\left(\frac{1+\tan(x)}{1-\tan(x)}\right)\left(\frac{\sin(x)-\cos(x)}{\sin(x)+\cos(x)}\right)=-1$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Escribe la tangente como seno sobre coseno: $\left(\frac{1+\frac{\sin(x)}{\cos(x)}}{1-\frac{\sin(x)}{\cos(x)}}\right)\left(\frac{\sin(x)-\cos(x)}{\sin(x)+\cos(x)}\right)$</li>
+      <li><b>Paso 2:</b> Suma y resta en las fracciones complejas: $\left(\frac{\frac{\cos(x)+\sin(x)}{\cos(x)}}{\frac{\cos(x)-\sin(x)}{\cos(x)}}\right)\left(\frac{\sin(x)-\cos(x)}{\sin(x)+\cos(x)}\right)$</li>
+      <li><b>Paso 3:</b> Simplifica denominadores: $\left(\frac{\cos(x)+\sin(x)}{\cos(x)-\sin(x)}\right)\left(\frac{\sin(x)-\cos(x)}{\sin(x)+\cos(x)}\right)$</li>
+      <li><b>Paso 4:</b> Simplifica factores cruzados asumiendo que son iguales: $1 \cdot 1 = 1$</li>
+  </ul>
+  <p>¿Dónde radica el error en este desarrollo?</p>
+
+  <input type="radio" name="e5" id="e5a" value="incorrecta"> <label for="e5a">A) En el Paso 2, al buscar un denominador común incorrecto.</label><br>
+  <input type="radio" name="e5" id="e5b" value="incorrecta"> <label for="e5b">B) En el Paso 3, al eliminar $\cos(x)$ sin considerar restricciones de dominio.</label><br>
+  <input type="radio" name="e5" id="e5c" value="correcta"> <label for="e5c">C) En el Paso 4, al cancelar $\cos(x)-\sin(x)$ con $\sin(x)-\cos(x)$ obteniendo 1 en lugar de -1.</label><br>
+  <input type="radio" name="e5" id="e5d" value="incorrecta"> <label for="e5d">D) No hay errores en el procedimiento, la identidad original planteada en el enunciado es falsa.</label><br><br>
+
+  <button onclick="verificarRespuesta('e5', 'feedback_e5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error final está en el Paso 4. Los términos <span class="arithmatex">\(\cos(x)-\sin(x)\)</span> y <span class="arithmatex">\(\sin(x)-\cos(x)\)</span> no son exactamente iguales, tienen signos opuestos (factorizar el negativo da <span class="arithmatex">\(-(\cos(x)-\sin(x))\)</span>). Por lo tanto, al cancelarlos, el factor resultante es <span class="arithmatex">\(-1\)</span>, lo que valida la identidad original. El estudiante obvió el signo.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6</legend>
+
+  <p>Desarrollo para $\frac{1}{\sec(x)+\tan(x)}+\frac{1}{\sec(x)-\tan(x)}=2\sec(x)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Suma las fracciones cruzando términos: $\frac{(\sec(x)-\tan(x)) + (\sec(x)+\tan(x))}{(\sec(x)+\tan(x))(\sec(x)-\tan(x))}$</li>
+      <li><b>Paso 2:</b> Simplifica el numerador: $\frac{2\sec(x)}{\sec^2(x)-\tan^2(x)}$</li>
+      <li><b>Paso 3:</b> Aplica identidad pitagórica en el denominador: $\frac{2\sec(x)}{-1}$</li>
+      <li><b>Paso 4:</b> Obtiene como resultado final: $-2\sec(x)$</li>
+  </ul>
+  <p>¿Qué error se cometió en este procedimiento?</p>
+
+  <input type="radio" name="e6" id="e6a" value="incorrecta"> <label for="e6a">A) En el Paso 1, al no multiplicar los denominadores correctamente (diferencia de cuadrados).</label><br>
+  <input type="radio" name="e6" id="e6b" value="incorrecta"> <label for="e6b">B) En el Paso 2, al sumar $\sec(x)$ asumiendo linealidad.</label><br>
+  <input type="radio" name="e6" id="e6c" value="correcta"> <label for="e6c">C) En el Paso 3, al concluir que $\sec^2(x)-\tan^2(x) = -1$ en lugar de $1$.</label><br>
+  <input type="radio" name="e6" id="e6d" value="incorrecta"> <label for="e6d">D) En el Paso 4, al extraer el signo negativo del denominador hacia el numerador.</label><br><br>
+
+  <button onclick="verificarRespuesta('e6', 'feedback_e6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error se encuentra en el Paso 3. A partir de la identidad pitagórica <span class="arithmatex">\(\tan^2(x) + 1 = \sec^2(x)\)</span>, si despejamos restando <span class="arithmatex">\(\tan^2(x)\)</span> a ambos lados, obtenemos <span class="arithmatex">\(\sec^2(x) - \tan^2(x) = 1\)</span>. El estudiante se equivocó con los signos y evaluó el denominador como <span class="arithmatex">\(-1\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7</legend>
+
+  <p>Desarrollo para $\frac{\tan(x)+\tan(y)}{\cot(x)+\cot(y)}=\tan(x)\tan(y)$:</p>
+  <ul>
+      <li><b>Paso 1:</b> Usa identidades recíprocas en el denominador: $\frac{\tan(x)+\tan(y)}{\frac{1}{\tan(x)}+\frac{1}{\tan(y)}}$</li>
+      <li><b>Paso 2:</b> Suma las fracciones del denominador: $\frac{\tan(x)+\tan(y)}{\frac{\tan(x)+\tan(y)}{\tan(x)\tan(y)}}$</li>
+      <li><b>Paso 3:</b> Convierte división principal en multiplicación: $(\tan(x)+\tan(y)) \cdot \left(\frac{\tan(x)+\tan(y)}{\tan(x)\tan(y)}\right)$</li>
+      <li><b>Paso 4:</b> Desarrolla el producto: $\frac{(\tan(x)+\tan(y))^2}{\tan(x)\tan(y)}$</li>
+  </ul>
+  <p>¿En qué paso cometió el estudiante su primer error?</p>
+
+  <input type="radio" name="e7" id="e7a" value="incorrecta"> <label for="e7a">A) En el Paso 1, al mezclar variables independientes $x$ e $y$ en una misma identidad.</label><br>
+  <input type="radio" name="e7" id="e7b" value="incorrecta"> <label for="e7b">B) En el Paso 2, al obtener el mínimo común múltiplo multiplicando los denominadores.</label><br>
+  <input type="radio" name="e7" id="e7c" value="correcta"> <label for="e7c">C) En el Paso 3, al multiplicar directamente en lugar de invertir la fracción del denominador.</label><br>
+  <input type="radio" name="e7" id="e7d" value="incorrecta"> <label for="e7d">D) En el Paso 4, al no expandir el binomio al cuadrado en el numerador.</label><br><br>
+
+  <button onclick="verificarRespuesta('e7', 'feedback_e7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_e7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El error ocurre al transitar del Paso 2 al Paso 3. Cuando dividimos una expresión entera por una fracción, debemos multiplicar la expresión superior por la fracción invertida del denominador. La expresión correcta sería <span class="arithmatex">\((\tan(x)+\tan(y)) \cdot \frac{\tan(x)\tan(y)}{\tan(x)+\tan(y)}\)</span>.</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>

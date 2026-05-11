@@ -1,0 +1,1445 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../multiple_trigo1/">
+      
+      
+        <link rel="next" href="../multiple_trigo3/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Ecuaciones trigonometricas - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-seleccion-multiple-ecuaciones-trigonometricas-completo" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Ecuaciones trigonometricas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Practica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Practica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer cuadrante y propiedades básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-soluciones-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Soluciones Generales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-soluciones-en-el-intervalo-0-2pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Soluciones en el Intervalo \([0, 2\pi)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-soluciones-generales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Soluciones Generales
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-soluciones-en-el-intervalo-0-2pi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Soluciones en el Intervalo \([0, 2\pi)\)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-seleccion-multiple-ecuaciones-trigonometricas-completo">Ejercicios de Selección Múltiple: Ecuaciones Trigonométricas (Completo)</h1>
+<p>Resuelve los siguientes ejercicios y luego verifica tu respuesta. Si tienes dudas, puedes desplegar el desarrollo paso a paso.</p>
+<hr />
+<h2 id="parte-i-soluciones-generales">Parte I: Soluciones Generales</h2>
+<p><em>Nota: En las siguientes ecuaciones, <span class="arithmatex">\(k\)</span> representa cualquier número entero (<span class="arithmatex">\(k \in \mathbb{Z}\)</span>).</em></p>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 11</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $3 \csc^2 x - 4 = 0$</p>
+
+  <input type="radio" name="p11" id="p11a" value="correcta"> <label for="p11a">A) $x = \frac{\pi}{3} + k\pi, \quad x = \frac{2\pi}{3} + k\pi$</label><br>
+  <input type="radio" name="p11" id="p11b" value="incorrecta"> <label for="p11b">B) $x = \frac{\pi}{6} + k\pi, \quad x = \frac{5\pi}{6} + k\pi$</label><br>
+  <input type="radio" name="p11" id="p11c" value="incorrecta"> <label for="p11c">C) $x = \frac{\pi}{3} + 2k\pi, \quad x = \frac{2\pi}{3} + 2k\pi$</label><br>
+  <input type="radio" name="p11" id="p11d" value="incorrecta"> <label for="p11d">D) $x = \pm \frac{\pi}{6} + 2k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p11', 'feedback_p11')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p11" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Despejamos la función cosecante: <span class="arithmatex">\(3 \csc^2 x = 4 \implies \csc^2 x = \frac{4}{3}\)</span>. Invirtiendo ambos lados obtenemos el seno: <span class="arithmatex">\(\sin^2 x = \frac{3}{4} \implies \sin x = \pm \frac{\sqrt{3}}{2}\)</span>. El seno toma estos valores en los ángulos de referencia <span class="arithmatex">\(\pi/3\)</span> y <span class="arithmatex">\(2\pi/3\)</span>. Al incluir valores positivos y negativos, la solución se repite cada media vuelta (<span class="arithmatex">\(\pi\)</span>).</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 12</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $1 - \tan^2 x = 0$</p>
+
+  <input type="radio" name="p12" id="p12a" value="incorrecta"> <label for="p12a">A) $x = \frac{\pi}{4} + 2k\pi$</label><br>
+  <input type="radio" name="p12" id="p12b" value="incorrecta"> <label for="p12b">B) $x = \frac{\pi}{4} + k\pi$</label><br>
+  <input type="radio" name="p12" id="p12c" value="correcta"> <label for="p12c">C) $x = \frac{\pi}{4} + \frac{k\pi}{2}$</label><br>
+  <input type="radio" name="p12" id="p12d" value="incorrecta"> <label for="p12d">D) $x = \pm \frac{\pi}{4} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p12', 'feedback_p12')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p12" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Despejamos la tangente: <span class="arithmatex">\(\tan^2 x = 1 \implies \tan x = \pm 1\)</span>. La tangente vale <span class="arithmatex">\(1\)</span> en <span class="arithmatex">\(\pi/4\)</span> y <span class="arithmatex">\(-1\)</span> en <span class="arithmatex">\(3\pi/4\)</span>. Como abarca las 4 diagonales de los cuadrantes, la distancia entre cada solución consecutiva es de <span class="arithmatex">\(90^\circ\)</span> o <span class="arithmatex">\(\pi/2\)</span>. Por lo tanto, <span class="arithmatex">\(x = \pi/4 + k\pi/2\)</span> cubre todas las soluciones.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 13</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\cos x (2 \sin x + 1) = 0$</p>
+
+  <input type="radio" name="p13" id="p13a" value="incorrecta"> <label for="p13a">A) $x = \frac{\pi}{2} + 2k\pi, \quad x = \frac{7\pi}{6} + 2k\pi, \quad x = \frac{11\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p13" id="p13b" value="correcta"> <label for="p13b">B) $x = \frac{\pi}{2} + k\pi, \quad x = \frac{7\pi}{6} + 2k\pi, \quad x = \frac{11\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p13" id="p13c" value="incorrecta"> <label for="p13c">C) $x = \frac{\pi}{2} + k\pi, \quad x = \frac{7\pi}{6} + k\pi, \quad x = \frac{11\pi}{6} + k\pi$</label><br>
+  <input type="radio" name="p13" id="p13d" value="incorrecta"> <label for="p13d">D) $x = k\pi, \quad x = \frac{7\pi}{6} + 2k\pi, \quad x = \frac{11\pi}{6} + 2k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p13', 'feedback_p13')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p13" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Igualamos cada factor a cero: 1) <span class="arithmatex">\(\cos x = 0 \implies x = \pi/2 + k\pi\)</span>. 2) <span class="arithmatex">\(2 \sin x + 1 = 0 \implies \sin x = -1/2\)</span>. El seno es <span class="arithmatex">\(-1/2\)</span> en los cuadrantes III y IV, en los ángulos <span class="arithmatex">\(7\pi/6\)</span> y <span class="arithmatex">\(11\pi/6\)</span>. Sumando su período <span class="arithmatex">\(2k\pi\)</span>, obtenemos las demás familias de soluciones.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 14</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\sec x (2 \cos x - \sqrt{2}) = 0$</p>
+
+  <input type="radio" name="p14" id="p14a" value="incorrecta"> <label for="p14a">A) $x = \frac{\pi}{2} + k\pi, \quad x = \pm \frac{\pi}{4} + 2k\pi$</label><br>
+  <input type="radio" name="p14" id="p14b" value="correcta"> <label for="p14b">B) $x = \pm \frac{\pi}{4} + 2k\pi$</label><br>
+  <input type="radio" name="p14" id="p14c" value="incorrecta"> <label for="p14c">C) $x = \frac{\pi}{4} + k\pi$</label><br>
+  <input type="radio" name="p14" id="p14d" value="incorrecta"> <label for="p14d">D) $x = \pm \frac{\pi}{4} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p14', 'feedback_p14')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p14" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Igualamos a cero: 1) <span class="arithmatex">\(\sec x = 0\)</span>. La secante nunca vale 0, por lo que esta parte no aporta soluciones. 2) <span class="arithmatex">\(2 \cos x - \sqrt{2} = 0 \implies \cos x = \sqrt{2}/2\)</span>. El coseno es positivo en el I y IV cuadrante, es decir, <span class="arithmatex">\(\pi/4\)</span> y <span class="arithmatex">\(-\pi/4\)</span> (o <span class="arithmatex">\(7\pi/4\)</span>). Al añadir el período, la única solución válida es <span class="arithmatex">\(x = \pm \pi/4 + 2k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 15</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $(\tan x + \sqrt{3})(\cos x + 2) = 0$</p>
+
+  <input type="radio" name="p15" id="p15a" value="correcta"> <label for="p15a">A) $x = \frac{2\pi}{3} + k\pi$</label><br>
+  <input type="radio" name="p15" id="p15b" value="incorrecta"> <label for="p15b">B) $x = \frac{2\pi}{3} + k\pi, \quad x = \pi + 2k\pi$</label><br>
+  <input type="radio" name="p15" id="p15c" value="incorrecta"> <label for="p15c">C) $x = \frac{\pi}{3} + k\pi$</label><br>
+  <input type="radio" name="p15" id="p15d" value="incorrecta"> <label for="p15d">D) $x = \frac{5\pi}{6} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p15', 'feedback_p15')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p15" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Evaluamos ambos factores: 1) <span class="arithmatex">\(\cos x + 2 = 0 \implies \cos x = -2\)</span>. Como el rango del coseno es <span class="arithmatex">\([-1, 1]\)</span>, no hay solución real. 2) <span class="arithmatex">\(\tan x + \sqrt{3} = 0 \implies \tan x = -\sqrt{3}\)</span>. La tangente es negativa en el II y IV cuadrante, con ángulo base <span class="arithmatex">\(2\pi/3\)</span>. Al sumar su período <span class="arithmatex">\(\pi\)</span>, la solución es <span class="arithmatex">\(x = 2\pi/3 + k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 16</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $(2 \cos x + \sqrt{3})(2 \sin x - 1) = 0$</p>
+
+  <input type="radio" name="p16" id="p16a" value="incorrecta"> <label for="p16a">A) $x = \frac{5\pi}{6} + k\pi, \quad x = \frac{\pi}{6} + k\pi$</label><br>
+  <input type="radio" name="p16" id="p16b" value="correcta"> <label for="p16b">B) $x = \pm \frac{5\pi}{6} + 2k\pi, \quad x = \frac{\pi}{6} + 2k\pi, \quad x = \frac{5\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p16" id="p16c" value="incorrecta"> <label for="p16c">C) $x = \frac{7\pi}{6} + 2k\pi, \quad x = \frac{11\pi}{6} + 2k\pi, \quad x = \frac{\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p16" id="p16d" value="incorrecta"> <label for="p16d">D) $x = \pm \frac{\pi}{6} + 2k\pi, \quad x = \frac{5\pi}{6} + 2k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p16', 'feedback_p16')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p16" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Separamos factores: 1) <span class="arithmatex">\(\cos x = -\sqrt{3}/2\)</span>. Esto ocurre en el II y III cuadrante, <span class="arithmatex">\(x = 5\pi/6 + 2k\pi\)</span> y <span class="arithmatex">\(x = 7\pi/6 + 2k\pi\)</span> (que equivale a <span class="arithmatex">\(-5\pi/6 + 2k\pi\)</span>). 2) <span class="arithmatex">\(\sin x = 1/2\)</span>. Esto ocurre en el I y II cuadrante, <span class="arithmatex">\(x = \pi/6 + 2k\pi\)</span> y <span class="arithmatex">\(x = 5\pi/6 + 2k\pi\)</span>. La opción correcta agrupa estas familias.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 17</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\cos x \sin x - 2 \cos x = 0$</p>
+
+  <input type="radio" name="p17" id="p17a" value="incorrecta"> <label for="p17a">A) $x = \frac{\pi}{2} + 2k\pi$</label><br>
+  <input type="radio" name="p17" id="p17b" value="incorrecta"> <label for="p17b">B) $x = \frac{\pi}{2} + k\pi, \quad x = \arcsin(2) + 2k\pi$</label><br>
+  <input type="radio" name="p17" id="p17c" value="incorrecta"> <label for="p17c">C) $x = k\pi$</label><br>
+  <input type="radio" name="p17" id="p17d" value="correcta"> <label for="p17d">D) $x = \frac{\pi}{2} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p17', 'feedback_p17')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p17" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos por término común: <span class="arithmatex">\(\cos x (\sin x - 2) = 0\)</span>. Esto nos da <span class="arithmatex">\(\cos x = 0\)</span> o <span class="arithmatex">\(\sin x = 2\)</span>. Como el seno nunca puede ser 2, la única condición válida es <span class="arithmatex">\(\cos x = 0\)</span>, lo que ocurre en <span class="arithmatex">\(\pi/2\)</span> y <span class="arithmatex">\(3\pi/2\)</span>. Esto se condensa como <span class="arithmatex">\(x = \pi/2 + k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 18</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\tan x \sin x + \sin x = 0$</p>
+
+  <input type="radio" name="p18" id="p18a" value="correcta"> <label for="p18a">A) $x = k\pi, \quad x = \frac{3\pi}{4} + k\pi$</label><br>
+  <input type="radio" name="p18" id="p18b" value="incorrecta"> <label for="p18b">B) $x = 2k\pi, \quad x = \frac{3\pi}{4} + 2k\pi, \quad x = \frac{7\pi}{4} + 2k\pi$</label><br>
+  <input type="radio" name="p18" id="p18c" value="incorrecta"> <label for="p18c">C) $x = k\pi, \quad x = \frac{\pi}{4} + k\pi$</label><br>
+  <input type="radio" name="p18" id="p18d" value="incorrecta"> <label for="p18d">D) $x = k\pi, \quad x = \pm \frac{3\pi}{4} + 2k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p18', 'feedback_p18')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p18" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos sacando <span class="arithmatex">\(\sin x\)</span>: <span class="arithmatex">\(\sin x (\tan x + 1) = 0\)</span>. De aquí, <span class="arithmatex">\(\sin x = 0 \implies x = k\pi\)</span>. Por otro lado, <span class="arithmatex">\(\tan x + 1 = 0 \implies \tan x = -1\)</span>, lo que nos da <span class="arithmatex">\(x = 3\pi/4 + k\pi\)</span>. La solución total es la unión de ambas familias.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 19</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $4 \cos^2 x - 4 \cos x + 1 = 0$</p>
+
+  <input type="radio" name="p19" id="p19a" value="incorrecta"> <label for="p19a">A) $x = \frac{\pi}{3} + k\pi$</label><br>
+  <input type="radio" name="p19" id="p19b" value="correcta"> <label for="p19b">B) $x = \pm \frac{\pi}{3} + 2k\pi$</label><br>
+  <input type="radio" name="p19" id="p19c" value="incorrecta"> <label for="p19c">C) $x = \pm \frac{\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p19" id="p19d" value="incorrecta"> <label for="p19d">D) $x = \frac{\pi}{3} + 2k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p19', 'feedback_p19')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p19" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Reconocemos un trinomio cuadrado perfecto: <span class="arithmatex">\((2 \cos x - 1)^2 = 0\)</span>. Esto implica que <span class="arithmatex">\(2 \cos x - 1 = 0 \implies \cos x = 1/2\)</span>. El coseno vale <span class="arithmatex">\(1/2\)</span> en <span class="arithmatex">\(\pi/3\)</span> (cuadrante I) y en <span class="arithmatex">\(-\pi/3\)</span> o <span class="arithmatex">\(5\pi/3\)</span> (cuadrante IV). Las soluciones generales son <span class="arithmatex">\(x = \pm \pi/3 + 2k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 20</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $2 \sin^2 x - \sin x - 1 = 0$</p>
+
+  <input type="radio" name="p20" id="p20a" value="correcta"> <label for="p20a">A) $x = \frac{\pi}{2} + 2k\pi, \quad x = \frac{7\pi}{6} + 2k\pi, \quad x = \frac{11\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p20" id="p20b" value="incorrecta"> <label for="p20b">B) $x = \frac{\pi}{2} + k\pi, \quad x = \frac{7\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p20" id="p20c" value="incorrecta"> <label for="p20c">C) $x = \frac{3\pi}{2} + 2k\pi, \quad x = \frac{\pi}{6} + 2k\pi, \quad x = \frac{5\pi}{6} + 2k\pi$</label><br>
+  <input type="radio" name="p20" id="p20d" value="incorrecta"> <label for="p20d">D) $x = \frac{\pi}{2} + 2k\pi, \quad x = \frac{7\pi}{6} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p20', 'feedback_p20')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p20" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos el trinomio: <span class="arithmatex">\((2 \sin x + 1)(\sin x - 1) = 0\)</span>. 1) <span class="arithmatex">\(\sin x = 1 \implies x = \pi/2 + 2k\pi\)</span>. 2) <span class="arithmatex">\(\sin x = -1/2\)</span>, lo que ocurre en los cuadrantes III y IV en <span class="arithmatex">\(7\pi/6\)</span> y <span class="arithmatex">\(11\pi/6\)</span>. Añadiendo el período <span class="arithmatex">\(2k\pi\)</span> completamos las familias.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 21</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\sqrt{3} \sin 2x = \cos 2x$</p>
+
+  <input type="radio" name="p21" id="p21a" value="incorrecta"> <label for="p21a">A) $x = \frac{\pi}{6} + \frac{k\pi}{2}$</label><br>
+  <input type="radio" name="p21" id="p21b" value="incorrecta"> <label for="p21b">B) $x = \frac{\pi}{12} + k\pi$</label><br>
+  <input type="radio" name="p21" id="p21c" value="correcta"> <label for="p21c">C) $x = \frac{\pi}{12} + \frac{k\pi}{2}$</label><br>
+  <input type="radio" name="p21" id="p21d" value="incorrecta"> <label for="p21d">D) $x = \frac{\pi}{3} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p21', 'feedback_p21')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p21" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Dividimos ambos lados por <span class="arithmatex">\(\cos 2x\)</span> (asumiendo que no es cero) y por <span class="arithmatex">\(\sqrt{3}\)</span>, resultando en <span class="arithmatex">\(\tan 2x = 1/\sqrt{3}\)</span>. La tangente es <span class="arithmatex">\(1/\sqrt{3}\)</span> en <span class="arithmatex">\(\pi/6\)</span>. Como el período de la tangente es <span class="arithmatex">\(\pi\)</span>, tenemos <span class="arithmatex">\(2x = \pi/6 + k\pi\)</span>. Dividiendo todo entre 2, se obtiene <span class="arithmatex">\(x = \pi/12 + k\pi/2\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 22</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\cos 3x = \sin 3x$</p>
+
+  <input type="radio" name="p22" id="p22a" value="correcta"> <label for="p22a">A) $x = \frac{\pi}{12} + \frac{k\pi}{3}$</label><br>
+  <input type="radio" name="p22" id="p22b" value="incorrecta"> <label for="p22b">B) $x = \frac{\pi}{4} + \frac{k\pi}{3}$</label><br>
+  <input type="radio" name="p22" id="p22c" value="incorrecta"> <label for="p22c">C) $x = \frac{\pi}{12} + k\pi$</label><br>
+  <input type="radio" name="p22" id="p22d" value="incorrecta"> <label for="p22d">D) $x = \frac{\pi}{4} + k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p22', 'feedback_p22')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p22" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Dividimos por <span class="arithmatex">\(\cos 3x\)</span>, obteniendo <span class="arithmatex">\(\tan 3x = 1\)</span>. La tangente vale 1 en <span class="arithmatex">\(\pi/4\)</span>. Con el período de la tangente, la ecuación es <span class="arithmatex">\(3x = \pi/4 + k\pi\)</span>. Finalmente, dividimos por 3 para despejar la variable: <span class="arithmatex">\(x = \pi/12 + k\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 23</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\cos \dfrac{x}{2} - 1 = 0$</p>
+
+  <input type="radio" name="p23" id="p23a" value="incorrecta"> <label for="p23a">A) $x = 2k\pi$</label><br>
+  <input type="radio" name="p23" id="p23b" value="correcta"> <label for="p23b">B) $x = 4k\pi$</label><br>
+  <input type="radio" name="p23" id="p23c" value="incorrecta"> <label for="p23c">C) $x = k\pi$</label><br>
+  <input type="radio" name="p23" id="p23d" value="incorrecta"> <label for="p23d">D) $x = 8k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p23', 'feedback_p23')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p23" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Tenemos <span class="arithmatex">\(\cos(x/2) = 1\)</span>. El coseno vale 1 en el ángulo 0 y en todos sus múltiplos de <span class="arithmatex">\(2\pi\)</span>. Es decir, <span class="arithmatex">\(x/2 = 2k\pi\)</span>. Multiplicando ambos lados por 2, obtenemos <span class="arithmatex">\(x = 4k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 24</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $2 \sin \dfrac{x}{3} + \sqrt{3} = 0$</p>
+
+  <input type="radio" name="p24" id="p24a" value="incorrecta"> <label for="p24a">A) $x = 4\pi + 2k\pi, \quad x = 5\pi + 2k\pi$</label><br>
+  <input type="radio" name="p24" id="p24b" value="incorrecta"> <label for="p24b">B) $x = \frac{4\pi}{9} + \frac{2k\pi}{3}, \quad x = \frac{5\pi}{9} + \frac{2k\pi}{3}$</label><br>
+  <input type="radio" name="p24" id="p24c" value="correcta"> <label for="p24c">C) $x = 4\pi + 6k\pi, \quad x = 5\pi + 6k\pi$</label><br>
+  <input type="radio" name="p24" id="p24d" value="incorrecta"> <label for="p24d">D) $x = \frac{4\pi}{3} + 6k\pi, \quad x = \frac{5\pi}{3} + 6k\pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p24', 'feedback_p24')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p24" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Despejamos: <span class="arithmatex">\(\sin(x/3) = -\sqrt{3}/2\)</span>. El seno toma este valor en <span class="arithmatex">\(4\pi/3\)</span> y <span class="arithmatex">\(5\pi/3\)</span>. Entonces, <span class="arithmatex">\(x/3 = 4\pi/3 + 2k\pi\)</span> y <span class="arithmatex">\(x/3 = 5\pi/3 + 2k\pi\)</span>. Multiplicando por 3 a toda la ecuación (incluyendo el período), llegamos a <span class="arithmatex">\(x = 4\pi + 6k\pi\)</span> y <span class="arithmatex">\(x = 5\pi + 6k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 25</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\tan \dfrac{x}{4} + \sqrt{3} = 0$</p>
+
+  <input type="radio" name="p25" id="p25a" value="incorrecta"> <label for="p25a">A) $x = \frac{8\pi}{3} + k\pi$</label><br>
+  <input type="radio" name="p25" id="p25b" value="correcta"> <label for="p25b">B) $x = \frac{8\pi}{3} + 4k\pi$</label><br>
+  <input type="radio" name="p25" id="p25c" value="incorrecta"> <label for="p25c">C) $x = \frac{2\pi}{3} + 4k\pi$</label><br>
+  <input type="radio" name="p25" id="p25d" value="incorrecta"> <label for="p25d">D) $x = \frac{2\pi}{12} + \frac{k\pi}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p25', 'feedback_p25')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p25" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Despejamos: <span class="arithmatex">\(\tan(x/4) = -\sqrt{3}\)</span>. Esto ocurre en el ángulo de referencia <span class="arithmatex">\(2\pi/3\)</span>. La expresión con su período es <span class="arithmatex">\(x/4 = 2\pi/3 + k\pi\)</span>. Multiplicando todo por 4, nos queda <span class="arithmatex">\(x = 8\pi/3 + 4k\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 26</legend>
+
+  <p>Determine las soluciones generales de la ecuación: $\sec \dfrac{x}{2} = \cos \dfrac{x}{2}$</p>
+
+  <input type="radio" name="p26" id="p26a" value="correcta"> <label for="p26a">A) $x = 2k\pi$</label><br>
+  <input type="radio" name="p26" id="p26b" value="incorrecta"> <label for="p26b">B) $x = k\pi$</label><br>
+  <input type="radio" name="p26" id="p26c" value="incorrecta"> <label for="p26c">C) $x = 4k\pi$</label><br>
+  <input type="radio" name="p26" id="p26d" value="incorrecta"> <label for="p26d">D) $x = \frac{k\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p26', 'feedback_p26')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p26" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Usamos la identidad <span class="arithmatex">\(\sec u = 1/\cos u\)</span>. Entonces <span class="arithmatex">\(1/\cos(x/2) = \cos(x/2) \implies \cos^2(x/2) = 1 \implies \cos(x/2) = \pm 1\)</span>. El coseno es <span class="arithmatex">\(\pm 1\)</span> en los múltiplos enteros de <span class="arithmatex">\(\pi\)</span> (<span class="arithmatex">\(0, \pi, 2\pi, \dots\)</span>). Así que <span class="arithmatex">\(x/2 = k\pi\)</span>, de donde multiplicando por 2 se obtiene <span class="arithmatex">\(x = 2k\pi\)</span>.</p>
+</details>
+<hr />
+<h2 id="parte-ii-soluciones-en-el-intervalo-0-2pi">Parte II: Soluciones en el Intervalo <span class="arithmatex">\([0, 2\pi)\)</span></h2>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 31</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $\cos x \sin x - \sin x = 0$</p>
+
+  <input type="radio" name="p31" id="p31a" value="incorrecta"> <label for="p31a">A) $x = 0, \pi, 2\pi$</label><br>
+  <input type="radio" name="p31" id="p31b" value="incorrecta"> <label for="p31b">B) $x = 0, \frac{\pi}{2}, \pi$</label><br>
+  <input type="radio" name="p31" id="p31c" value="correcta"> <label for="p31c">C) $x = 0, \pi$</label><br>
+  <input type="radio" name="p31" id="p31d" value="incorrecta"> <label for="p31d">D) $x = \frac{\pi}{2}, \frac{3\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p31', 'feedback_p31')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p31" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos sacando factor común: <span class="arithmatex">\(\sin x (\cos x - 1) = 0\)</span>. 1) <span class="arithmatex">\(\sin x = 0 \implies x = 0, \pi\)</span> (el <span class="arithmatex">\(2\pi\)</span> no se incluye por el intervalo abierto). 2) <span class="arithmatex">\(\cos x = 1 \implies x = 0\)</span>. Por lo tanto, las únicas soluciones son <span class="arithmatex">\(0\)</span> y <span class="arithmatex">\(\pi\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 32</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $\sin x - 2 \sin^2 x = 0$</p>
+
+  <input type="radio" name="p32" id="p32a" value="correcta"> <label for="p32a">A) $x = 0, \frac{\pi}{6}, \frac{5\pi}{6}, \pi$</label><br>
+  <input type="radio" name="p32" id="p32b" value="incorrecta"> <label for="p32b">B) $x = 0, \frac{\pi}{3}, \frac{2\pi}{3}, \pi$</label><br>
+  <input type="radio" name="p32" id="p32c" value="incorrecta"> <label for="p32c">C) $x = \frac{\pi}{6}, \frac{5\pi}{6}$</label><br>
+  <input type="radio" name="p32" id="p32d" value="incorrecta"> <label for="p32d">D) $x = 0, \pi$</label><br><br>
+
+  <button onclick="verificarRespuesta('p32', 'feedback_p32')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p32" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos <span class="arithmatex">\(\sin x\)</span>: <span class="arithmatex">\(\sin x (1 - 2 \sin x) = 0\)</span>. De <span class="arithmatex">\(\sin x = 0\)</span> obtenemos <span class="arithmatex">\(x = 0\)</span> y <span class="arithmatex">\(x = \pi\)</span>. De <span class="arithmatex">\(1 - 2 \sin x = 0 \implies \sin x = 1/2\)</span>, obtenemos las soluciones en el primer y segundo cuadrante: <span class="arithmatex">\(x = \pi/6\)</span> y <span class="arithmatex">\(x = 5\pi/6\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 33</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $2 \sin^2 x - 5 \sin x + 2 = 0$</p>
+
+  <input type="radio" name="p33" id="p33a" value="incorrecta"> <label for="p33a">A) $x = \frac{\pi}{3}, \frac{2\pi}{3}$</label><br>
+  <input type="radio" name="p33" id="p33b" value="correcta"> <label for="p33b">B) $x = \frac{\pi}{6}, \frac{5\pi}{6}$</label><br>
+  <input type="radio" name="p33" id="p33c" value="incorrecta"> <label for="p33c">C) $x = \frac{7\pi}{6}, \frac{11\pi}{6}$</label><br>
+  <input type="radio" name="p33" id="p33d" value="incorrecta"> <label for="p33d">D) $x = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p33', 'feedback_p33')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p33" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Tratamos la expresión como un trinomio: <span class="arithmatex">\((2 \sin x - 1)(\sin x - 2) = 0\)</span>. La opción <span class="arithmatex">\(\sin x = 2\)</span> es imposible. La opción <span class="arithmatex">\(2 \sin x - 1 = 0 \implies \sin x = 1/2\)</span> nos da <span class="arithmatex">\(x = \pi/6\)</span> y <span class="arithmatex">\(x = 5\pi/6\)</span> en el intervalo pedido.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 34</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $\sin x - \cos x - \tan x = -1$</p>
+
+  <input type="radio" name="p34" id="p34a" value="correcta"> <label for="p34a">A) $x = 0, \frac{\pi}{4}, \frac{5\pi}{4}$</label><br>
+  <input type="radio" name="p34" id="p34b" value="incorrecta"> <label for="p34b">B) $x = \frac{\pi}{4}, \frac{5\pi}{4}$</label><br>
+  <input type="radio" name="p34" id="p34c" value="incorrecta"> <label for="p34c">C) $x = 0, \pi, \frac{\pi}{4}, \frac{5\pi}{4}$</label><br>
+  <input type="radio" name="p34" id="p34d" value="incorrecta"> <label for="p34d">D) $x = 0, \frac{\pi}{4}, \frac{3\pi}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p34', 'feedback_p34')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p34" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Reescribimos la tangente: <span class="arithmatex">\(\sin x - \cos x - \frac{\sin x}{\cos x} + 1 = 0\)</span>. Multiplicamos por <span class="arithmatex">\(\cos x\)</span>: <span class="arithmatex">\(\sin x \cos x - \cos^2 x - \sin x + \cos x = 0\)</span>. Factorizamos agrupando: <span class="arithmatex">\(\cos x(\sin x - \cos x) - 1(\sin x - \cos x) = 0 \implies (\cos x - 1)(\sin x - \cos x) = 0\)</span>. 1) <span class="arithmatex">\(\cos x = 1 \implies x = 0\)</span>. 2) <span class="arithmatex">\(\sin x = \cos x \implies \tan x = 1 \implies x = \pi/4, 5\pi/4\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 35</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $2 \cos^2 x - 7 \cos x + 3 = 0$</p>
+
+  <input type="radio" name="p35" id="p35a" value="incorrecta"> <label for="p35a">A) $x = \frac{\pi}{6}, \frac{11\pi}{6}$</label><br>
+  <input type="radio" name="p35" id="p35b" value="correcta"> <label for="p35b">B) $x = \frac{\pi}{3}, \frac{5\pi}{3}$</label><br>
+  <input type="radio" name="p35" id="p35c" value="incorrecta"> <label for="p35c">C) $x = \frac{2\pi}{3}, \frac{4\pi}{3}$</label><br>
+  <input type="radio" name="p35" id="p35d" value="incorrecta"> <label for="p35d">D) $x = \frac{\pi}{3}, \frac{2\pi}{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p35', 'feedback_p35')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p35" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Factorizamos como <span class="arithmatex">\((2\cos x - 1)(\\cos x - 3) = 0\)</span>. Descartamos <span class="arithmatex">\(\cos x = 3\)</span>. Nos queda <span class="arithmatex">\(2\cos x = 1 \implies \cos x = 1/2\)</span>. El coseno es positivo y vale <span class="arithmatex">\(1/2\)</span> en el primer y cuarto cuadrante: <span class="arithmatex">\(\pi/3\)</span> y <span class="arithmatex">\(5\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 36</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $4 \sin^2 x + 2 \cos^2 x = 3$</p>
+
+  <input type="radio" name="p36" id="p36a" value="incorrecta"> <label for="p36a">A) $x = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{7\pi}{6}, \frac{11\pi}{6}$</label><br>
+  <input type="radio" name="p36" id="p36b" value="incorrecta"> <label for="p36b">B) $x = \frac{\pi}{4}, \frac{3\pi}{4}$</label><br>
+  <input type="radio" name="p36" id="p36c" value="incorrecta"> <label for="p36c">C) $x = \frac{\pi}{3}, \frac{2\pi}{3}, \frac{4\pi}{3}, \frac{5\pi}{3}$</label><br>
+  <input type="radio" name="p36" id="p36d" value="correcta"> <label for="p36d">D) $x = \frac{\pi}{4}, \frac{3\pi}{4}, \frac{5\pi}{4}, \frac{7\pi}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p36', 'feedback_p36')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p36" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Usamos la identidad <span class="arithmatex">\(\cos^2 x = 1 - \sin^2 x\)</span>: <span class="arithmatex">\(4 \sin^2 x + 2(1 - \sin^2 x) = 3 \implies 2 \sin^2 x + 2 = 3 \implies \sin^2 x = 1/2 \implies \sin x = \pm \frac{1}{\sqrt{2}}\)</span>. Esto corresponde a los ángulos medios de los 4 cuadrantes: <span class="arithmatex">\(\pi/4, 3\pi/4, 5\pi/4, 7\pi/4\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 37</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $\dfrac{1 - \cos x}{1 + \cos x} = 3$</p>
+
+  <input type="radio" name="p37" id="p37a" value="correcta"> <label for="p37a">A) $x = \frac{2\pi}{3}, \frac{4\pi}{3}$</label><br>
+  <input type="radio" name="p37" id="p37b" value="incorrecta"> <label for="p37b">B) $x = \frac{\pi}{3}, \frac{5\pi}{3}$</label><br>
+  <input type="radio" name="p37" id="p37c" value="incorrecta"> <label for="p37c">C) $x = \frac{5\pi}{6}, \frac{7\pi}{6}$</label><br>
+  <input type="radio" name="p37" id="p37d" value="incorrecta"> <label for="p37d">D) $x = \frac{\pi}{2}, \frac{3\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p37', 'feedback_p37')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p37" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Linealizamos: <span class="arithmatex">\(1 - \cos x = 3(1 + \cos x) \implies 1 - \cos x = 3 + 3 \cos x\)</span>. Agrupamos términos: <span class="arithmatex">\(4\cos x = -2 \implies \cos x = -1/2\)</span>. El coseno vale <span class="arithmatex">\(-1/2\)</span> en los cuadrantes II y III, específicamente en <span class="arithmatex">\(2\pi/3\)</span> y <span class="arithmatex">\(4\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 38</legend>
+
+  <p>Resuelva la ecuación en el intervalo $[0, 2\pi)$: $\sin x = \cos 2x$</p>
+
+  <input type="radio" name="p38" id="p38a" value="incorrecta"> <label for="p38a">A) $x = \frac{\pi}{3}, \frac{2\pi}{3}, \pi$</label><br>
+  <input type="radio" name="p38" id="p38b" value="incorrecta"> <label for="p38b">B) $x = \frac{\pi}{6}, \frac{5\pi}{6}$</label><br>
+  <input type="radio" name="p38" id="p38c" value="correcta"> <label for="p38c">C) $x = \frac{\pi}{6}, \frac{5\pi}{6}, \frac{3\pi}{2}$</label><br>
+  <input type="radio" name="p38" id="p38d" value="incorrecta"> <label for="p38d">D) $x = \frac{7\pi}{6}, \frac{11\pi}{6}, \frac{\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p38', 'feedback_p38')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p38" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Sustituimos el ángulo doble por su versión en seno: <span class="arithmatex">\(\cos 2x = 1 - 2\sin^2 x\)</span>. Queda <span class="arithmatex">\(\sin x = 1 - 2\sin^2 x \implies 2\sin^2 x + \sin x - 1 = 0\)</span>. Factorizando: <span class="arithmatex">\((2\sin x - 1)(\sin x + 1) = 0\)</span>. Las opciones son <span class="arithmatex">\(\sin x = 1/2 \implies x = \pi/6, 5\pi/6\)</span>, y <span class="arithmatex">\(\sin x = -1 \implies x = 3\pi/2\)</span>.</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>

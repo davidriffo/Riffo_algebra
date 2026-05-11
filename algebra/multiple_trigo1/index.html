@@ -1,0 +1,1251 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../trigonometria_6/">
+      
+      
+        <link rel="next" href="../multiple_trigo2/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Primer cuadrante y propiedades básicas - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-seleccion-multiple-trigonometria-analitica-y-reduccion" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Primer cuadrante y propiedades básicas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Practica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Practica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer cuadrante y propiedades básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-seleccion-multiple-trigonometria-analitica-y-reduccion">Ejercicios de Selección Múltiple: Trigonometría Analítica y Reducción</h1>
+<p>Resuelve los siguientes ejercicios y luego verifica tu respuesta. Si tienes dudas, puedes desplegar el desarrollo paso a paso.</p>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1</legend>
+
+  <p>Si $\sin(\alpha) = \dfrac{3}{5}$ y $\alpha$ es un ángulo en el segundo cuadrante, entonces el valor exacto de $\tan(\pi + \alpha)$ es igual a:</p>
+
+  <input type="radio" name="p1" id="p1a" value="correcta"> <label for="p1a">A) $-\dfrac{3}{4}$</label><br>
+  <input type="radio" name="p1" id="p1b" value="incorrecta"> <label for="p1b">B) $\dfrac{3}{4}$</label><br>
+  <input type="radio" name="p1" id="p1c" value="incorrecta"> <label for="p1c">C) $-\dfrac{4}{3}$</label><br>
+  <input type="radio" name="p1" id="p1d" value="incorrecta"> <label for="p1d">D) $\dfrac{4}{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p1', 'feedback_p1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(\alpha\)</span> está en el segundo cuadrante, el coseno es negativo. 
+Usando la identidad pitagórica <span class="arithmatex">\(\sin^2\alpha + \cos^2\alpha = 1\)</span>, calculamos el coseno:
+$<span class="arithmatex">\(\cos(\alpha) = -\sqrt{1 - \left(\frac{3}{5}\right)^2} = -\frac{4}{5}\)</span>$
+Luego, obtenemos la tangente:
+$<span class="arithmatex">\(\tan(\alpha) = \frac{\sin(\alpha)}{\cos(\alpha)} = \frac{3/5}{-4/5} = -\frac{3}{4}\)</span>$
+Por la periodicidad de la función tangente (que es de <span class="arithmatex">\(\pi\)</span>), sabemos que <span class="arithmatex">\(\tan(\pi + \alpha) = \tan(\alpha)\)</span>. Por lo tanto, el resultado es <span class="arithmatex">\(-\frac{3}{4}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2</legend>
+
+  <p>Sabiendo que $\sec(\beta) = 3$ y que $\sin(\beta) < 0$, determine el valor de $\sin(2\beta)$:</p>
+
+  <input type="radio" name="p2" id="p2a" value="incorrecta"> <label for="p2a">A) $\dfrac{4\sqrt{2}}{9}$</label><br>
+  <input type="radio" name="p2" id="p2b" value="correcta"> <label for="p2b">B) $-\dfrac{4\sqrt{2}}{9}$</label><br>
+  <input type="radio" name="p2" id="p2c" value="incorrecta"> <label for="p2c">C) $-\dfrac{2\sqrt{2}}{9}$</label><br>
+  <input type="radio" name="p2" id="p2d" value="incorrecta"> <label for="p2d">D) $\dfrac{2\sqrt{2}}{9}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p2', 'feedback_p2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Si <span class="arithmatex">\(\sec(\beta) = 3\)</span>, entonces <span class="arithmatex">\(\cos(\beta) = \frac{1}{3}\)</span>. Como <span class="arithmatex">\(\cos(\beta) &gt; 0\)</span> y <span class="arithmatex">\(\sin(\beta) &lt; 0\)</span>, el ángulo <span class="arithmatex">\(\beta\)</span> pertenece al cuarto cuadrante.
+Calculamos el seno:
+$<span class="arithmatex">\(\sin(\beta) = -\sqrt{1 - \cos^2\beta} = -\sqrt{1 - \frac{1}{9}} = -\sqrt{\frac{8}{9}} = -\frac{2\sqrt{2}}{3}\)</span>$
+Aplicamos la fórmula del ángulo doble para el seno:
+$<span class="arithmatex">\(\sin(2\beta) = 2\sin(\beta)\cos(\beta) = 2\left(-\frac{2\sqrt{2}}{3}\right)\left(\frac{1}{3}\right) = -\frac{4\sqrt{2}}{9}\)</span>$</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3</legend>
+
+  <p>Si $\cos(x) = -\dfrac{1}{4}$ con $x \in \left(\pi, \dfrac{3\pi}{2}\right)$, el valor de la expresión $\cos\left(x - \dfrac{\pi}{3}\right)$ corresponde a:</p>
+
+  <input type="radio" name="p3" id="p3a" value="incorrecta"> <label for="p3a">A) $\dfrac{1 - 3\sqrt{5}}{8}$</label><br>
+  <input type="radio" name="p3" id="p3b" value="incorrecta"> <label for="p3b">B) $\dfrac{-1 + 3\sqrt{5}}{8}$</label><br>
+  <input type="radio" name="p3" id="p3c" value="correcta"> <label for="p3c">C) $\dfrac{-1 - 3\sqrt{5}}{8}$</label><br>
+  <input type="radio" name="p3" id="p3d" value="incorrecta"> <label for="p3d">D) $\dfrac{1 + 3\sqrt{5}}{8}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p3', 'feedback_p3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(x\)</span> está en el tercer cuadrante, su seno es negativo.
+$<span class="arithmatex">\(\sin(x) = -\sqrt{1 - \left(-\frac{1}{4}\right)^2} = -\sqrt{1 - \frac{1}{16}} = -\frac{\sqrt{15}}{4}\)</span>$
+Usamos la fórmula de resta para el coseno: <span class="arithmatex">\(\cos(A - B) = \cos(A)\cos(B) + \sin(A)\sin(B)\)</span>.
+$<span class="arithmatex">\(\cos\left(x - \frac{\pi}{3}\right) = \cos(x)\cos\left(\frac{\pi}{3}\right) + \sin(x)\sin\left(\frac{\pi}{3}\right)\)</span>$
+Reemplazamos los valores conocidos:
+$<span class="arithmatex">\(= \left(-\frac{1}{4}\right)\left(\frac{1}{2}\right) + \left(-\frac{\sqrt{15}}{4}\right)\left(\frac{\sqrt{3}}{2}\right) = -\frac{1}{8} - \frac{\sqrt{45}}{8} = \frac{-1 - 3\sqrt{5}}{8}\)</span>$</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4</legend>
+
+  <p>Considere que $\tan(\theta) = \sqrt{2}$ para un ángulo $\theta$ agudo. ¿Cuál es el valor de $\sin\left(\dfrac{\pi}{2} + 2\theta\right)$?</p>
+
+  <input type="radio" name="p4" id="p4a" value="incorrecta"> <label for="p4a">A) $\dfrac{1}{3}$</label><br>
+  <input type="radio" name="p4" id="p4b" value="incorrecta"> <label for="p4b">B) $\dfrac{2\sqrt{2}}{3}$</label><br>
+  <input type="radio" name="p4" id="p4c" value="incorrecta"> <label for="p4c">C) $-\dfrac{2\sqrt{2}}{3}$</label><br>
+  <input type="radio" name="p4" id="p4d" value="correcta"> <label for="p4d">D) $-\dfrac{1}{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p4', 'feedback_p4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Por las identidades de cofunción, sabemos que <span class="arithmatex">\(\sin(\pi/2 + A) = \cos(A)\)</span>. 
+Entonces, <span class="arithmatex">\(\sin(\pi/2 + 2\theta) = \cos(2\theta)\)</span>.
+Podemos usar la fórmula del ángulo doble en términos de tangente: 
+$<span class="arithmatex">\(\cos(2\theta) = \frac{1 - \tan^2\theta}{1 + \tan^2\theta}\)</span>$
+Reemplazando <span class="arithmatex">\(\tan(\theta) = \sqrt{2}\)</span>:
+$<span class="arithmatex">\(\cos(2\theta) = \frac{1 - (\sqrt{2})^2}{1 + (\sqrt{2})^2} = \frac{1 - 2}{1 + 2} = -\frac{1}{3}\)</span>$</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5</legend>
+
+  <p>Sea $p$ un ángulo en el primer cuadrante tal que $\sin(p) = \dfrac{x}{3}$. La expresión equivalente para $\cot(\pi - p)$ en términos de $x$ es:</p>
+
+  <input type="radio" name="p5" id="p5a" value="incorrecta"> <label for="p5a">A) $\dfrac{\sqrt{9-x^2}}{x}$</label><br>
+  <input type="radio" name="p5" id="p5b" value="incorrecta"> <label for="p5b">B) $-\dfrac{x}{\sqrt{9-x^2}}$</label><br>
+  <input type="radio" name="p5" id="p5c" value="correcta"> <label for="p5c">C) $-\dfrac{\sqrt{9-x^2}}{x}$</label><br>
+  <input type="radio" name="p5" id="p5d" value="incorrecta"> <label for="p5d">D) $\dfrac{x}{\sqrt{9-x^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p5', 'feedback_p5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Por identidades de reducción al primer cuadrante, <span class="arithmatex">\(\cot(\pi - p) = -\cot(p)\)</span>.
+Imaginemos un triángulo rectángulo para el ángulo <span class="arithmatex">\(p\)</span>. Si <span class="arithmatex">\(\sin(p) = \frac{x}{3}\)</span>, el cateto opuesto es <span class="arithmatex">\(x\)</span> y la hipotenusa es <span class="arithmatex">\(3\)</span>.
+Por Pitágoras, el cateto adyacente es <span class="arithmatex">\(\sqrt{3^2 - x^2} = \sqrt{9-x^2}\)</span>.
+La cotangente es cateto adyacente sobre opuesto: <span class="arithmatex">\(\cot(p) = \frac{\sqrt{9-x^2}}{x}\)</span>.
+Por lo tanto, <span class="arithmatex">\(-\cot(p) = -\frac{\sqrt{9-x^2}}{x}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6</legend>
+
+  <p>Si se cumple que $\csc(y) + \cot(y) = 5$, entonces el valor de $\sec(y)$ es igual a:</p>
+
+  <input type="radio" name="p6" id="p6a" value="incorrecta"> <label for="p6a">A) $\dfrac{12}{13}$</label><br>
+  <input type="radio" name="p6" id="p6b" value="correcta"> <label for="p6b">B) $\dfrac{13}{12}$</label><br>
+  <input type="radio" name="p6" id="p6c" value="incorrecta"> <label for="p6c">C) $\dfrac{13}{5}$</label><br>
+  <input type="radio" name="p6" id="p6d" value="incorrecta"> <label for="p6d">D) $-\dfrac{13}{12}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p6', 'feedback_p6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Usamos la identidad pitagórica: <span class="arithmatex">\(\csc^2(y) - \cot^2(y) = 1\)</span>.
+Factorizando como suma por diferencia: <span class="arithmatex">\((\csc(y) - \cot(y))(\csc(y) + \cot(y)) = 1\)</span>.
+Sustituimos el valor dado: <span class="arithmatex">\((\csc(y) - \cot(y))(5) = 1 \implies \csc(y) - \cot(y) = 1/5\)</span>.
+Sumando ambas ecuaciones (la original y esta nueva) obtenemos <span class="arithmatex">\(2\csc(y) = 5 + 1/5 = 26/5\)</span>, de donde <span class="arithmatex">\(\csc(y) = 13/5\)</span> y <span class="arithmatex">\(\sin(y) = 5/13\)</span>.
+Restando las ecuaciones obtenemos <span class="arithmatex">\(2\cot(y) = 5 - 1/5 = 24/5\)</span>, de donde <span class="arithmatex">\(\cot(y) = 12/5\)</span>.
+Sabemos que <span class="arithmatex">\(\cos(y) = \sin(y)\cot(y) = \left(\frac{5}{13}\right)\left(\frac{12}{5}\right) = \frac{12}{13}\)</span>.
+Finalmente, <span class="arithmatex">\(\sec(y) = \frac{1}{\cos(y)} = \frac{13}{12}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7</legend>
+
+  <p>Sea $x$ un ángulo en el cuarto cuadrante tal que $\cos(x) = k$. Exprese $\csc(x)$ en términos de $k$.</p>
+
+  <input type="radio" name="p7" id="p7a" value="incorrecta"> <label for="p7a">A) $\dfrac{1}{\sqrt{1-k^2}}$</label><br>
+  <input type="radio" name="p7" id="p7b" value="incorrecta"> <label for="p7b">B) $-\dfrac{\sqrt{1-k^2}}{k}$</label><br>
+  <input type="radio" name="p7" id="p7c" value="incorrecta"> <label for="p7c">C) $\dfrac{\sqrt{1-k^2}}{k}$</label><br>
+  <input type="radio" name="p7" id="p7d" value="correcta"> <label for="p7d">D) $-\dfrac{1}{\sqrt{1-k^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p7', 'feedback_p7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(x\)</span> pertenece al cuarto cuadrante, el seno (y por consiguiente la cosecante) debe ser negativo.
+Hallamos <span class="arithmatex">\(\sin(x)\)</span> con la identidad pitagórica: <span class="arithmatex">\(\sin(x) = -\sqrt{1 - \cos^2(x)} = -\sqrt{1 - k^2}\)</span>.
+Como <span class="arithmatex">\(\csc(x) = \frac{1}{\sin(x)}\)</span>, obtenemos: <span class="arithmatex">\(\csc(x) = -\frac{1}{\sqrt{1-k^2}}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 8</legend>
+
+  <p>Si $\tan(\alpha) = m$, donde $m < 0$ y $\sin(\alpha) > 0$, determine $\sec(\alpha)$ en términos de $m$.</p>
+
+  <input type="radio" name="p8" id="p8a" value="correcta"> <label for="p8a">A) $-\sqrt{1+m^2}$</label><br>
+  <input type="radio" name="p8" id="p8b" value="incorrecta"> <label for="p8b">B) $\sqrt{1+m^2}$</label><br>
+  <input type="radio" name="p8" id="p8c" value="incorrecta"> <label for="p8c">C) $-\dfrac{1}{\sqrt{1+m^2}}$</label><br>
+  <input type="radio" name="p8" id="p8d" value="incorrecta"> <label for="p8d">D) $\dfrac{1}{\sqrt{1+m^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p8', 'feedback_p8')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p8" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Dado que <span class="arithmatex">\(\tan(\alpha) &lt; 0\)</span> y <span class="arithmatex">\(\sin(\alpha) &gt; 0\)</span>, el ángulo <span class="arithmatex">\(\alpha\)</span> necesariamente se ubica en el segundo cuadrante, donde la secante (y el coseno) son negativos.
+Usamos la identidad <span class="arithmatex">\(\sec^2(\alpha) = 1 + \tan^2(\alpha)\)</span>.
+Reemplazamos la tangente: <span class="arithmatex">\(\sec^2(\alpha) = 1 + m^2\)</span>.
+Extraemos raíz cuadrada tomando el signo negativo de acuerdo al cuadrante: <span class="arithmatex">\(\sec(\alpha) = -\sqrt{1+m^2}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 9</legend>
+
+  <p>Sea $t$ un ángulo tal que $\sin(t) = \dfrac{a-1}{a+1}$ y $\cos(t) < 0$. Determine $\tan(t)$ en términos de $a$, asumiendo que $a > 1$.</p>
+
+  <input type="radio" name="p9" id="p9a" value="incorrecta"> <label for="p9a">A) $\dfrac{a-1}{2\sqrt{a}}$</label><br>
+  <input type="radio" name="p9" id="p9b" value="correcta"> <label for="p9b">B) $\dfrac{1-a}{2\sqrt{a}}$</label><br>
+  <input type="radio" name="p9" id="p9c" value="incorrecta"> <label for="p9c">C) $\dfrac{2\sqrt{a}}{1-a}$</label><br>
+  <input type="radio" name="p9" id="p9d" value="incorrecta"> <label for="p9d">D) $-\dfrac{2\sqrt{a}}{a-1}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p9', 'feedback_p9')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p9" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(a&gt;1\)</span>, <span class="arithmatex">\(\sin(t)\)</span> es positivo. Unido a <span class="arithmatex">\(\cos(t) &lt; 0\)</span>, sabemos que <span class="arithmatex">\(t\)</span> está en el segundo cuadrante, por lo que la tangente será negativa.
+Hallamos <span class="arithmatex">\(\cos(t)\)</span> usando Pitágoras:
+$<span class="arithmatex">\(\cos(t) = -\sqrt{1 - \left(\frac{a-1}{a+1}\right)^2} = -\sqrt{\frac{(a+1)^2 - (a-1)^2}{(a+1)^2}}\)</span>$
+Desarrollamos los cuadrados en el numerador: <span class="arithmatex">\((a^2+2a+1) - (a^2-2a+1) = 4a\)</span>.
+$<span class="arithmatex">\(\cos(t) = -\sqrt{\frac{4a}{(a+1)^2}} = -\frac{2\sqrt{a}}{a+1}\)</span>$
+Finalmente: <span class="arithmatex">\(\tan(t) = \frac{\sin(t)}{\cos(t)} = \frac{\frac{a-1}{a+1}}{-\frac{2\sqrt{a}}{a+1}} = -\frac{a-1}{2\sqrt{a}} = \frac{1-a}{2\sqrt{a}}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 10</legend>
+
+  <p>Sea $\beta \in \left(\pi, \dfrac{3\pi}{2}\right)$. Si $\cot(\beta) = \dfrac{7}{24}$, calcule el valor exacto de la expresión $\sin(\beta) - \cos(\beta)$.</p>
+
+  <input type="radio" name="p10" id="p10a" value="correcta"> <label for="p10a">A) $-\dfrac{17}{25}$</label><br>
+  <input type="radio" name="p10" id="p10b" value="incorrecta"> <label for="p10b">B) $\dfrac{17}{25}$</label><br>
+  <input type="radio" name="p10" id="p10c" value="incorrecta"> <label for="p10c">C) $-\dfrac{31}{25}$</label><br>
+  <input type="radio" name="p10" id="p10d" value="incorrecta"> <label for="p10d">D) $\dfrac{31}{25}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p10', 'feedback_p10')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p10" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(\beta\)</span> pertenece al tercer cuadrante, el seno y el coseno deben ser ambos negativos.
+Considerando un triángulo rectángulo de referencia (sin importar los signos temporales), si <span class="arithmatex">\(\cot(\beta) = \frac{7}{24}\)</span>, el adyacente es <span class="arithmatex">\(7\)</span> y el opuesto es <span class="arithmatex">\(24\)</span>.
+La hipotenusa será <span class="arithmatex">\(\sqrt{7^2 + 24^2} = \sqrt{49 + 576} = \sqrt{625} = 25\)</span>.
+Por lo tanto, ajustando por el cuadrante: <span class="arithmatex">\(\sin(\beta) = -\frac{24}{25}\)</span> y <span class="arithmatex">\(\cos(\beta) = -\frac{7}{25}\)</span>.
+Calculamos la expresión: <span class="arithmatex">\(\sin(\beta) - \cos(\beta) = -\frac{24}{25} - \left(-\frac{7}{25}\right) = \frac{-24 + 7}{25} = -\frac{17}{25}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 11</legend>
+
+  <p>Sabiendo que $\sec(\gamma) = -\dfrac{13}{5}$ y que $\tan(\gamma) > 0$, calcule el valor de la fracción $\dfrac{\csc(\gamma) + \cot(\gamma)}{\csc(\gamma) - \cot(\gamma)}$.</p>
+
+  <input type="radio" name="p11" id="p11a" value="incorrecta"> <label for="p11a">A) $-\dfrac{4}{9}$</label><br>
+  <input type="radio" name="p11" id="p11b" value="incorrecta"> <label for="p11b">B) $\dfrac{9}{4}$</label><br>
+  <input type="radio" name="p11" id="p11c" value="correcta"> <label for="p11c">C) $\dfrac{4}{9}$</label><br>
+  <input type="radio" name="p11" id="p11d" value="incorrecta"> <label for="p11d">D) $-\dfrac{9}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p11', 'feedback_p11')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p11" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(\sec(\gamma) &lt; 0\)</span> y <span class="arithmatex">\(\tan(\gamma) &gt; 0\)</span>, el ángulo <span class="arithmatex">\(\gamma\)</span> está en el tercer cuadrante.
+De <span class="arithmatex">\(\sec(\gamma) = -13/5\)</span> obtenemos <span class="arithmatex">\(\cos(\gamma) = -5/13\)</span>.
+Evaluamos el seno (tercer cuadrante es negativo): <span class="arithmatex">\(\sin(\gamma) = -\sqrt{1 - (-5/13)^2} = -12/13\)</span>.
+Derivamos las funciones necesarias: <span class="arithmatex">\(\csc(\gamma) = -13/12\)</span> y <span class="arithmatex">\(\cot(\gamma) = \cos(\gamma)/\sin(\gamma) = 5/12\)</span>.
+Evaluamos la fracción pedida:
+$<span class="arithmatex">\(\frac{-\frac{13}{12} + \frac{5}{12}}{-\frac{13}{12} - \frac{5}{12}} = \frac{-\frac{8}{12}}{-\frac{18}{12}} = \frac{-8}{-18} = \frac{4}{9}\)</span>$</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 12</legend>
+
+  <p>Si $\cos(x) = \dfrac{2\sqrt{2}}{3}$ y $x$ pertenece al cuarto cuadrante, halle el valor numérico de $\tan^2(x) - \csc^2(x)$.</p>
+
+  <input type="radio" name="p12" id="p12a" value="incorrecta"> <label for="p12a">A) $\dfrac{71}{8}$</label><br>
+  <input type="radio" name="p12" id="p12b" value="incorrecta"> <label for="p12b">B) $-\dfrac{65}{8}$</label><br>
+  <input type="radio" name="p12" id="p12c" value="incorrecta"> <label for="p12c">C) $\dfrac{65}{8}$</label><br>
+  <input type="radio" name="p12" id="p12d" value="correcta"> <label for="p12d">D) $-\dfrac{71}{8}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p12', 'feedback_p12')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p12" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Calculamos <span class="arithmatex">\(\sec(x)\)</span> invirtiendo el coseno: <span class="arithmatex">\(\sec(x) = \frac{3}{2\sqrt{2}}\)</span>.
+Al cuadrar obtenemos: <span class="arithmatex">\(\sec^2(x) = \frac{9}{8}\)</span>.
+Sabiendo que <span class="arithmatex">\(\tan^2(x) = \sec^2(x) - 1\)</span>, entonces <span class="arithmatex">\(\tan^2(x) = \frac{9}{8} - 1 = \frac{1}{8}\)</span>.
+Para el seno (cuarto cuadrante es negativo): <span class="arithmatex">\(\sin(x) = -\sqrt{1 - \left(\frac{2\sqrt{2}}{3}\right)^2} = -\sqrt{1 - \frac{8}{9}} = -\frac{1}{3}\)</span>.
+La cosecante es la inversa: <span class="arithmatex">\(\csc(x) = -3\)</span>, por ende <span class="arithmatex">\(\csc^2(x) = 9\)</span>.
+Reemplazamos en la expresión original: <span class="arithmatex">\(\tan^2(x) - \csc^2(x) = \frac{1}{8} - 9 = \frac{1 - 72}{8} = -\frac{71}{8}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 13</legend>
+
+  <p>Sabiendo que $\csc(\theta) = -4$ y $\cos(\theta) > 0$, evalúe la expresión $\sec(\theta) + \tan(\theta)$.</p>
+
+  <input type="radio" name="p13" id="p13a" value="incorrecta"> <label for="p13a">A) $-\dfrac{\sqrt{15}}{5}$</label><br>
+  <input type="radio" name="p13" id="p13b" value="correcta"> <label for="p13b">B) $\dfrac{\sqrt{15}}{5}$</label><br>
+  <input type="radio" name="p13" id="p13c" value="incorrecta"> <label for="p13c">C) $\dfrac{\sqrt{15}}{3}$</label><br>
+  <input type="radio" name="p13" id="p13d" value="incorrecta"> <label for="p13d">D) $-\dfrac{\sqrt{15}}{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p13', 'feedback_p13')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p13" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>De <span class="arithmatex">\(\csc(\theta) = -4\)</span> obtenemos <span class="arithmatex">\(\sin(\theta) = -1/4\)</span>.
+Como <span class="arithmatex">\(\cos(\theta) &gt; 0\)</span>, <span class="arithmatex">\(\theta\)</span> se ubica en el cuarto cuadrante.
+Hallamos el coseno con Pitágoras: <span class="arithmatex">\(\cos(\theta) = \sqrt{1 - (-1/4)^2} = \sqrt{15}/4\)</span>.
+Hallamos la secante: <span class="arithmatex">\(\sec(\theta) = 4/\sqrt{15}\)</span>.
+Hallamos la tangente: <span class="arithmatex">\(\tan(\theta) = \sin(\theta)/\cos(\theta) = (-1/4) / (\sqrt{15}/4) = -1/\sqrt{15}\)</span>.
+Sumamos: <span class="arithmatex">\(\sec(\theta) + \tan(\theta) = \frac{4}{\sqrt{15}} - \frac{1}{\sqrt{15}} = \frac{3}{\sqrt{15}}\)</span>.
+Racionalizamos multiplicando por <span class="arithmatex">\(\sqrt{15}/\sqrt{15}\)</span>: <span class="arithmatex">\(\frac{3\sqrt{15}}{15} = \frac{\sqrt{15}}{5}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 14</legend>
+
+  <p>Si $t$ está en el segundo cuadrante y $\csc(t) = p$, escriba una expresión algebraica simplificada para $\cos(t) + \tan(t)$ en términos de $p$.</p>
+
+  <input type="radio" name="p14" id="p14a" value="incorrecta"> <label for="p14a">A) $\dfrac{p^2 + p - 1}{p\sqrt{p^2-1}}$</label><br>
+  <input type="radio" name="p14" id="p14b" value="incorrecta"> <label for="p14b">B) $\dfrac{-p^2 + p + 1}{p\sqrt{p^2-1}}$</label><br>
+  <input type="radio" name="p14" id="p14c" value="correcta"> <label for="p14c">C) $\dfrac{-p^2 - p + 1}{p\sqrt{p^2-1}}$</label><br>
+  <input type="radio" name="p14" id="p14d" value="incorrecta"> <label for="p14d">D) $\dfrac{-p^2 - p - 1}{p\sqrt{p^2-1}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p14', 'feedback_p14')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p14" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como <span class="arithmatex">\(t\)</span> está en el segundo cuadrante, el seno y cosecante son positivos, pero el coseno y tangente son negativos.
+De <span class="arithmatex">\(\csc(t) = p\)</span>, derivamos <span class="arithmatex">\(\sin(t) = 1/p\)</span>.
+Hallamos el coseno: <span class="arithmatex">\(\cos(t) = -\sqrt{1 - \sin^2(t)} = -\sqrt{1 - \frac{1}{p^2}} = -\frac{\sqrt{p^2-1}}{p}\)</span>.
+Hallamos la tangente: <span class="arithmatex">\(\tan(t) = \frac{\sin(t)}{\cos(t)} = \frac{1/p}{-\frac{\sqrt{p^2-1}}{p}} = -\frac{1}{\sqrt{p^2-1}}\)</span>.
+Sumamos ambas funciones:
+$<span class="arithmatex">\(\cos(t) + \tan(t) = -\frac{\sqrt{p^2-1}}{p} - \frac{1}{\sqrt{p^2-1}}\)</span>$
+Buscando un denominador común <span class="arithmatex">\(p\sqrt{p^2-1}\)</span>:
+$<span class="arithmatex">\(= \frac{-(\sqrt{p^2-1})^2 - 1(p)}{p\sqrt{p^2-1}} = \frac{-(p^2-1) - p}{p\sqrt{p^2-1}} = \frac{-p^2 - p + 1}{p\sqrt{p^2-1}}\)</span>$</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 15</legend>
+
+  <p>Sea $\tan(\phi) = \dfrac{u}{v}$ con la restricción de que $u > 0$ y $v < 0$. Escriba las funciones $\cos(\phi)$ y $\sin(\phi)$ en términos de $u$ y $v$.</p>
+
+  <input type="radio" name="p15" id="p15a" value="correcta"> <label for="p15a">A) $\cos(\phi) = \dfrac{v}{\sqrt{u^2+v^2}}, \sin(\phi) = \dfrac{u}{\sqrt{u^2+v^2}}$</label><br>
+  <input type="radio" name="p15" id="p15b" value="incorrecta"> <label for="p15b">B) $\cos(\phi) = -\dfrac{v}{\sqrt{u^2+v^2}}, \sin(\phi) = \dfrac{u}{\sqrt{u^2+v^2}}$</label><br>
+  <input type="radio" name="p15" id="p15c" value="incorrecta"> <label for="p15c">C) $\cos(\phi) = \dfrac{v}{\sqrt{u^2+v^2}}, \sin(\phi) = -\dfrac{u}{\sqrt{u^2+v^2}}$</label><br>
+  <input type="radio" name="p15" id="p15d" value="incorrecta"> <label for="p15d">D) $\cos(\phi) = \dfrac{u}{\sqrt{u^2+v^2}}, \sin(\phi) = \dfrac{v}{\sqrt{u^2+v^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p15', 'feedback_p15')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p15" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Sabemos que la tangente es igual a <span class="arithmatex">\(\frac{\text{opuesto}}{\text{adyacente}} = \frac{u}{v}\)</span>.
+Como el problema especifica que <span class="arithmatex">\(u\)</span> (numerador, que se asocia con el eje Y) es positivo, y <span class="arithmatex">\(v\)</span> (denominador, asociado al eje X) es negativo, inferimos que estamos lidiando con un ángulo en el segundo cuadrante, donde la tangente es negativa, el seno es positivo y el coseno es negativo.
+Calculamos la hipotenusa <span class="arithmatex">\(r\)</span>: <span class="arithmatex">\(r = \sqrt{u^2 + v^2}\)</span> (la hipotenusa siempre es positiva).
+Sabiendo esto, el seno será el opuesto sobre la hipotenusa: <span class="arithmatex">\(\sin(\phi) = \frac{u}{\sqrt{u^2 + v^2}}\)</span>. Como <span class="arithmatex">\(u&gt;0\)</span>, el signo es correcto (positivo).
+El coseno será el adyacente sobre la hipotenusa: <span class="arithmatex">\(\cos(\phi) = \frac{v}{\sqrt{u^2 + v^2}}\)</span>. Como <span class="arithmatex">\(v&lt;0\)</span>, el signo asume la negatividad correctamente.</p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>

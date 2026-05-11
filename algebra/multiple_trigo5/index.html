@@ -1,0 +1,1316 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../multiple_trigo4/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Aplicaciones - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-seleccion-multiple-aplicaciones-trigonometricas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Aplicaciones
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Practica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Practica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer cuadrante y propiedades básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-seleccion-multiple-aplicaciones-trigonometricas">Ejercicios de Selección Múltiple: Aplicaciones Trigonométricas</h1>
+<p>Resuelve los siguientes ejercicios y luego verifica tu respuesta. Si tienes dudas, puedes desplegar el desarrollo para ver el teorema utilizado y la respuesta.</p>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1: Rastreo de un satélite</legend>
+
+  <p>La trayectoria de un satélite que orbita la Tierra hace que pase directamente sobre dos estaciones de rastreo $A$ y $B$, que están separadas por $50\text{ mi}$. Cuando el satélite está a un lado de las dos estaciones, los ángulos de elevación en $A$ y $B$ miden $87.0^\circ$ y $84.2^\circ$, respectivamente. ¿A qué distancia está el satélite de la estación $A$ y cuál es su altura?</p>
+
+  <input type="radio" name="p1" id="p1a" value="correcta"> <label for="p1a">A) Distancia: 1018.3 mi, Altura: 1016.9 mi</label><br>
+  <input type="radio" name="p1" id="p1b" value="incorrecta"> <label for="p1b">B) Distancia: 1050.2 mi, Altura: 1048.5 mi</label><br>
+  <input type="radio" name="p1" id="p1c" value="incorrecta"> <label for="p1c">C) Distancia: 950.5 mi, Altura: 900.2 mi</label><br>
+  <input type="radio" name="p1" id="p1d" value="incorrecta"> <label for="p1d">D) Distancia: 1018.6 mi, Altura: 1000.5 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p1', 'feedback_p1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos y Razones Trigonométricas<br />
+<strong>Respuesta correcta:</strong> Distancia: 1018.3 mi, Altura: 1016.9 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2: Vuelo de un avión</legend>
+
+  <p>Un piloto vuela sobre una carretera recta. Determina que los ángulos de depresión hacia dos postes indicadores de millas, separados por $5\text{ mi}$, son de $32^\circ$ y $48^\circ$. Si el avión se encuentra entre los dos postes, ¿cuál es la distancia del avión al punto $A$ (poste con ángulo de $32^\circ$) y su elevación?</p>
+
+  <input type="radio" name="p2" id="p2a" value="incorrecta"> <label for="p2a">A) Distancia: 4.52 mi, Elevación: 3.12 mi</label><br>
+  <input type="radio" name="p2" id="p2b" value="correcta"> <label for="p2b">B) Distancia: 3.77 mi, Elevación: 2.00 mi</label><br>
+  <input type="radio" name="p2" id="p2c" value="incorrecta"> <label for="p2c">C) Distancia: 3.15 mi, Elevación: 1.50 mi</label><br>
+  <input type="radio" name="p2" id="p2d" value="incorrecta"> <label for="p2d">D) Distancia: 5.10 mi, Elevación: 2.80 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p2', 'feedback_p2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos y Razones Trigonométricas<br />
+<strong>Respuesta correcta:</strong> Distancia: 3.77 mi, Elevación: 2.00 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3: Distancia a través de un río</legend>
+
+  <p>Para encontrar la distancia a través de un río, una topógrafa elige los puntos $A$ y $B$, que están separados por $200\text{ ft}$ en un lado del río. Luego elige un punto de referencia $C$ en el lado opuesto y encuentra que $\angle BAC \approx 82^\circ$ y $\angle ABC \approx 52^\circ$. Aproxime la distancia de $A$ a $C$.</p>
+
+  <input type="radio" name="p3" id="p3a" value="correcta"> <label for="p3a">A) 219.1 ft</label><br>
+  <input type="radio" name="p3" id="p3b" value="incorrecta"> <label for="p3b">B) 185.4 ft</label><br>
+  <input type="radio" name="p3" id="p3c" value="incorrecta"> <label for="p3c">C) 198.5 ft</label><br>
+  <input type="radio" name="p3" id="p3d" value="incorrecta"> <label for="p3d">D) 150.2 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p3', 'feedback_p3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos<br />
+<strong>Respuesta correcta:</strong> 219.1 ft</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4: La Torre Inclinada de Pisa</legend>
+
+  <p>El campanario de la catedral de Pisa se inclina $5.6^\circ$ respecto a la vertical. Una turista se encuentra a $105\text{ m}$ de su base, con la torre inclinada directamente hacia ella. Mide el ángulo de elevación hasta la cima de la torre y obtiene $29.2^\circ$. Encuentre la longitud de la torre al metro más cercano.</p>
+
+  <input type="radio" name="p4" id="p4a" value="incorrecta"> <label for="p4a">A) 52 m</label><br>
+  <input type="radio" name="p4" id="p4b" value="incorrecta"> <label for="p4b">B) 65 m</label><br>
+  <input type="radio" name="p4" id="p4c" value="correcta"> <label for="p4c">C) 56 m</label><br>
+  <input type="radio" name="p4" id="p4d" value="incorrecta"> <label for="p4d">D) 48 m</label><br><br>
+
+  <button onclick="verificarRespuesta('p4', 'feedback_p4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos<br />
+<strong>Respuesta correcta:</strong> 56 m</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5: Altura de un árbol</legend>
+
+  <p>Un árbol en la ladera de una colina proyecta una sombra de $215\text{ ft}$ colina abajo. Si el ángulo de inclinación de la colina es de $22^\circ$ con respecto a la horizontal y el ángulo de elevación del sol es de $52^\circ$, encuentre la altura del árbol.</p>
+
+  <input type="radio" name="p5" id="p5a" value="incorrecta"> <label for="p5a">A) 125.4 ft</label><br>
+  <input type="radio" name="p5" id="p5b" value="correcta"> <label for="p5b">B) 174.6 ft</label><br>
+  <input type="radio" name="p5" id="p5c" value="incorrecta"> <label for="p5c">C) 198.2 ft</label><br>
+  <input type="radio" name="p5" id="p5d" value="incorrecta"> <label for="p5d">D) 150.5 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p5', 'feedback_p5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos<br />
+<strong>Respuesta correcta:</strong> 174.6 ft</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6: Cálculo de distancia (Automóviles)</legend>
+
+  <p>Dos caminos rectos divergen en un ángulo de $65^\circ$. Dos automóviles salen de la intersección a las 2:00 p.m., uno viaja a $50\text{ mi/h}$ y el otro a $30\text{ mi/h}$. ¿A qué distancia se encuentran los automóviles a las 2:30 p.m.?</p>
+
+  <input type="radio" name="p6" id="p6a" value="incorrecta"> <label for="p6a">A) 27.5 mi</label><br>
+  <input type="radio" name="p6" id="p6b" value="incorrecta"> <label for="p6b">B) 32.1 mi</label><br>
+  <input type="radio" name="p6" id="p6c" value="correcta"> <label for="p6c">C) 23.1 mi</label><br>
+  <input type="radio" name="p6" id="p6d" value="incorrecta"> <label for="p6d">D) 20.4 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p6', 'feedback_p6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 23.1 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7: Campo triangular</legend>
+
+  <p>Un campo triangular tiene lados de longitudes $22$, $36$ y $44\text{ yd}$. Encuentre el ángulo más grande del campo.</p>
+
+  <input type="radio" name="p7" id="p7a" value="correcta"> <label for="p7a">A) 95.7^\circ</label><br>
+  <input type="radio" name="p7" id="p7b" value="incorrecta"> <label for="p7b">B) 85.2^\circ</label><br>
+  <input type="radio" name="p7" id="p7c" value="incorrecta"> <label for="p7c">C) 102.5^\circ</label><br>
+  <input type="radio" name="p7" id="p7d" value="incorrecta"> <label for="p7d">D) 110.1^\circ</label><br><br>
+
+  <button onclick="verificarRespuesta('p7', 'feedback_p7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 95.7^\circ</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 8: Teleférico</legend>
+
+  <p>Una montaña empinada tiene una inclinación de $74^\circ$ con respecto a la horizontal y se eleva $3400\text{ ft}$ sobre la llanura. Se instalará un teleférico desde un punto a $800\text{ ft}$ de la base hasta la cima. Encuentre la longitud más corta de cable necesaria.</p>
+
+  <input type="radio" name="p8" id="p8a" value="incorrecta"> <label for="p8a">A) 3500.2 ft</label><br>
+  <input type="radio" name="p8" id="p8b" value="incorrecta"> <label for="p8b">B) 3800.5 ft</label><br>
+  <input type="radio" name="p8" id="p8c" value="correcta"> <label for="p8c">C) 3835.4 ft</label><br>
+  <input type="radio" name="p8" id="p8d" value="incorrecta"> <label for="p8d">D) 4050.8 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p8', 'feedback_p8')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p8" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 3835.4 ft</p>
+</details>
+<hr />
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1: Distancia a través de un lago</legend>
+
+  <p>Los puntos $A$ y $B$ están separados por un lago. Para encontrar la distancia entre ellos, un topógrafo ubica un punto $C$ en tierra firme tal que $\angle CAB = 48.6^\circ$. También mide la distancia $CA$ como $312\text{ ft}$ y $CB$ como $527\text{ ft}$. Encuentre la distancia entre $A$ y $B$.</p>
+
+  <input type="radio" name="p1" id="p1a" value="correcta"> <label for="p1a">A) 399.7 ft</label><br>
+  <input type="radio" name="p1" id="p1b" value="incorrecta"> <label for="p1b">B) 412.3 ft</label><br>
+  <input type="radio" name="p1" id="p1c" value="incorrecta"> <label for="p1c">C) 365.1 ft</label><br>
+  <input type="radio" name="p1" id="p1d" value="incorrecta"> <label for="p1d">D) 450.8 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p1', 'feedback_p1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 399.7 ft</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2: Cálculo de una distancia (Globo)</legend>
+
+  <p>Observadores en $P$ y $Q$ se encuentran en la ladera de una colina que tiene una inclinación de $32^\circ$ con respecto a la horizontal. El observador en $P$ determina que el ángulo de elevación a un globo aerostático es de $62^\circ$. En el mismo instante, el observador en $Q$ mide que el ángulo de elevación al globo es de $71^\circ$. Si $P$ está a $60\text{ m}$ colina abajo desde $Q$, encuentre la distancia desde $Q$ hasta el globo.</p>
+
+  <input type="radio" name="p2" id="p2a" value="incorrecta"> <label for="p2a">A) 165.4 m</label><br>
+  <input type="radio" name="p2" id="p2b" value="correcta"> <label for="p2b">B) 191.8 m</label><br>
+  <input type="radio" name="p2" id="p2c" value="incorrecta"> <label for="p2c">C) 210.2 m</label><br>
+  <input type="radio" name="p2" id="p2d" value="incorrecta"> <label for="p2d">D) 150.9 m</label><br><br>
+
+  <button onclick="verificarRespuesta('p2', 'feedback_p2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos<br />
+<strong>Respuesta correcta:</strong> 191.8 m</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3: Cálculo de un ángulo</legend>
+
+  <p>Una torre de agua de $30\text{ m}$ de altura se encuentra en la cima de una colina. Desde una distancia de $120\text{ m}$ colina abajo, se observa que el ángulo formado entre la parte superior y la base de la torre es de $8^\circ$. Encuentre el ángulo de inclinación de la colina.</p>
+
+  <input type="radio" name="p3" id="p3a" value="incorrecta"> <label for="p3a">A) 41.5^\circ</label><br>
+  <input type="radio" name="p3" id="p3b" value="incorrecta"> <label for="p3b">B) 35.8^\circ</label><br>
+  <input type="radio" name="p3" id="p3c" value="correcta"> <label for="p3c">C) 48.1^\circ</label><br>
+  <input type="radio" name="p3" id="p3d" value="incorrecta"> <label for="p3d">D) 52.3^\circ</label><br><br>
+
+  <button onclick="verificarRespuesta('p3', 'feedback_p3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Senos<br />
+<strong>Respuesta correcta:</strong> 48.1^\circ</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4: Geometría de un paralelogramo</legend>
+
+  <p>Un paralelogramo tiene lados de longitudes $3$ y $5$, y un ángulo interior es de $50^\circ$. Encuentre las longitudes de sus dos diagonales.</p>
+
+  <input type="radio" name="p4" id="p4a" value="incorrecta"> <label for="p4a">A) 3.50 y 6.80</label><br>
+  <input type="radio" name="p4" id="p4b" value="incorrecta"> <label for="p4b">B) 4.12 y 7.50</label><br>
+  <input type="radio" name="p4" id="p4c" value="correcta"> <label for="p4c">C) 3.84 y 7.30</label><br>
+  <input type="radio" name="p4" id="p4d" value="incorrecta"> <label for="p4d">D) 3.10 y 6.50</label><br><br>
+
+  <button onclick="verificarRespuesta('p4', 'feedback_p4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 3.84 y 7.30</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5: Cálculo de distancia (Carretera)</legend>
+
+  <p>Un automóvil viaja por una carretera recta en dirección este durante $1\text{ h}$, luego viaja durante $30\text{ min}$ por otra carretera que se dirige al noreste. Si el automóvil ha mantenido una velocidad constante de $40\text{ mi/h}$, ¿a qué distancia se encuentra de su posición inicial?</p>
+
+  <input type="radio" name="p5" id="p5a" value="correcta"> <label for="p5a">A) 55.9 mi</label><br>
+  <input type="radio" name="p5" id="p5b" value="incorrecta"> <label for="p5b">B) 60.0 mi</label><br>
+  <input type="radio" name="p5" id="p5c" value="incorrecta"> <label for="p5c">C) 52.3 mi</label><br>
+  <input type="radio" name="p5" id="p5d" value="incorrecta"> <label for="p5d">D) 48.5 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p5', 'feedback_p5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 55.9 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6: Navegación por estima</legend>
+
+  <p>Una piloto vuela en línea recta durante $1\text{ h y } 30\text{ min}$. Luego realiza una corrección de rumbo, dirigiéndose $10^\circ$ a la derecha de su curso original, y vuela $2\text{ h}$ en la nueva dirección. Si mantiene una velocidad constante de $625\text{ mi/h}$, ¿a qué distancia está de su posición inicial?</p>
+
+  <input type="radio" name="p6" id="p6a" value="incorrecta"> <label for="p6a">A) 2100 mi</label><br>
+  <input type="radio" name="p6" id="p6b" value="incorrecta"> <label for="p6b">B) 1950 mi</label><br>
+  <input type="radio" name="p6" id="p6c" value="correcta"> <label for="p6c">C) 2182 mi</label><br>
+  <input type="radio" name="p6" id="p6d" value="incorrecta"> <label for="p6d">D) 2250 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p6', 'feedback_p6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 2182 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7: Navegación de botes</legend>
+
+  <p>Dos botes salen del mismo puerto al mismo tiempo. Uno viaja a una velocidad de $30\text{ mi/h}$ en la dirección $\text{N } 50^\circ\text{ E}$ y el otro viaja a una velocidad de $26\text{ mi/h}$ en la dirección $\text{S } 70^\circ\text{ E}$. ¿A qué distancia están los dos botes después de una hora?</p>
+
+  <input type="radio" name="p7" id="p7a" value="incorrecta"> <label for="p7a">A) 30.5 mi</label><br>
+  <input type="radio" name="p7" id="p7b" value="correcta"> <label for="p7b">B) 28.2 mi</label><br>
+  <input type="radio" name="p7" id="p7c" value="incorrecta"> <label for="p7c">C) 25.1 mi</label><br>
+  <input type="radio" name="p7" id="p7d" value="incorrecta"> <label for="p7d">D) 32.0 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p7', 'feedback_p7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 28.2 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 8: Navegación de pescador</legend>
+
+  <p>Un pescador sale de su puerto base y se dirige en dirección $\text{N } 70^\circ\text{ W}$. Viaja $30\text{ mi}$ y llega a la Isla Huevo. Al día siguiente navega en dirección $\text{N } 10^\circ\text{ E}$ durante $50\text{ mi}$, llegando a la Isla Bosque. Encuentre la distancia entre el puerto base del pescador y la Isla Bosque.</p>
+
+  <input type="radio" name="p8" id="p8a" value="incorrecta"> <label for="p8a">A) 55.0 mi</label><br>
+  <input type="radio" name="p8" id="p8b" value="incorrecta"> <label for="p8b">B) 60.5 mi</label><br>
+  <input type="radio" name="p8" id="p8c" value="correcta"> <label for="p8c">C) 62.4 mi</label><br>
+  <input type="radio" name="p8" id="p8d" value="incorrecta"> <label for="p8d">D) 68.1 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p8', 'feedback_p8')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p8" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Vectores o Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 62.4 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 9: Error de Navegación</legend>
+
+  <p>El aeropuerto B está a $300\text{ mi}$ del aeropuerto A con un rumbo de $\text{N } 50^\circ\text{ E}$. Un piloto que desea volar de A a B vuela por error directamente hacia el este a $200\text{ mi/h}$ durante $30\text{ minutos}$, momento en el que se da cuenta de su error. ¿A qué distancia está el piloto de su destino en el momento en que nota el error?</p>
+
+  <input type="radio" name="p9" id="p9a" value="incorrecta"> <label for="p9a">A) 210.5 mi</label><br>
+  <input type="radio" name="p9" id="p9b" value="incorrecta"> <label for="p9b">B) 250.2 mi</label><br>
+  <input type="radio" name="p9" id="p9c" value="correcta"> <label for="p9c">C) 232.5 mi</label><br>
+  <input type="radio" name="p9" id="p9d" value="incorrecta"> <label for="p9d">D) 195.8 mi</label><br><br>
+
+  <button onclick="verificarRespuesta('p9', 'feedback_p9')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p9" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 232.5 mi</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 10: Remolque de una barcaza</legend>
+
+  <p>Dos remolcadores que están separados por $120\text{ ft}$ tiran de una barcaza. Si la longitud de un cable es de $212\text{ ft}$ y la longitud del otro es de $230\text{ ft}$, encuentre el ángulo formado por los dos cables.</p>
+
+  <input type="radio" name="p10" id="p10a" value="incorrecta"> <label for="p10a">A) 25.1^\circ</label><br>
+  <input type="radio" name="p10" id="p10b" value="incorrecta"> <label for="p10b">B) 35.8^\circ</label><br>
+  <input type="radio" name="p10" id="p10c" value="correcta"> <label for="p10c">C) 31.0^\circ</label><br>
+  <input type="radio" name="p10" id="p10d" value="incorrecta"> <label for="p10d">D) 40.2^\circ</label><br><br>
+
+  <button onclick="verificarRespuesta('p10', 'feedback_p10')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p10" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 31.0^\circ</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 11: Volando cometas</legend>
+
+  <p>Un niño está volando dos cometas al mismo tiempo. Tiene $380\text{ ft}$ de cuerda suelta para una cometa y $420\text{ ft}$ para la otra. Estima que el ángulo entre las dos cuerdas es de $30^\circ$. Aproxime la distancia entre las cometas.</p>
+
+  <input type="radio" name="p11" id="p11a" value="incorrecta"> <label for="p11a">A) 195.2 ft</label><br>
+  <input type="radio" name="p11" id="p11b" value="correcta"> <label for="p11b">B) 210.8 ft</label><br>
+  <input type="radio" name="p11" id="p11c" value="incorrecta"> <label for="p11c">C) 230.5 ft</label><br>
+  <input type="radio" name="p11" id="p11d" value="incorrecta"> <label for="p11d">D) 180.1 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p11', 'feedback_p11')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p11" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 210.8 ft</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 12: Fijación de una torre</legend>
+
+  <p>Una torre de $125\text{ ft}$ está ubicada en la ladera de una montaña que tiene una inclinación de $32^\circ$ con respecto a la horizontal. Se debe fijar un cable tensor a la parte superior de la torre y anclarlo en un punto a $55\text{ ft}$ colina abajo desde la base de la torre. Encuentre la longitud más corta de cable necesaria.</p>
+
+  <input type="radio" name="p12" id="p12a" value="incorrecta"> <label for="p12a">A) 150.5 ft</label><br>
+  <input type="radio" name="p12" id="p12b" value="incorrecta"> <label for="p12b">B) 165.2 ft</label><br>
+  <input type="radio" name="p12" id="p12c" value="correcta"> <label for="p12c">C) 161.0 ft</label><br>
+  <input type="radio" name="p12" id="p12d" value="incorrecta"> <label for="p12d">D) 170.8 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p12', 'feedback_p12')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p12" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 161.0 ft</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 13: Torre CN</legend>
+
+  <p>La Torre CN en Toronto es la estructura independiente más alta del mundo. Una mujer en la plataforma de observación, a $1150\text{ ft}$ sobre el suelo, observa que el ángulo formado por las líneas de visión hacia dos puntos de referencia en el suelo es de $43^\circ$. También observa que el ángulo entre la vertical y la línea de visión a un punto es de $62^\circ$ y al otro es de $54^\circ$. Encuentre la distancia entre los dos puntos de referencia.</p>
+
+  <input type="radio" name="p13" id="p13a" value="incorrecta"> <label for="p13a">A) 1350.5 ft</label><br>
+  <input type="radio" name="p13" id="p13b" value="correcta"> <label for="p13b">B) 1530.1 ft</label><br>
+  <input type="radio" name="p13" id="p13c" value="incorrecta"> <label for="p13c">C) 1650.8 ft</label><br>
+  <input type="radio" name="p13" id="p13d" value="incorrecta"> <label for="p13d">D) 1420.4 ft</label><br><br>
+
+  <button onclick="verificarRespuesta('p13', 'feedback_p13')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p13" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo</summary>
+<p><strong>Teorema utilizado:</strong> Ley de Cosenos<br />
+<strong>Respuesta correcta:</strong> 1530.1 ft</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>

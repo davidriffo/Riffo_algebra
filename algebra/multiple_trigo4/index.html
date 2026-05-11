@@ -1,0 +1,1335 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de matemáticas y algebra.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../multiple_trigo3/">
+      
+      
+        <link rel="next" href="../multiple_trigo5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Funciones inversas - Riffo_Algebra</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ejercicios-de-seleccion-multiple-funciones-trigonometricas-inversas" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Riffo_Algebra" class="md-header__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Riffo_Algebra
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Funciones inversas
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Riffo_Algebra" class="md-nav__button md-logo" aria-label="Riffo_Algebra" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Riffo_Algebra
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometria 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Practica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Practica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Primer cuadrante y propiedades básicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecuaciones trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Identidades trigonometricas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones inversas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-evaluacion-de-expresiones-numericas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Evaluación de Expresiones Numéricas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-expresiones-algebraicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Expresiones Algebraicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multiple_trigo5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parte-i-evaluacion-de-expresiones-numericas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte I: Evaluación de Expresiones Numéricas
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#parte-ii-expresiones-algebraicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parte II: Expresiones Algebraicas
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ejercicios-de-seleccion-multiple-funciones-trigonometricas-inversas">Ejercicios de Selección Múltiple: Funciones Trigonométricas Inversas</h1>
+<p>Resuelve los siguientes ejercicios y luego verifica tu respuesta. Si tienes dudas, puedes desplegar el desarrollo paso a paso.</p>
+<hr />
+<h2 id="parte-i-evaluacion-de-expresiones-numericas">Parte I: Evaluación de Expresiones Numéricas</h2>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 1 (b)</legend>
+
+  <p>Calcule el valor exacto de: $\arccos\left(-\dfrac{1}{2}\right)$</p>
+
+  <input type="radio" name="p1" id="p1a" value="incorrecta"> <label for="p1a">A) $\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p1" id="p1b" value="incorrecta"> <label for="p1b">B) $-\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p1" id="p1c" value="correcta"> <label for="p1c">C) $\dfrac{2\pi}{3}$</label><br>
+  <input type="radio" name="p1" id="p1d" value="incorrecta"> <label for="p1d">D) $\dfrac{5\pi}{6}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p1', 'feedback_p1')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p1" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El rango de la función arcocoseno es <span class="arithmatex">\([0, \pi]\)</span>. El coseno es negativo en el segundo cuadrante. El ángulo base para el coseno de valor <span class="arithmatex">\(1/2\)</span> es <span class="arithmatex">\(\pi/3\)</span>. Por lo tanto, el ángulo cuyo coseno es <span class="arithmatex">\(-1/2\)</span> es <span class="arithmatex">\(\pi - \pi/3 = 2\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 2 (c)</legend>
+
+  <p>Calcule el valor exacto de: $\arctan\left(\sqrt{3}\right)$</p>
+
+  <input type="radio" name="p2" id="p2a" value="incorrecta"> <label for="p2a">A) $\dfrac{\pi}{6}$</label><br>
+  <input type="radio" name="p2" id="p2b" value="incorrecta"> <label for="p2b">B) $\dfrac{\pi}{4}$</label><br>
+  <input type="radio" name="p2" id="p2c" value="correcta"> <label for="p2c">C) $\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p2" id="p2d" value="incorrecta"> <label for="p2d">D) $\dfrac{\pi}{2}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p2', 'feedback_p2')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p2" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El rango de la función arcotangente es <span class="arithmatex">\((-\pi/2, \pi/2)\)</span>. Buscamos un ángulo en este intervalo cuya tangente sea <span class="arithmatex">\(\sqrt{3}\)</span>. Sabemos por los triángulos notables que la tangente vale <span class="arithmatex">\(\sqrt{3}\)</span> en el ángulo <span class="arithmatex">\(\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 3 (d)</legend>
+
+  <p>Calcule el valor exacto de: $\arcsin\left(-\dfrac{1}{2}\right)$</p>
+
+  <input type="radio" name="p3" id="p3a" value="incorrecta"> <label for="p3a">A) $\dfrac{11\pi}{6}$</label><br>
+  <input type="radio" name="p3" id="p3b" value="correcta"> <label for="p3b">B) $-\dfrac{\pi}{6}$</label><br>
+  <input type="radio" name="p3" id="p3c" value="incorrecta"> <label for="p3c">C) $-\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p3" id="p3d" value="incorrecta"> <label for="p3d">D) $\dfrac{7\pi}{6}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p3', 'feedback_p3')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p3" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>El rango de la función arcoseno es <span class="arithmatex">\([-\pi/2, \pi/2]\)</span>. Como el valor evaluado es negativo, el ángulo resultante estará en el cuarto cuadrante (y obligatoriamente debe ser representado en su forma negativa para entrar en el rango). El ángulo cuyo seno es <span class="arithmatex">\(-1/2\)</span> dentro de este intervalo es <span class="arithmatex">\(-\pi/6\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 4 (e)</legend>
+
+  <p>Calcule el valor de: $\arcsin\left(\dfrac{1}{2}\right) + \arctan\left(-\dfrac{\sqrt{3}}{3}\right) - \arccos\left(-\dfrac{\sqrt{2}}{2}\right)$</p>
+
+  <input type="radio" name="p4" id="p4a" value="correcta"> <label for="p4a">A) $-\dfrac{3\pi}{4}$</label><br>
+  <input type="radio" name="p4" id="p4b" value="incorrecta"> <label for="p4b">B) $\dfrac{\pi}{4}$</label><br>
+  <input type="radio" name="p4" id="p4c" value="incorrecta"> <label for="p4c">C) $-\dfrac{\pi}{2}$</label><br>
+  <input type="radio" name="p4" id="p4d" value="incorrecta"> <label for="p4d">D) $\dfrac{3\pi}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p4', 'feedback_p4')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p4" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Evaluamos término a término respetando rigurosamente los rangos principales de cada función:
+1) <span class="arithmatex">\(\arcsin(1/2) = \pi/6\)</span>.
+2) <span class="arithmatex">\(\arctan(-\sqrt{3}/3) = -\pi/6\)</span>.
+3) <span class="arithmatex">\(\arccos(-\sqrt{2}/2) = 3\pi/4\)</span>.</p>
+<p>Reemplazando en la expresión general tenemos: <span class="arithmatex">\(\frac{\pi}{6} + \left(-\frac{\pi}{6}\right) - \frac{3\pi}{4}\)</span>. 
+Los dos primeros términos se anulan, dejando como resultado final <span class="arithmatex">\(-3\pi/4\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 5 (f)</legend>
+
+  <p>Calcule el valor exacto de: $\sin\left(\arcsin\left(\dfrac{1}{4}\right)\right)$</p>
+
+  <input type="radio" name="p5" id="p5a" value="correcta"> <label for="p5a">A) $\dfrac{1}{4}$</label><br>
+  <input type="radio" name="p5" id="p5b" value="incorrecta"> <label for="p5b">B) $\dfrac{\sqrt{15}}{4}$</label><br>
+  <input type="radio" name="p5" id="p5c" value="incorrecta"> <label for="p5c">C) $-\dfrac{1}{4}$</label><br>
+  <input type="radio" name="p5" id="p5d" value="incorrecta"> <label for="p5d">D) No está definido</label><br><br>
+
+  <button onclick="verificarRespuesta('p5', 'feedback_p5')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p5" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Por las propiedades de la función inversa y su composición, sabemos que <span class="arithmatex">\(\sin(\arcsin(x)) = x\)</span> para todo valor de <span class="arithmatex">\(x\)</span> contenido en el intervalo <span class="arithmatex">\([-1, 1]\)</span>. Como el valor numérico <span class="arithmatex">\(1/4\)</span> pertenece plenamente a este intervalo de dominio válido, la simplificación es directa y el resultado es sencillamente <span class="arithmatex">\(1/4\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 6 (g)</legend>
+
+  <p>Calcule el valor exacto de: $\arccos\left(\cos\left(\dfrac{\pi}{3}\right)\right)$</p>
+
+  <input type="radio" name="p6" id="p6a" value="incorrecta"> <label for="p6a">A) $-\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p6" id="p6b" value="incorrecta"> <label for="p6b">B) $\dfrac{2\pi}{3}$</label><br>
+  <input type="radio" name="p6" id="p6c" value="correcta"> <label for="p6c">C) $\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p6" id="p6d" value="incorrecta"> <label for="p6d">D) $\dfrac{\pi}{6}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p6', 'feedback_p6')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p6" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Por las propiedades de composición inversa, se cumple que <span class="arithmatex">\(\arccos(\cos(x)) = x\)</span> si y solo si el ángulo <span class="arithmatex">\(x\)</span> está dentro del rango principal de la función arcocoseno, que es <span class="arithmatex">\([0, \pi]\)</span>. Dado que el ángulo <span class="arithmatex">\(\pi/3\)</span> pertenece sin problemas al intervalo <span class="arithmatex">\([0, \pi]\)</span>, la identidad se aplica de forma directa y el resultado de la expresión compuesta es <span class="arithmatex">\(\pi/3\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 7 (i)</legend>
+
+  <p>Calcule el valor exacto de: $\arccos\left(\cos\left(-\dfrac{\pi}{4}\right)\right)$</p>
+
+  <input type="radio" name="p7" id="p7a" value="incorrecta"> <label for="p7a">A) $-\dfrac{\pi}{4}$</label><br>
+  <input type="radio" name="p7" id="p7b" value="correcta"> <label for="p7b">B) $\dfrac{\pi}{4}$</label><br>
+  <input type="radio" name="p7" id="p7c" value="incorrecta"> <label for="p7c">C) $\dfrac{3\pi}{4}$</label><br>
+  <input type="radio" name="p7" id="p7d" value="incorrecta"> <label for="p7d">D) $\dfrac{5\pi}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p7', 'feedback_p7')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p7" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Tengamos extremo cuidado aquí: el ángulo <span class="arithmatex">\(-\pi/4\)</span> NO pertenece al rango del arcocoseno que es <span class="arithmatex">\([0, \pi]\)</span>. Por ende, no podemos cancelar las funciones directamente. Procedemos evaluando primero la parte interna: <span class="arithmatex">\(\cos(-\pi/4) = \sqrt{2}/2\)</span>. Ahora que tenemos un valor numérico, evaluamos la expresión externa y buscamos <span class="arithmatex">\(\arccos(\sqrt{2}/2)\)</span>. El ángulo equivalente en el rango estricto <span class="arithmatex">\([0, \pi]\)</span> cuyo coseno corresponde a este valor es <span class="arithmatex">\(\pi/4\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 8 (j)</legend>
+
+  <p>Calcule el valor exacto de: $\tan\left(\arcsin\left(-\dfrac{\sqrt{3}}{2}\right)\right)$</p>
+
+  <input type="radio" name="p8" id="p8a" value="incorrecta"> <label for="p8a">A) $\dfrac{\sqrt{3}}{3}$</label><br>
+  <input type="radio" name="p8" id="p8b" value="incorrecta"> <label for="p8b">B) $-\dfrac{\sqrt{3}}{3}$</label><br>
+  <input type="radio" name="p8" id="p8c" value="incorrecta"> <label for="p8c">C) $\sqrt{3}$</label><br>
+  <input type="radio" name="p8" id="p8d" value="correcta"> <label for="p8d">D) $-\sqrt{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p8', 'feedback_p8')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p8" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Evaluamos el bloque interno para hallar el ángulo: <span class="arithmatex">\(\theta = \arcsin(-\sqrt{3}/2)\)</span>. Esto corresponde a <span class="arithmatex">\(-\pi/3\)</span> en el cuarto cuadrante. Teniendo claro que el argumento es <span class="arithmatex">\(-\pi/3\)</span>, ahora procedemos a aplicar la función exterior de la composición, es decir, calculamos su tangente: <span class="arithmatex">\(\tan(-\pi/3) = -\sqrt{3}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 9 (k)</legend>
+
+  <p>Calcule el valor exacto de: $\arccos\left(\sqrt{3}\sin\left(\dfrac{\pi}{6}\right)\right)$</p>
+
+  <input type="radio" name="p9" id="p9a" value="incorrecta"> <label for="p9a">A) $\dfrac{\pi}{3}$</label><br>
+  <input type="radio" name="p9" id="p9b" value="correcta"> <label for="p9b">B) $\dfrac{\pi}{6}$</label><br>
+  <input type="radio" name="p9" id="p9c" value="incorrecta"> <label for="p9c">C) $\dfrac{5\pi}{6}$</label><br>
+  <input type="radio" name="p9" id="p9d" value="incorrecta"> <label for="p9d">D) $\dfrac{2\pi}{3}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p9', 'feedback_p9')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p9" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Primero calculamos y reemplazamos el valor exacto de la función trigonométrica más interna: <span class="arithmatex">\(\sin(\pi/6) = 1/2\)</span>. Al sustituir este resultado parcial en la expresión general, nos queda el bloque de evaluación: <span class="arithmatex">\(\arccos(\sqrt{3} \cdot 1/2) = \arccos(\sqrt{3}/2)\)</span>. Al preguntarnos qué ángulo en el dominio principal <span class="arithmatex">\([0, \pi]\)</span> posee este valor para su coseno, hallamos que la respuesta es <span class="arithmatex">\(\pi/6\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 10 (l)</legend>
+
+  <p>Calcule el valor exacto de: $\sec(\arcsin(12/13))$</p>
+
+  <input type="radio" name="p10" id="p10a" value="incorrecta"> <label for="p10a">A) $\dfrac{13}{12}$</label><br>
+  <input type="radio" name="p10" id="p10b" value="incorrecta"> <label for="p10b">B) $\dfrac{5}{13}$</label><br>
+  <input type="radio" name="p10" id="p10c" value="correcta"> <label for="p10c">C) $\dfrac{13}{5}$</label><br>
+  <input type="radio" name="p10" id="p10d" value="incorrecta"> <label for="p10d">D) $\dfrac{12}{5}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p10', 'feedback_p10')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p10" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Sea el ángulo <span class="arithmatex">\(\theta = \arcsin(12/13)\)</span>. Esto nos indica que <span class="arithmatex">\(\sin \theta = 12/13\)</span> y que <span class="arithmatex">\(\theta\)</span> pertenece al primer cuadrante, al ser un valor positivo. Construimos mentalmente un triángulo rectángulo de referencia donde el cateto opuesto vale <span class="arithmatex">\(12\)</span> y la hipotenusa <span class="arithmatex">\(13\)</span>. Usando el Teorema de Pitágoras, determinamos que el cateto adyacente es <span class="arithmatex">\(\sqrt{13^2 - 12^2} = \sqrt{169 - 144} = \sqrt{25} = 5\)</span>. Por último, aplicamos la definición de la secante que buscábamos (hipotenusa sobre cateto adyacente), con lo cual <span class="arithmatex">\(\sec \theta = 13/5\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 11 (m)</legend>
+
+  <p>Calcule el valor exacto de: $\sin(\arccos(3/5))$</p>
+
+  <input type="radio" name="p11" id="p11a" value="incorrecta"> <label for="p11a">A) $\dfrac{3}{4}$</label><br>
+  <input type="radio" name="p11" id="p11b" value="correcta"> <label for="p11b">B) $\dfrac{4}{5}$</label><br>
+  <input type="radio" name="p11" id="p11c" value="incorrecta"> <label for="p11c">C) $-\dfrac{4}{5}$</label><br>
+  <input type="radio" name="p11" id="p11d" value="incorrecta"> <label for="p11d">D) $\dfrac{5}{4}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p11', 'feedback_p11')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p11" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Denotemos el argumento con la variable <span class="arithmatex">\(\theta = \arccos(3/5)\)</span>. A partir de aquí afirmamos que <span class="arithmatex">\(\cos \theta = 3/5\)</span> y que el ángulo recae en el primer cuadrante. En el modelado de un triángulo rectángulo de referencia acorde a este dato, dispondremos que el cateto adyacente es <span class="arithmatex">\(= 3\)</span> y la hipotenusa <span class="arithmatex">\(= 5\)</span>. Evaluando pitagóricamente, el cateto opuesto será <span class="arithmatex">\(\sqrt{5^2 - 3^2} = \sqrt{16} = 4\)</span>. Nos exigen hallar <span class="arithmatex">\(\sin \theta\)</span>, que sabemos equivale a cateto opuesto entre hipotenusa: de forma simple obtenemos el resultado <span class="arithmatex">\(4/5\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 12 (n)</legend>
+
+  <p>Calcule el valor exacto de: $\tan(\arcsin(1/2))$</p>
+
+  <input type="radio" name="p12" id="p12a" value="incorrecta"> <label for="p12a">A) $\sqrt{3}$</label><br>
+  <input type="radio" name="p12" id="p12b" value="correcta"> <label for="p12b">B) $\dfrac{\sqrt{3}}{3}$</label><br>
+  <input type="radio" name="p12" id="p12c" value="incorrecta"> <label for="p12c">C) $\dfrac{\sqrt{3}}{2}$</label><br>
+  <input type="radio" name="p12" id="p12d" value="incorrecta"> <label for="p12d">D) $1$</label><br><br>
+
+  <button onclick="verificarRespuesta('p12', 'feedback_p12')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p12" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Como la expresión es manejable sin apoyo geométrico complejo, se puede conocer primero el ángulo de forma directa: <span class="arithmatex">\(\theta = \arcsin(1/2) = \pi/6\)</span>. Acto seguido, nos disponemos a calcular <span class="arithmatex">\(\tan(\pi/6) = 1/\sqrt{3} = \sqrt{3}/3\)</span>. Alternativamente, si construyes un triángulo rectángulo, fijas el cateto opuesto <span class="arithmatex">\(= 1\)</span> y la hipotenusa <span class="arithmatex">\(= 2\)</span>, lo cual revela un cateto adyacente igual a <span class="arithmatex">\(\sqrt{3}\)</span>. Entonces <span class="arithmatex">\(\tan \theta = \frac{1}{\sqrt{3}} = \frac{\sqrt{3}}{3}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 13 (o)</legend>
+
+  <p>Calcule el valor exacto de: $\tan(2\arctan(5/13))$</p>
+
+  <input type="radio" name="p13" id="p13a" value="incorrecta"> <label for="p13a">A) $\dfrac{10}{13}$</label><br>
+  <input type="radio" name="p13" id="p13b" value="correcta"> <label for="p13b">B) $\dfrac{65}{72}$</label><br>
+  <input type="radio" name="p13" id="p13c" value="incorrecta"> <label for="p13c">C) $\dfrac{130}{144}$</label><br>
+  <input type="radio" name="p13" id="p13d" value="incorrecta"> <label for="p13d">D) $\dfrac{120}{169}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p13', 'feedback_p13')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p13" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Nombramos <span class="arithmatex">\(\theta = \arctan(5/13)\)</span>, por ende se deduce que <span class="arithmatex">\(\tan \theta = 5/13\)</span>. El propósito que tenemos en frente es calcular una composición de tipo <span class="arithmatex">\(\tan(2\theta)\)</span>. Acudimos de forma natural a la fórmula de ángulo doble para tangente: <span class="arithmatex">\(\tan(2\theta) = \frac{2\tan \theta}{1 - \tan^2 \theta} = \frac{2(5/13)}{1 - (5/13)^2} = \frac{10/13}{1 - 25/169} = \frac{10/13}{(169-25)/169} = \frac{10/13}{144/169} = \frac{10}{13} \cdot \frac{169}{144} = \frac{1690}{1872}\)</span>. Después de simplificar meticulosamente la fracción (dividiendo tanto numerador como denominador por el factor común 26), obtenemos satisfactoriamente la versión irreducible <span class="arithmatex">\(65/72\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 14 (p)</legend>
+
+  <p>Calcule el valor exacto de: $\cos(\arcsin(3/5) - \arccos(3/5))$</p>
+
+  <input type="radio" name="p14" id="p14a" value="correcta"> <label for="p14a">A) $\dfrac{24}{25}$</label><br>
+  <input type="radio" name="p14" id="p14b" value="incorrecta"> <label for="p14b">B) $\dfrac{7}{25}$</label><br>
+  <input type="radio" name="p14" id="p14c" value="incorrecta"> <label for="p14c">C) $0$</label><br>
+  <input type="radio" name="p14" id="p14d" value="incorrecta"> <label for="p14d">D) $1$</label><br><br>
+
+  <button onclick="verificarRespuesta('p14', 'feedback_p14')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p14" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Sea <span class="arithmatex">\(A = \arcsin(3/5)\)</span> y <span class="arithmatex">\(B = \arccos(3/5)\)</span>. A través del estudio de identidades de cofunciones, sabemos con firmeza matemática que la suma de inversos <span class="arithmatex">\(\arcsin(x) + \arccos(x) = \pi/2\)</span> (para un mismo valor de x), y gracias a esto <span class="arithmatex">\(B = \pi/2 - A\)</span>. Nos requieren calcular la expresión <span class="arithmatex">\(\cos(A - B) = \cos(A - (\pi/2 - A)) = \cos(2A - \pi/2)\)</span>. Sustentados en la paridad par de la función coseno, esta manipulación nos da vía libre a escribirla como <span class="arithmatex">\(\cos(\pi/2 - 2A) = \sin(2A)\)</span>. Hacemos un llamado a la herramienta trigonométrica de fórmula del seno de ángulo doble: <span class="arithmatex">\(\sin(2A) = 2 \sin A \cos A\)</span>. Del primer ángulo propuesto sabemos al instante que <span class="arithmatex">\(\sin A = 3/5\)</span> y por el Teorema de Pitágoras extraemos el adyacente dando <span class="arithmatex">\(\cos A = 4/5\)</span>. Finalmente: <span class="arithmatex">\(2(3/5)(4/5) = 24/25\)</span>.</p>
+</details>
+<hr />
+<h2 id="parte-ii-expresiones-algebraicas">Parte II: Expresiones Algebraicas</h2>
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 15 17(a)</legend>
+
+  <p>Determine una expresión algebraica simplificada para: $\cos(\arcsin(x))$</p>
+
+  <input type="radio" name="p15" id="p15a" value="incorrecta"> <label for="p15a">A) $x$</label><br>
+  <input type="radio" name="p15" id="p15b" value="incorrecta"> <label for="p15b">B) $\dfrac{1}{x}$</label><br>
+  <input type="radio" name="p15" id="p15c" value="correcta"> <label for="p15c">C) $\sqrt{1-x^2}$</label><br>
+  <input type="radio" name="p15" id="p15d" value="incorrecta"> <label for="p15d">D) $\dfrac{x}{\sqrt{1-x^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p15', 'feedback_p15')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p15" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Partimos planteando que <span class="arithmatex">\(\theta = \arcsin(x)\)</span>, premisa desde la cual se asume formalmente <span class="arithmatex">\(\sin \theta = x\)</span>. Acudimos a la técnica estándar y graficamos mentalmente un triángulo rectángulo empleando el cociente: ubicamos una hipotenusa valiendo <span class="arithmatex">\(1\)</span> y a su vez un cateto opuesto de valor <span class="arithmatex">\(x\)</span>. Al introducir estas longitudes en el célebre Teorema de Pitágoras, desvelamos que el cateto adyacente recae en la expresión <span class="arithmatex">\(\sqrt{1 - x^2}\)</span>. Finalmente, y resolviendo lo planteado, armamos la equivalencia del cálculo solicitado como el coseno: <span class="arithmatex">\(\cos \theta = \frac{\text{adyacente}}{\text{hipotenusa}} = \frac{\sqrt{1 - x^2}}{1} = \sqrt{1 - x^2}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 16 17(b)</legend>
+
+  <p>Determine una expresión algebraica simplificada para: $\sin(\arctan(x))$</p>
+
+  <input type="radio" name="p16" id="p16a" value="correcta"> <label for="p16a">A) $\dfrac{x}{\sqrt{1+x^2}}$</label><br>
+  <input type="radio" name="p16" id="p16b" value="incorrecta"> <label for="p16b">B) $\dfrac{1}{\sqrt{1+x^2}}$</label><br>
+  <input type="radio" name="p16" id="p16c" value="incorrecta"> <label for="p16c">C) $x\sqrt{1+x^2}$</label><br>
+  <input type="radio" name="p16" id="p16d" value="incorrecta"> <label for="p16d">D) $\dfrac{\sqrt{1+x^2}}{x}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p16', 'feedback_p16')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p16" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Iniciemos rotulando al ángulo interior: <span class="arithmatex">\(\theta = \arctan(x)\)</span>, por consiguiente se materializa la igualdad de <span class="arithmatex">\(\tan \theta = x\)</span>. Dando paso al clásico abordaje geométrico, trazamos un triángulo rectángulo asignándole al cateto opuesto el parámetro algebraico <span class="arithmatex">\(x\)</span> y al cateto adyacente el valor <span class="arithmatex">\(1\)</span>. El Teorema de Pitágoras interviene y dictamina para nuestra hipotenusa un valor final de <span class="arithmatex">\(\sqrt{1 + x^2}\)</span>. Concluiremos satisfactoriamente sabiendo que el seno que deseamos calcular responde fielmente al cociente de opuesto sobre hipotenusa: y por ende tenemos <span class="arithmatex">\(\sin \theta = \frac{x}{\sqrt{1+x^2}}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 17 17(c)</legend>
+
+  <p>Determine una expresión algebraica simplificada para: $\sin(2\arcsin(x))$</p>
+
+  <input type="radio" name="p17" id="p17a" value="incorrecta"> <label for="p17a">A) $2x$</label><br>
+  <input type="radio" name="p17" id="p17b" value="correcta"> <label for="p17b">B) $2x\sqrt{1-x^2}$</label><br>
+  <input type="radio" name="p17" id="p17c" value="incorrecta"> <label for="p17c">C) $1-2x^2$</label><br>
+  <input type="radio" name="p17" id="p17d" value="incorrecta"> <label for="p17d">D) $\dfrac{2x}{\sqrt{1-x^2}}$</label><br><br>
+
+  <button onclick="verificarRespuesta('p17', 'feedback_p17')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p17" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Consideremos nombrar al bloque inicial del ángulo: <span class="arithmatex">\(\theta = \arcsin(x)\)</span>, bajo cuya deducción afirmamos sin dudar que <span class="arithmatex">\(\sin \theta = x\)</span> y asimismo, al aplicar rigurosamente la identidad pitagórica deducimos de la misma que <span class="arithmatex">\(\cos \theta = \sqrt{1-x^2}\)</span>. El objetivo nos exige resolver la composición <span class="arithmatex">\(\sin(2\theta)\)</span>. Realizando el necesario despliegue según la fórmula canónica de un ángulo doble en la función seno, tendremos: <span class="arithmatex">\(\sin(2\theta) = 2 \sin \theta \cos \theta = 2x\sqrt{1-x^2}\)</span>.</p>
+</details>
+<hr />
+<fieldset style="border: 1px solid #e0e0e0; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+  <legend style="font-weight: bold; color: #3f51b5;">Pregunta 18 17(d)</legend>
+
+  <p>Determine una expresión algebraica simplificada para: $\sin(\arctan(x) - \arcsin(x))$</p>
+
+  <input type="radio" name="p18" id="p18a" value="incorrecta"> <label for="p18a">A) $\dfrac{x\sqrt{1-x^2} - 1}{\sqrt{1+x^2}}$</label><br>
+  <input type="radio" name="p18" id="p18b" value="correcta"> <label for="p18b">B) $\dfrac{x(\sqrt{1-x^2} - 1)}{\sqrt{1+x^2}}$</label><br>
+  <input type="radio" name="p18" id="p18c" value="incorrecta"> <label for="p18c">C) $\dfrac{\sqrt{1-x^2} - x}{\sqrt{1+x^2}}$</label><br>
+  <input type="radio" name="p18" id="p18d" value="incorrecta"> <label for="p18d">D) $0$</label><br><br>
+
+  <button onclick="verificarRespuesta('p18', 'feedback_p18')" style="background-color: #3f51b5; color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer;">Verificar</button>
+  <div id="feedback_p18" style="margin-top: 15px; font-weight: bold;"></div>
+</fieldset>
+
+<details class="info">
+<summary>Ver desarrollo paso a paso</summary>
+<p>Para poder dominar esta resta debemos estructurarla asumiendo dos partes; así, sean los ángulos de estudio <span class="arithmatex">\(A = \arctan(x)\)</span> y por su contraparte se tenga <span class="arithmatex">\(B = \arcsin(x)\)</span>. Usamos la archiconocida fórmula trigonométrica que reza: <span class="arithmatex">\(\sin(A - B) = \sin A \cos B - \cos A \sin B\)</span>.<br>Iniciando con los aportes del ángulo <span class="arithmatex">\(A\)</span>: mediante nuestro triángulo sabemos opuesto <span class="arithmatex">\(x\)</span>, adyacente <span class="arithmatex">\(1\)</span>, y lógicamente su hip <span class="arithmatex">\(\sqrt{1+x^2} \implies \sin A = \frac{x}{\sqrt{1+x^2}}\)</span> e igualmente <span class="arithmatex">\(\cos A = \frac{1}{\sqrt{1+x^2}}\)</span>.<br>Prosiguiendo con el análisis del segundo bloque <span class="arithmatex">\(B\)</span>: es dato primario que <span class="arithmatex">\(\sin B = x \implies\)</span> por extensión el adyacente nos indica que <span class="arithmatex">\(\cos B = \sqrt{1-x^2}\)</span>.<br>Terminamos sustituyendo de forma ordenada la información recabada: <span class="arithmatex">\(\left(\frac{x}{\sqrt{1+x^2}}\right)(\sqrt{1-x^2}) - \left(\frac{1}{\sqrt{1+x^2}}\right)(x) = \frac{x\sqrt{1-x^2} - x}{\sqrt{1+x^2}} = \frac{x(\sqrt{1-x^2} - 1)}{\sqrt{1+x^2}}\)</span>.</p>
+</details>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>
