@@ -1,0 +1,1946 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Material de apoyo, guías y problemas de  álgebra y álgebra lineal.">
+      
+      
+        <meta name="author" content="José David Torres Riffo">
+      
+      
+      
+        <link rel="prev" href="../problemas_bloque_3_web/">
+      
+      
+        <link rel="next" href="../problemas_bloque_5_web/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Definición de determinante - MateRiffo</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#determinantes-definicion-y-calculo-por-cofactores" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="MateRiffo" class="md-header__button md-logo" aria-label="MateRiffo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            MateRiffo
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Definición de determinante
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Cambiar a modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="deep-orange"  aria-label="Cambiar a modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Cambiar a modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MateRiffo" class="md-nav__button md-logo" aria-label="MateRiffo" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    MateRiffo
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Álgebra
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Álgebra
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sumatorias_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sumatorias dobles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../productorias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Productorias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../binomio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teorema del binomio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Trigonometría
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Trigonometría
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 4
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 5
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trigonometria_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Trigonometría 6
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Módulo de Determinantes y matrices elementales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Módulo de Determinantes y matrices elementales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas_bloque_1_web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matrices elementales
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas_bloque_2_web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Matriz inversa
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas_bloque_3_web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Factorización A=LU
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definición de determinante
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Definición de determinante
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mecanica-de-cofactores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mecánica de cofactores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mecánica de cofactores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cof-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matrices-con-estructura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matrices con estructura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matrices con estructura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#est-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-por-cofactores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades por cofactores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades por cofactores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pro-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pro-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 13
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apl-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apl-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 15
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problemas_bloque_5_web/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Propiedades del determinante
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mecanica-de-cofactores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mecánica de cofactores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mecánica de cofactores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cof-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cof-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#matrices-con-estructura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Matrices con estructura
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Matrices con estructura">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#est-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-03" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-04" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 8
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-05" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 9
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-06" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 10
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#est-07" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 11
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#propiedades-por-cofactores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Propiedades por cofactores
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propiedades por cofactores">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pro-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 12
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pro-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 13
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aplicaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Aplicaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplicaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apl-01" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 14
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apl-02" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 15
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="determinantes-definicion-y-calculo-por-cofactores">Determinantes: definición y cálculo por cofactores</h1>
+<p>Colección de 15 problemas sobre la <strong>definición recursiva del determinante</strong> y su cálculo por <strong>desarrollo de cofactores</strong>. Todo se resuelve con las herramientas de esta sección: la definición, el desarrollo por cualquier fila o columna y el cálculo para matrices triangulares. Todavía <strong>no</strong> se usan operaciones de fila, <span class="arithmatex">\(\det(AB)\)</span> ni la relación con la invertibilidad.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Resultados fundamentales</p>
+<table>
+<thead>
+<tr>
+<th>Resultado</th>
+<th>Enunciado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Submatriz</strong> <span class="arithmatex">\(A_{ij}\)</span></td>
+<td>La matriz <span class="arithmatex">\((n-1)\times(n-1)\)</span> que queda al borrar la fila <span class="arithmatex">\(i\)</span> y la columna <span class="arithmatex">\(j\)</span> de <span class="arithmatex">\(A\)</span>.</td>
+</tr>
+<tr>
+<td><strong>Cofactor</strong> <span class="arithmatex">\(C_{ij}\)</span></td>
+<td><span class="arithmatex">\(C_{ij}=(-1)^{i+j}\det A_{ij}\)</span>.</td>
+</tr>
+<tr>
+<td><strong>Caso <span class="arithmatex">\(2\times 2\)</span></strong></td>
+<td><span class="arithmatex">\(\det\begin{pmatrix}a&amp;b\\c&amp;d\end{pmatrix}=ad-bc\)</span>.</td>
+</tr>
+<tr>
+<td><strong>Teorema 1</strong></td>
+<td>Se puede desarrollar por <strong>cualquier</strong> fila <span class="arithmatex">\(i\)</span> o columna <span class="arithmatex">\(j\)</span>: <span class="arithmatex">\(\det A=\sum_{j=1}^n a_{ij}C_{ij}=\sum_{i=1}^n a_{ij}C_{ij}\)</span>.</td>
+</tr>
+<tr>
+<td><strong>Teorema 2</strong></td>
+<td>Si <span class="arithmatex">\(A\)</span> es triangular, <span class="arithmatex">\(\det A\)</span> es el producto de los elementos de la diagonal. Si <span class="arithmatex">\(A\)</span> tiene una fila o columna de ceros, <span class="arithmatex">\(\det A=0\)</span>.</td>
+</tr>
+<tr>
+<td><strong>Tablero de signos</strong></td>
+<td>El signo <span class="arithmatex">\((-1)^{i+j}\)</span> alterna como un tablero de ajedrez, empezando con <span class="arithmatex">\(+\)</span> en la esquina superior izquierda.</td>
+</tr>
+</tbody>
+</table>
+<p>Para <span class="arithmatex">\(4\times 4\)</span>:</p>
+<div class="arithmatex">\[\begin{pmatrix}+&amp;-&amp;+&amp;-\\-&amp;+&amp;-&amp;+\\+&amp;-&amp;+&amp;-\\-&amp;+&amp;-&amp;+\end{pmatrix}\]</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Las tres trampas de esta sección</p>
+<ol>
+<li><strong>El signo depende de la posición, no del valor.</strong> El factor <span class="arithmatex">\((-1)^{i+j}\)</span> se fija con <span class="arithmatex">\((i,j)\)</span>; un elemento negativo no cambia el signo del tablero, simplemente se multiplica.</li>
+<li><strong>Elementos de una fila con cofactores de otra no dan el determinante.</strong> <span class="arithmatex">\(\sum_j a_{kj}C_{ij}\)</span> con <span class="arithmatex">\(k\neq i\)</span> vale <span class="arithmatex">\(0\)</span>, no <span class="arithmatex">\(\det A\)</span>.</li>
+<li><strong>"Producto de la diagonal" solo vale para matrices triangulares.</strong> En una matriz cualquiera ese producto no tiene relación con el determinante.</li>
+</ol>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Un aviso sobre el costo</p>
+<p>El desarrollo por cofactores es excelente para matrices pequeñas o con muchos ceros, pero es <strong>desastroso</strong> para matrices grandes sin estructura (Problema 15). Conviene elegir siempre la fila o columna con más ceros.</p>
+</div>
+<hr />
+<h2 id="mecanica-de-cofactores">Mecánica de cofactores</h2>
+<h3 id="cof-01">Problema 1</h3>
+<p>Sea</p>
+<div class="arithmatex">\[A=\begin{pmatrix}1&amp;0&amp;2&amp;-1\\3&amp;1&amp;0&amp;2\\0&amp;2&amp;1&amp;0\\2&amp;0&amp;-1&amp;4\end{pmatrix}.\]</div>
+<ol>
+<li>Escriba las submatrices <span class="arithmatex">\(A_{23}\)</span> y <span class="arithmatex">\(A_{41}\)</span> y calcule los cofactores <span class="arithmatex">\(C_{23}\)</span> y <span class="arithmatex">\(C_{41}\)</span>.</li>
+<li>Calcule <span class="arithmatex">\(\det A\)</span> desarrollando por la columna <span class="arithmatex">\(2\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Para <span class="arithmatex">\(A_{23}\)</span> se borra la fila <span class="arithmatex">\(2\)</span> y la columna <span class="arithmatex">\(3\)</span>:</p>
+<div class="arithmatex">\[A_{23}=\begin{pmatrix}1&amp;0&amp;-1\\0&amp;2&amp;0\\2&amp;0&amp;4\end{pmatrix}.\]</div>
+<p>Desarrollando por la fila <span class="arithmatex">\(2\)</span> (solo el <span class="arithmatex">\(2\)</span> del centro es distinto de cero, signo <span class="arithmatex">\(+\)</span>):
+<span class="arithmatex">\(\det A_{23}=2\,(1\cdot 4-(-1)\cdot 2)=2\cdot 6=12\)</span>. Como <span class="arithmatex">\(2+3=5\)</span> es impar,</p>
+<div class="arithmatex">\[C_{23}=(-1)^{5}\cdot 12=-12.\]</div>
+<p>Para <span class="arithmatex">\(A_{41}\)</span> se borra la fila <span class="arithmatex">\(4\)</span> y la columna <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[A_{41}=\begin{pmatrix}0&amp;2&amp;-1\\1&amp;0&amp;2\\2&amp;1&amp;0\end{pmatrix},\]</div>
+<div class="arithmatex">\[\det A_{41}=0\,(0-2)-2\,(0-4)+(-1)(1-0)=8-1=7.\]</div>
+<p>Como <span class="arithmatex">\(4+1=5\)</span> es impar, <span class="arithmatex">\(C_{41}=-7\)</span>.</p>
+<p><strong>Parte 2.</strong> La columna <span class="arithmatex">\(2\)</span> es <span class="arithmatex">\((0,1,2,0)^T\)</span>: solo hacen falta <span class="arithmatex">\(C_{22}\)</span> y <span class="arithmatex">\(C_{32}\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\(A_{22}=\begin{pmatrix}1&amp;2&amp;-1\\0&amp;1&amp;0\\2&amp;-1&amp;4\end{pmatrix}\)</span>. Por la fila <span class="arithmatex">\(2\)</span>: <span class="arithmatex">\(\det A_{22}=1\,(4+2)=6\)</span> y <span class="arithmatex">\(C_{22}=+6\)</span>.</li>
+<li><span class="arithmatex">\(A_{32}=\begin{pmatrix}1&amp;2&amp;-1\\3&amp;0&amp;2\\2&amp;-1&amp;4\end{pmatrix}\)</span>. Por la fila <span class="arithmatex">\(1\)</span>: <span class="arithmatex">\(\det A_{32}=1\,(0+2)-2\,(12-4)+(-1)(-3-0)=2-16+3=-11\)</span> y <span class="arithmatex">\(C_{32}=(-1)^{5}(-11)=+11\)</span>.</li>
+</ul>
+<div class="arithmatex">\[\det A=0\cdot C_{12}+1\cdot 6+2\cdot 11+0\cdot C_{42}=28.\]</div>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $C_{23}=-12$ y $C_{41}=-7$.
+2. $\det A=28$.
+</code></pre>
+<p>!!! tip "Elegir bien la línea"</p>
+<pre><code>Los ceros de la columna $2$ ahorraron dos submatrices $3\times 3$ completas. Antes de desarrollar, mire siempre qué fila o columna tiene más ceros.
+</code></pre>
+<hr />
+<h3 id="cof-02">Problema 2</h3>
+<ol>
+<li>Desarrolle por la primera fila el determinante de <span class="arithmatex">\(\begin{pmatrix}a&amp;b&amp;c\\d&amp;e&amp;f\\g&amp;h&amp;i\end{pmatrix}\)</span> y demuestre que</li>
+</ol>
+<div class="arithmatex">\[\det=aei+bfg+cdh-ceg-bdi-afh.\]</div>
+<ol>
+<li>Calcule con esa fórmula <span class="arithmatex">\(\det\begin{pmatrix}3&amp;-1&amp;2\\1&amp;4&amp;-2\\2&amp;0&amp;5\end{pmatrix}\)</span> y compruebe el resultado desarrollando por la fila <span class="arithmatex">\(3\)</span>.</li>
+<li>¿Se extiende esta regla de "seis términos" a matrices <span class="arithmatex">\(4\times 4\)</span>?</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong></p>
+<div class="arithmatex">\[\det=a(ei-fh)-b(di-fg)+c(dh-eg)=aei-afh-bdi+bfg+cdh-ceg,\]</div>
+<p>que reordenado es la fórmula pedida: tres términos positivos (las "diagonales") y tres negativos.</p>
+<p><strong>Parte 2.</strong> Términos positivos: <span class="arithmatex">\(aei=3\cdot4\cdot5=60\)</span>, <span class="arithmatex">\(bfg=(-1)(-2)(2)=4\)</span>, <span class="arithmatex">\(cdh=2\cdot1\cdot0=0\)</span>. Términos negativos: <span class="arithmatex">\(ceg=2\cdot4\cdot2=16\)</span>, <span class="arithmatex">\(bdi=(-1)(1)(5)=-5\)</span>, <span class="arithmatex">\(afh=0\)</span>. Entonces</p>
+<div class="arithmatex">\[\det=(60+4+0)-(16-5+0)=64-11=53.\]</div>
+<p>Comprobación por la fila <span class="arithmatex">\(3\)</span>, que es <span class="arithmatex">\((2,0,5)\)</span>:</p>
+<div class="arithmatex">\[\det=2\cdot(+1)\det\begin{pmatrix}-1&amp;2\\4&amp;-2\end{pmatrix}+5\cdot(+1)\det\begin{pmatrix}3&amp;-1\\1&amp;4\end{pmatrix}=2\,(2-8)+5\,(12+1)=-12+65=53.\]</div>
+<p><strong>Parte 3.</strong> No. Un determinante <span class="arithmatex">\(4\times 4\)</span> tiene <span class="arithmatex">\(4!=24\)</span> términos, y no se obtiene "sumando diagonales". La regla de Sarrus es solo para <span class="arithmatex">\(3\times 3\)</span>; para tamaños mayores hay que usar cofactores.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. Se obtiene la fórmula de seis términos.
+2. $\det=53$ por ambos caminos.
+3. No; Sarrus solo vale para $3\times 3$.
+</code></pre>
+<hr />
+<h3 id="cof-03">Problema 3</h3>
+<p>Sea <span class="arithmatex">\(A=\begin{pmatrix}1&amp;2&amp;-1\\0&amp;3&amp;4\\2&amp;1&amp;5\end{pmatrix}\)</span>.</p>
+<ol>
+<li>Calcule los cofactores <span class="arithmatex">\(C_{21},C_{22},C_{23}\)</span> de la fila <span class="arithmatex">\(2\)</span>.</li>
+<li>Calcule <span class="arithmatex">\(\sum_j a_{2j}C_{2j}\)</span> y <span class="arithmatex">\(\sum_j a_{1j}C_{2j}\)</span>. ¿Qué observa?</li>
+<li>Demuestre que para <strong>cualquier</strong> matriz <span class="arithmatex">\(3\times 3\)</span> se cumple <span class="arithmatex">\(\sum_{j=1}^3 a_{1j}C_{2j}=0\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong></p>
+<ul>
+<li><span class="arithmatex">\(C_{21}=-\det\begin{pmatrix}2&amp;-1\\1&amp;5\end{pmatrix}=-(10+1)=-11\)</span>.</li>
+<li><span class="arithmatex">\(C_{22}=+\det\begin{pmatrix}1&amp;-1\\2&amp;5\end{pmatrix}=5+2=7\)</span>.</li>
+<li><span class="arithmatex">\(C_{23}=-\det\begin{pmatrix}1&amp;2\\2&amp;1\end{pmatrix}=-(1-4)=3\)</span>.</li>
+</ul>
+<p><strong>Parte 2.</strong> Con los elementos de la fila <span class="arithmatex">\(2\)</span>, que es <span class="arithmatex">\((0,3,4)\)</span>:</p>
+<div class="arithmatex">\[0\cdot(-11)+3\cdot 7+4\cdot 3=33=\det A.\]</div>
+<p>Con los elementos de la fila <span class="arithmatex">\(1\)</span>, que es <span class="arithmatex">\((1,2,-1)\)</span>:</p>
+<div class="arithmatex">\[1\cdot(-11)+2\cdot 7+(-1)\cdot 3=-11+14-3=0.\]</div>
+<p>Los elementos de una fila combinados con los cofactores de <strong>otra</strong> dan <span class="arithmatex">\(0\)</span>.</p>
+<p><strong>Parte 3.</strong> Para una matriz general <span class="arithmatex">\((a_{ij})\)</span> de <span class="arithmatex">\(3\times 3\)</span>:</p>
+<div class="arithmatex">\[C_{21}=-(a_{12}a_{33}-a_{13}a_{32}),\quad C_{22}=a_{11}a_{33}-a_{13}a_{31},\quad C_{23}=-(a_{11}a_{32}-a_{12}a_{31}).\]</div>
+<p>Entonces</p>
+<div class="arithmatex">\[\sum_j a_{1j}C_{2j}=-a_{11}a_{12}a_{33}+a_{11}a_{13}a_{32}+a_{12}a_{11}a_{33}-a_{12}a_{13}a_{31}-a_{13}a_{11}a_{32}+a_{13}a_{12}a_{31}.\]</div>
+<p>Los seis términos se cancelan en parejas: el 1.º con el 3.º, el 2.º con el 5.º y el 4.º con el 6.º. La suma es <span class="arithmatex">\(0\)</span>.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $C_{21}=-11$, $C_{22}=7$, $C_{23}=3$.
+2. $\sum_j a_{2j}C_{2j}=33=\det A$, pero $\sum_j a_{1j}C_{2j}=0$.
+3. Los seis términos se cancelan por parejas.
+</code></pre>
+<p>!!! danger "Trampa"</p>
+<pre><code>Mezclar la fila de los elementos con la fila de los cofactores es un error muy común al calcular rápido. El resultado no es el determinante: es $0$.
+</code></pre>
+<hr />
+<h3 id="cof-04">Problema 4</h3>
+<p>Calcule</p>
+<div class="arithmatex">\[\det\begin{pmatrix}1&amp;2&amp;0&amp;0&amp;3\\0&amp;4&amp;0&amp;0&amp;0\\2&amp;1&amp;3&amp;0&amp;1\\0&amp;5&amp;1&amp;2&amp;0\\1&amp;0&amp;0&amp;0&amp;2\end{pmatrix}\]</div>
+<p>eligiendo en cada paso la fila o columna con más ceros. ¿Cuántos determinantes <span class="arithmatex">\(2\times 2\)</span> hacen falta?</p>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Paso 1.</strong> La fila <span class="arithmatex">\(2\)</span> es <span class="arithmatex">\((0,4,0,0,0)\)</span>. Solo el <span class="arithmatex">\(4\)</span> en la posición <span class="arithmatex">\((2,2)\)</span> (signo <span class="arithmatex">\(+\)</span>) contribuye:</p>
+<div class="arithmatex">\[\det A=4\cdot\det\begin{pmatrix}1&amp;0&amp;0&amp;3\\2&amp;3&amp;0&amp;1\\0&amp;1&amp;2&amp;0\\1&amp;0&amp;0&amp;2\end{pmatrix}.\]</div>
+<p><strong>Paso 2.</strong> En esta matriz <span class="arithmatex">\(4\times 4\)</span> la columna <span class="arithmatex">\(3\)</span> es <span class="arithmatex">\((0,0,2,0)^T\)</span>. El <span class="arithmatex">\(2\)</span> está en la posición <span class="arithmatex">\((3,3)\)</span> (signo <span class="arithmatex">\(+\)</span>):</p>
+<div class="arithmatex">\[\det\begin{pmatrix}1&amp;0&amp;0&amp;3\\2&amp;3&amp;0&amp;1\\0&amp;1&amp;2&amp;0\\1&amp;0&amp;0&amp;2\end{pmatrix}=2\cdot\det\begin{pmatrix}1&amp;0&amp;3\\2&amp;3&amp;1\\1&amp;0&amp;2\end{pmatrix}.\]</div>
+<p><strong>Paso 3.</strong> En la matriz <span class="arithmatex">\(3\times 3\)</span> la columna <span class="arithmatex">\(2\)</span> es <span class="arithmatex">\((0,3,0)^T\)</span>. El <span class="arithmatex">\(3\)</span> está en la posición <span class="arithmatex">\((2,2)\)</span> (signo <span class="arithmatex">\(+\)</span>):</p>
+<div class="arithmatex">\[\det\begin{pmatrix}1&amp;0&amp;3\\2&amp;3&amp;1\\1&amp;0&amp;2\end{pmatrix}=3\cdot\det\begin{pmatrix}1&amp;3\\1&amp;2\end{pmatrix}=3\,(2-3)=-3.\]</div>
+<p><strong>Total.</strong> <span class="arithmatex">\(\det A=4\cdot 2\cdot(-3)=-24\)</span>. Solo hizo falta un determinante <span class="arithmatex">\(2\times 2\)</span>.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>$\det A=-24$, con un único determinante $2\times 2$.
+</code></pre>
+<p>!!! tip "Estrategia"</p>
+<pre><code>En matrices con muchos ceros, cada desarrollo por una línea con un solo elemento distinto de cero reduce el tamaño sin abrir ramas: el cálculo es una cadena, no un árbol.
+</code></pre>
+<hr />
+<h2 id="matrices-con-estructura">Matrices con estructura</h2>
+<h3 id="est-01">Problema 5</h3>
+<ol>
+<li>Demuestre que para cualquier matriz con bloques de la forma</li>
+</ol>
+<div class="arithmatex">\[M=\begin{pmatrix}a&amp;b&amp;0&amp;0\\c&amp;d&amp;0&amp;0\\e&amp;f&amp;g&amp;h\\i&amp;j&amp;k&amp;l\end{pmatrix}\]</div>
+<p>se cumple <span class="arithmatex">\(\det M=(ad-bc)(gl-hk)\)</span>.</p>
+<ol>
+<li>Calcule <span class="arithmatex">\(\det\begin{pmatrix}2&amp;1&amp;0&amp;0\\3&amp;4&amp;0&amp;0\\1&amp;2&amp;5&amp;1\\0&amp;3&amp;2&amp;3\end{pmatrix}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Desarrollando por la fila <span class="arithmatex">\(1\)</span>, que es <span class="arithmatex">\((a,b,0,0)\)</span>:</p>
+<div class="arithmatex">\[\det M=a\det\begin{pmatrix}d&amp;0&amp;0\\f&amp;g&amp;h\\j&amp;k&amp;l\end{pmatrix}-b\det\begin{pmatrix}c&amp;0&amp;0\\e&amp;g&amp;h\\i&amp;k&amp;l\end{pmatrix}.\]</div>
+<p>Cada determinante <span class="arithmatex">\(3\times 3\)</span> se desarrolla por su fila <span class="arithmatex">\(1\)</span>, que solo tiene un elemento no nulo:</p>
+<div class="arithmatex">\[\det\begin{pmatrix}d&amp;0&amp;0\\f&amp;g&amp;h\\j&amp;k&amp;l\end{pmatrix}=d\,(gl-hk),\qquad \det\begin{pmatrix}c&amp;0&amp;0\\e&amp;g&amp;h\\i&amp;k&amp;l\end{pmatrix}=c\,(gl-hk).\]</div>
+<p>Por lo tanto <span class="arithmatex">\(\det M=ad(gl-hk)-bc(gl-hk)=(ad-bc)(gl-hk)\)</span>.</p>
+<p><strong>Parte 2.</strong> Es el caso con <span class="arithmatex">\(a=2,b=1,c=3,d=4\)</span> y <span class="arithmatex">\(g=5,h=1,k=2,l=3\)</span>:</p>
+<div class="arithmatex">\[\det=(2\cdot4-1\cdot3)(5\cdot3-1\cdot2)=5\cdot 13=65.\]</div>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $\det M=(ad-bc)(gl-hk)$.
+2. $\det=65$.
+</code></pre>
+<p>!!! tip "Idea general"</p>
+<pre><code>Una matriz triangular por bloques tiene como determinante el producto de los determinantes de los bloques diagonales. Aquí se probó solo el caso $2+2$, pero la idea se generaliza.
+</code></pre>
+<hr />
+<h3 id="est-02">Problema 6</h3>
+<p>Sea <span class="arithmatex">\(V(x,y,z)=\det\begin{pmatrix}1&amp;1&amp;1\\x&amp;y&amp;z\\x^2&amp;y^2&amp;z^2\end{pmatrix}\)</span> (determinante de Vandermonde).</p>
+<ol>
+<li>Desarrolle por la fila <span class="arithmatex">\(1\)</span> y demuestre que <span class="arithmatex">\(V(x,y,z)=(y-x)(z-x)(z-y)\)</span>.</li>
+<li>Calcule <span class="arithmatex">\(V\)</span> para los nodos <span class="arithmatex">\((1,2,3)\)</span> y <span class="arithmatex">\((0,1,3)\)</span>.</li>
+<li>¿Cuándo es <span class="arithmatex">\(V=0\)</span>?</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[V=(yz^2-zy^2)-(xz^2-zx^2)+(xy^2-yx^2).\]</div>
+<p>Agrupando por potencias de <span class="arithmatex">\(z\)</span>:</p>
+<div class="arithmatex">\[V=z^2(y-x)-z(y^2-x^2)+xy(y-x)=(y-x)\bigl[z^2-z(x+y)+xy\bigr].\]</div>
+<p>El corchete se factoriza como <span class="arithmatex">\((z-x)(z-y)\)</span>, así que <span class="arithmatex">\(V=(y-x)(z-x)(z-y)\)</span>.</p>
+<p><strong>Parte 2.</strong> Con <span class="arithmatex">\((1,2,3)\)</span>: <span class="arithmatex">\((1)(2)(1)=2\)</span>. Con <span class="arithmatex">\((0,1,3)\)</span>: <span class="arithmatex">\((1)(3)(2)=6\)</span>.</p>
+<p><strong>Parte 3.</strong> De la forma factorizada, <span class="arithmatex">\(V=0\)</span> si y solo si dos de los nodos coinciden.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $V=(y-x)(z-x)(z-y)$.
+2. $V(1,2,3)=2$ y $V(0,1,3)=6$.
+3. $V=0$ exactamente cuando hay dos nodos iguales.
+</code></pre>
+<hr />
+<h3 id="est-03">Problema 7</h3>
+<ol>
+<li>Calcule <span class="arithmatex">\(\det A(x)\)</span> para <span class="arithmatex">\(A(x)=\begin{pmatrix}x&amp;1&amp;1\\1&amp;x&amp;1\\1&amp;1&amp;x\end{pmatrix}\)</span> y encuentre los valores de <span class="arithmatex">\(x\)</span> que lo anulan.</li>
+<li>Calcule <span class="arithmatex">\(\det B(x,y)\)</span> para <span class="arithmatex">\(B(x,y)=\begin{pmatrix}x&amp;y&amp;0\\0&amp;x&amp;y\\y&amp;0&amp;x\end{pmatrix}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[\det A(x)=x(x^2-1)-1(x-1)+1(1-x)=x^3-x-x+1+1-x=x^3-3x+2.\]</div>
+<p>Como <span class="arithmatex">\(x=1\)</span> es raíz, <span class="arithmatex">\(x^3-3x+2=(x-1)(x^2+x-2)=(x-1)^2(x+2)\)</span>. Se anula para <span class="arithmatex">\(x=1\)</span> (doble) y <span class="arithmatex">\(x=-2\)</span>.</p>
+<p><strong>Parte 2.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[\det B=x\,(x\cdot x-y\cdot 0)-y\,(0\cdot x-y\cdot y)+0=x^3+y^3.\]</div>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $\det A(x)=x^3-3x+2=(x-1)^2(x+2)$; se anula en $x=1$ y $x=-2$.
+2. $\det B(x,y)=x^3+y^3$.
+</code></pre>
+<hr />
+<h3 id="est-04">Problema 8</h3>
+<p>Para cada matriz <span class="arithmatex">\(A\)</span> calcule el polinomio <span class="arithmatex">\(p(x)=\det(A-xI)\)</span> y encuentre sus raíces:</p>
+<ol>
+<li><span class="arithmatex">\(A=\begin{pmatrix}3&amp;1\\2&amp;2\end{pmatrix}\)</span>.</li>
+<li><span class="arithmatex">\(A=\begin{pmatrix}2&amp;1&amp;0\\1&amp;2&amp;1\\0&amp;1&amp;2\end{pmatrix}\)</span>.</li>
+<li><span class="arithmatex">\(A=\begin{pmatrix}1&amp;2&amp;3\\0&amp;4&amp;5\\0&amp;0&amp;6\end{pmatrix}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong></p>
+<div class="arithmatex">\[p(x)=\det\begin{pmatrix}3-x&amp;1\\2&amp;2-x\end{pmatrix}=(3-x)(2-x)-2=x^2-5x+4=(x-1)(x-4).\]</div>
+<p>Raíces: <span class="arithmatex">\(1\)</span> y <span class="arithmatex">\(4\)</span>. Observe que su suma es <span class="arithmatex">\(5=\operatorname{tr}A\)</span> y su producto es <span class="arithmatex">\(4=\det A\)</span>.</p>
+<p><strong>Parte 2.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[p(x)=(2-x)\bigl[(2-x)^2-1\bigr]-1\bigl[(2-x)-0\bigr]=(2-x)\bigl[(2-x)^2-2\bigr].\]</div>
+<p>Las raíces son <span class="arithmatex">\(x=2\)</span> y <span class="arithmatex">\((2-x)^2=2\)</span>, es decir <span class="arithmatex">\(x=2\pm\sqrt2\)</span>.</p>
+<p><strong>Parte 3.</strong> <span class="arithmatex">\(A-xI\)</span> es triangular, así que por el Teorema 2:</p>
+<div class="arithmatex">\[p(x)=(1-x)(4-x)(6-x),\]</div>
+<p>con raíces <span class="arithmatex">\(1,4,6\)</span>, que son exactamente los elementos de la diagonal.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $p(x)=(x-1)(x-4)$; raíces $1$ y $4$.
+2. $p(x)=(2-x)\bigl[(2-x)^2-2\bigr]$; raíces $2$, $2+\sqrt2$, $2-\sqrt2$.
+3. $p(x)=(1-x)(4-x)(6-x)$; raíces $1,4,6$.
+</code></pre>
+<hr />
+<h3 id="est-05">Problema 9</h3>
+<p>Sea <span class="arithmatex">\(D_n\)</span> el determinante de la matriz tridiagonal <span class="arithmatex">\(n\times n\)</span> con <span class="arithmatex">\(a\)</span> en la diagonal y <span class="arithmatex">\(1\)</span> en las dos diagonales vecinas:</p>
+<div class="arithmatex">\[D_1=(a),\quad D_2=\begin{pmatrix}a&amp;1\\1&amp;a\end{pmatrix},\quad D_3=\begin{pmatrix}a&amp;1&amp;0\\1&amp;a&amp;1\\0&amp;1&amp;a\end{pmatrix},\ \dots\]</div>
+<p>con la convención <span class="arithmatex">\(D_0=1\)</span>.</p>
+<ol>
+<li>Demuestre que <span class="arithmatex">\(D_n=aD_{n-1}-D_{n-2}\)</span> para <span class="arithmatex">\(n\ge 2\)</span>.</li>
+<li>Si <span class="arithmatex">\(a=2\)</span>, demuestre que <span class="arithmatex">\(D_n=n+1\)</span>.</li>
+<li>Si <span class="arithmatex">\(a=1\)</span>, calcule <span class="arithmatex">\(D_1,\dots,D_6\)</span>, observe que la sucesión se repite y calcule <span class="arithmatex">\(D_{100}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Desarrollando por la fila <span class="arithmatex">\(1\)</span>, que es <span class="arithmatex">\((a,1,0,\dots,0)\)</span>:</p>
+<div class="arithmatex">\[D_n=a\,D_{n-1}-1\cdot\det(M),\]</div>
+<p>donde <span class="arithmatex">\(M\)</span> es la submatriz que resulta de borrar la fila <span class="arithmatex">\(1\)</span> y la columna <span class="arithmatex">\(2\)</span>. La primera columna de <span class="arithmatex">\(M\)</span> es <span class="arithmatex">\((1,0,\dots,0)^T\)</span>, así que desarrollando <span class="arithmatex">\(M\)</span> por esa columna queda <span class="arithmatex">\(\det M=1\cdot D_{n-2}\)</span>. Por lo tanto <span class="arithmatex">\(D_n=aD_{n-1}-D_{n-2}\)</span>. (Para <span class="arithmatex">\(n=2\)</span> esto da <span class="arithmatex">\(a^2-1\)</span>, que coincide con el cálculo directo.)</p>
+<p><strong>Parte 2.</strong> Con <span class="arithmatex">\(a=2\)</span>: <span class="arithmatex">\(D_0=1\)</span> y <span class="arithmatex">\(D_1=2\)</span> cumplen la fórmula. Si <span class="arithmatex">\(D_{n-1}=n\)</span> y <span class="arithmatex">\(D_{n-2}=n-1\)</span>, entonces <span class="arithmatex">\(D_n=2n-(n-1)=n+1\)</span>. Por inducción, <span class="arithmatex">\(D_n=n+1\)</span> para todo <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>Parte 3.</strong> Con <span class="arithmatex">\(a=1\)</span> la recurrencia es <span class="arithmatex">\(D_n=D_{n-1}-D_{n-2}\)</span> con <span class="arithmatex">\(D_0=D_1=1\)</span>:</p>
+<div class="arithmatex">\[D_1,\dots,D_6=1,\ 0,\ -1,\ -1,\ 0,\ 1,\qquad D_7=1,\ D_8=0,\dots\]</div>
+<p>Como <span class="arithmatex">\(D_6=D_0=1\)</span> y <span class="arithmatex">\(D_7=D_1=1\)</span>, la sucesión se repite con período <span class="arithmatex">\(6\)</span>. Como <span class="arithmatex">\(100=6\cdot16+4\)</span>, resulta <span class="arithmatex">\(D_{100}=D_4=-1\)</span>.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $D_n=aD_{n-1}-D_{n-2}$.
+2. $D_n=n+1$.
+3. $1,0,-1,-1,0,1,\dots$ con período $6$; $D_{100}=-1$.
+</code></pre>
+<p>!!! tip "Cálculo eficiente"</p>
+<pre><code>Calcular $D_n$ con la recurrencia cuesta del orden de $n$ operaciones, frente a las $n!$ del desarrollo ciego. La estructura de ceros lo cambia todo.
+</code></pre>
+<hr />
+<h3 id="est-06">Problema 10</h3>
+<p>Una matriz <strong>flecha</strong> tiene la primera fila, la primera columna y la diagonal no nulas, y ceros en el resto:</p>
+<div class="arithmatex">\[F_n=\begin{pmatrix}a&amp;b_1&amp;b_2&amp;\cdots&amp;b_n\\c_1&amp;d_1&amp;0&amp;\cdots&amp;0\\c_2&amp;0&amp;d_2&amp;\cdots&amp;0\\\vdots&amp;&amp;&amp;\ddots&amp;\\c_n&amp;0&amp;0&amp;\cdots&amp;d_n\end{pmatrix}.\]</div>
+<ol>
+<li>Calcule <span class="arithmatex">\(\det F_2\)</span> por la fila <span class="arithmatex">\(1\)</span>.</li>
+<li>Demuestre por inducción que <span class="arithmatex">\(\det F_n=a\,d_1\cdots d_n-\sum_{i=1}^n b_ic_i\prod_{j\ne i}d_j\)</span>.</li>
+<li>Calcule <span class="arithmatex">\(\det\begin{pmatrix}2&amp;1&amp;1&amp;1\\1&amp;3&amp;0&amp;0\\1&amp;0&amp;4&amp;0\\1&amp;0&amp;0&amp;5\end{pmatrix}\)</span> y <span class="arithmatex">\(\det\begin{pmatrix}1&amp;2&amp;3\\4&amp;5&amp;0\\6&amp;0&amp;7\end{pmatrix}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Por la fila <span class="arithmatex">\(1\)</span> de <span class="arithmatex">\(F_2=\begin{pmatrix}a&amp;b_1&amp;b_2\\c_1&amp;d_1&amp;0\\c_2&amp;0&amp;d_2\end{pmatrix}\)</span>:</p>
+<div class="arithmatex">\[\det F_2=a\,d_1d_2-b_1\,(c_1d_2-0)+b_2\,(0-d_1c_2)=ad_1d_2-b_1c_1d_2-b_2c_2d_1.\]</div>
+<p><strong>Parte 2.</strong> El caso <span class="arithmatex">\(n=1\)</span> es <span class="arithmatex">\(ad_1-b_1c_1\)</span>, correcto. Supongamos la fórmula para <span class="arithmatex">\(n-1\)</span> y desarrollemos <span class="arithmatex">\(F_n\)</span> por la <strong>última fila</strong>, <span class="arithmatex">\((c_n,0,\dots,0,d_n)\)</span>.</p>
+<ul>
+<li>El término de <span class="arithmatex">\(d_n\)</span> (posición <span class="arithmatex">\((n+1,n+1)\)</span>, signo <span class="arithmatex">\(+\)</span>) tiene como submatriz una flecha de tamaño <span class="arithmatex">\(n-1\)</span>:
+$<span class="arithmatex">\(d_n\Bigl[a\prod_{i&lt;n}d_i-\sum_{i&lt;n}b_ic_i\prod_{j&lt;n,\,j\ne i}d_j\Bigr].\)</span>$</li>
+<li>El término de <span class="arithmatex">\(c_n\)</span> (posición <span class="arithmatex">\((n+1,1)\)</span>, signo <span class="arithmatex">\((-1)^{n}\)</span>) tiene como submatriz la que resulta de borrar la última fila y la primera columna. Su primera fila es <span class="arithmatex">\((b_1,\dots,b_n)\)</span> y las demás filas son <span class="arithmatex">\(d_i\,e_i\)</span> para <span class="arithmatex">\(i&lt;n\)</span>, con una última columna nula salvo por <span class="arithmatex">\(b_n\)</span>. Desarrollando por esa última columna queda <span class="arithmatex">\((-1)^{n+1}b_n\prod_{i&lt;n}d_i\)</span>. Con el signo exterior, el aporte es <span class="arithmatex">\(-\,b_nc_n\prod_{i&lt;n}d_i\)</span>.</li>
+</ul>
+<p>Sumando ambos aportes:</p>
+<div class="arithmatex">\[\det F_n=a\prod_{i\le n}d_i-\sum_{i&lt;n}b_ic_i\prod_{j\le n,\,j\ne i}d_j-b_nc_n\prod_{i&lt;n}d_i,\]</div>
+<p>que es la fórmula para <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>Parte 3.</strong> Primera matriz: <span class="arithmatex">\(a=2\)</span>, <span class="arithmatex">\(b_i=c_i=1\)</span>, <span class="arithmatex">\(d=(3,4,5)\)</span>:</p>
+<div class="arithmatex">\[\det=2\cdot60-(4\cdot5+3\cdot5+3\cdot4)=120-47=73.\]</div>
+<p>Segunda matriz: <span class="arithmatex">\(a=1\)</span>, <span class="arithmatex">\(b=(2,3)\)</span>, <span class="arithmatex">\(c=(4,6)\)</span>, <span class="arithmatex">\(d=(5,7)\)</span>:</p>
+<div class="arithmatex">\[\det=1\cdot35-2\cdot4\cdot7-3\cdot6\cdot5=35-56-90=-111.\]</div>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $\det F_2=ad_1d_2-b_1c_1d_2-b_2c_2d_1$.
+2. Se demuestra por inducción desarrollando por la última fila.
+3. Los determinantes valen $73$ y $-111$.
+</code></pre>
+<hr />
+<h3 id="est-07">Problema 11</h3>
+<p>Calcule</p>
+<div class="arithmatex">\[\det\begin{pmatrix}0&amp;1&amp;0&amp;2\\3&amp;0&amp;4&amp;0\\0&amp;5&amp;0&amp;6\\7&amp;0&amp;8&amp;0\end{pmatrix}\]</div>
+<p>desarrollando por la columna <span class="arithmatex">\(1\)</span>, y compruebe que el resultado es el producto de <span class="arithmatex">\(\det\begin{pmatrix}3&amp;4\\7&amp;8\end{pmatrix}\)</span> y <span class="arithmatex">\(\det\begin{pmatrix}1&amp;2\\5&amp;6\end{pmatrix}\)</span>.</p>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p>La columna <span class="arithmatex">\(1\)</span> es <span class="arithmatex">\((0,3,0,7)^T\)</span>: contribuyen las posiciones <span class="arithmatex">\((2,1)\)</span> y <span class="arithmatex">\((4,1)\)</span>, ambas con signo <span class="arithmatex">\(-\)</span>.</p>
+<p><strong>Término de <span class="arithmatex">\(3\)</span>.</strong> Borrando la fila <span class="arithmatex">\(2\)</span> y la columna <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[A_{21}=\begin{pmatrix}1&amp;0&amp;2\\5&amp;0&amp;6\\0&amp;8&amp;0\end{pmatrix}.\]</div>
+<p>Por la columna <span class="arithmatex">\(2\)</span>, que es <span class="arithmatex">\((0,0,8)^T\)</span> (el <span class="arithmatex">\(8\)</span> está en la posición <span class="arithmatex">\((3,2)\)</span>, signo <span class="arithmatex">\(-\)</span>):</p>
+<div class="arithmatex">\[\det A_{21}=-8\cdot\det\begin{pmatrix}1&amp;2\\5&amp;6\end{pmatrix}=-8\cdot(-4)=32.\]</div>
+<p><strong>Término de <span class="arithmatex">\(7\)</span>.</strong> Borrando la fila <span class="arithmatex">\(4\)</span> y la columna <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[A_{41}=\begin{pmatrix}1&amp;0&amp;2\\0&amp;4&amp;0\\5&amp;0&amp;6\end{pmatrix},\qquad \det A_{41}=4\,(6-10)=-16\]</div>
+<p>(desarrollo por la fila <span class="arithmatex">\(2\)</span>, el <span class="arithmatex">\(4\)</span> en la posición <span class="arithmatex">\((2,2)\)</span>, signo <span class="arithmatex">\(+\)</span>).</p>
+<p><strong>Total.</strong></p>
+<div class="arithmatex">\[\det=-3\cdot32-7\cdot(-16)=-96+112=16.\]</div>
+<p><strong>Comprobación.</strong> <span class="arithmatex">\(\det\begin{pmatrix}3&amp;4\\7&amp;8\end{pmatrix}=24-28=-4\)</span> y <span class="arithmatex">\(\det\begin{pmatrix}1&amp;2\\5&amp;6\end{pmatrix}=6-10=-4\)</span>; su producto es <span class="arithmatex">\((-4)(-4)=16\)</span>. ✓</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>$\det=16=(-4)(-4)$.
+</code></pre>
+<p>!!! tip "Patrón tablero"</p>
+<pre><code>Los ceros forman un tablero: los elementos de las filas $2$ y $4$ ocupan las columnas $1,3$, y los de las filas $1$ y $3$ las columnas $2,4$. La matriz se "separa" en dos bloques $2\times 2$, y el determinante es el producto de los de esos bloques.
+</code></pre>
+<hr />
+<h2 id="propiedades-por-cofactores">Propiedades por cofactores</h2>
+<h3 id="pro-01">Problema 12</h3>
+<ol>
+<li>Sean <span class="arithmatex">\(u=(1,2,3)\)</span> y <span class="arithmatex">\(v=(0,1,-1)\)</span>, y considere las matrices con fila <span class="arithmatex">\(1\)</span> igual a <span class="arithmatex">\(u\)</span>, a <span class="arithmatex">\(v\)</span> o a <span class="arithmatex">\(3u-2v\)</span>, y filas <span class="arithmatex">\(2\)</span> y <span class="arithmatex">\(3\)</span> iguales a <span class="arithmatex">\((4,0,1)\)</span> y <span class="arithmatex">\((2,1,1)\)</span>. Calcule los tres determinantes y verifique que <span class="arithmatex">\(\det(3u-2v)=3\det(u)-2\det(v)\)</span>.</li>
+<li>Sea <span class="arithmatex">\(A=\begin{pmatrix}1&amp;2&amp;-1\\0&amp;3&amp;4\\2&amp;1&amp;5\end{pmatrix}\)</span> (con <span class="arithmatex">\(\det A=33\)</span>) y sea <span class="arithmatex">\(B\)</span> la matriz que resulta de sumar <span class="arithmatex">\(t\)</span> a la entrada <span class="arithmatex">\(a_{22}\)</span>. Calcule <span class="arithmatex">\(\det B\)</span> en función de <span class="arithmatex">\(t\)</span>.</li>
+<li>Demuestre en general que si <span class="arithmatex">\(B\)</span> difiere de <span class="arithmatex">\(A\)</span> solo en la entrada <span class="arithmatex">\((i,j)\)</span>, donde <span class="arithmatex">\(b_{ij}=a_{ij}+t\)</span>, entonces <span class="arithmatex">\(\det B=\det A+t\,C_{ij}\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<ul>
+<li>Con <span class="arithmatex">\(u=(1,2,3)\)</span>: <span class="arithmatex">\(\det=1(0-1)-2(4-2)+3(4-0)=-1-4+12=7\)</span>.</li>
+<li>Con <span class="arithmatex">\(v=(0,1,-1)\)</span>: <span class="arithmatex">\(\det=0-1(4-2)+(-1)(4-0)=-2-4=-6\)</span>.</li>
+<li>Con <span class="arithmatex">\(3u-2v=(3,4,11)\)</span>: <span class="arithmatex">\(\det=3(0-1)-4(4-2)+11(4-0)=-3-8+44=33\)</span>.</li>
+</ul>
+<p>Y <span class="arithmatex">\(3\cdot7-2\cdot(-6)=21+12=33\)</span>. ✓</p>
+<p><strong>Parte 2.</strong> El cofactor <span class="arithmatex">\(C_{22}=\det\begin{pmatrix}1&amp;-1\\2&amp;5\end{pmatrix}=7\)</span> no depende de <span class="arithmatex">\(a_{22}\)</span>. Desarrollando <span class="arithmatex">\(B\)</span> por la fila <span class="arithmatex">\(2\)</span>:</p>
+<div class="arithmatex">\[\det B=0\cdot C_{21}+(3+t)\cdot7+4\cdot3=33+7t.\]</div>
+<p><strong>Parte 3.</strong> Los cofactores <span class="arithmatex">\(C_{i1},\dots,C_{in}\)</span> de la fila <span class="arithmatex">\(i\)</span> dependen solo de las demás filas. Desarrollando <span class="arithmatex">\(B\)</span> por la fila <span class="arithmatex">\(i\)</span>:</p>
+<div class="arithmatex">\[\det B=\sum_{k\neq j}a_{ik}C_{ik}+(a_{ij}+t)C_{ij}=\det A+t\,C_{ij}.\]</div>
+<p>El mismo argumento prueba la linealidad de la parte 1: si la fila <span class="arithmatex">\(i\)</span> de una matriz es <span class="arithmatex">\(\alpha u+\beta v\)</span>, desarrollando por esa fila queda <span class="arithmatex">\(\sum_j(\alpha u_j+\beta v_j)C_{ij}=\alpha\det(\text{con }u)+\beta\det(\text{con }v)\)</span>.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. Los determinantes son $7$, $-6$ y $33=3\cdot7-2\cdot(-6)$.
+2. $\det B=33+7t$.
+3. $\det B=\det A+t\,C_{ij}$.
+</code></pre>
+<hr />
+<h3 id="pro-02">Problema 13</h3>
+<p>Decida si cada afirmación es verdadera o falsa. Justifique con una demostración o un contraejemplo.</p>
+<ol>
+<li>La matriz <span class="arithmatex">\(3\times 3\)</span> con todos los elementos iguales a <span class="arithmatex">\(1\)</span> tiene determinante <span class="arithmatex">\(0\)</span>.</li>
+<li>Si <span class="arithmatex">\(\det A=0\)</span>, entonces <span class="arithmatex">\(A\)</span> tiene una fila o una columna de ceros.</li>
+<li>Si todos los elementos de <span class="arithmatex">\(A\)</span> son positivos, entonces <span class="arithmatex">\(\det A&gt;0\)</span>.</li>
+<li>Para toda <span class="arithmatex">\(A\)</span>, <span class="arithmatex">\(\sum_j a_{2j}C_{1j}=\det A\)</span>.</li>
+<li>Si todos los cofactores de una fila de <span class="arithmatex">\(A\)</span> son <span class="arithmatex">\(0\)</span>, entonces <span class="arithmatex">\(\det A=0\)</span>.</li>
+<li>Si la primera columna de <span class="arithmatex">\(A\)</span> es <span class="arithmatex">\((1,0,\dots,0)^T\)</span>, entonces <span class="arithmatex">\(\det A=\det A_{11}\)</span>.</li>
+<li>Si <span class="arithmatex">\(A\)</span> es triangular y <span class="arithmatex">\(\det A=0\)</span>, algún elemento de la diagonal es <span class="arithmatex">\(0\)</span>.</li>
+<li>Para toda matriz <span class="arithmatex">\(A\)</span> de <span class="arithmatex">\(2\times 2\)</span>, <span class="arithmatex">\(\det(2A)=2\det A\)</span>.</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<ol>
+<li><strong>Verdadera.</strong> Por la fila <span class="arithmatex">\(1\)</span>: <span class="arithmatex">\((1-1)-(1-1)+(1-1)=0\)</span>.</li>
+<li><strong>Falsa.</strong> <span class="arithmatex">\(A=\begin{pmatrix}1&amp;1\\1&amp;1\end{pmatrix}\)</span> tiene <span class="arithmatex">\(\det A=0\)</span>, pero ninguna fila ni columna de ceros.</li>
+<li><strong>Falsa.</strong> <span class="arithmatex">\(A=\begin{pmatrix}1&amp;2\\3&amp;4\end{pmatrix}\)</span> tiene <span class="arithmatex">\(\det A=4-6=-2&lt;0\)</span>.</li>
+<li><strong>Falsa.</strong> Son elementos de la fila <span class="arithmatex">\(2\)</span> con cofactores de la fila <span class="arithmatex">\(1\)</span>. Con <span class="arithmatex">\(A=I_2\)</span>: <span class="arithmatex">\(a_{21}C_{11}+a_{22}C_{12}=0\cdot1+1\cdot0=0\neq1=\det I_2\)</span>.</li>
+<li><strong>Verdadera.</strong> Desarrollando por esa fila, <span class="arithmatex">\(\det A=\sum_j a_{ij}\cdot0=0\)</span>.</li>
+<li><strong>Verdadera.</strong> Desarrollando por la columna <span class="arithmatex">\(1\)</span>, solo el elemento <span class="arithmatex">\(a_{11}=1\)</span> es no nulo y su signo es <span class="arithmatex">\(+\)</span>, luego <span class="arithmatex">\(\det A=1\cdot C_{11}=\det A_{11}\)</span>.</li>
+<li><strong>Verdadera.</strong> Por el Teorema 2, <span class="arithmatex">\(\det A\)</span> es el producto de los elementos de la diagonal; un producto es cero solo si algún factor es cero.</li>
+<li><strong>Falsa.</strong> Con <span class="arithmatex">\(A=I_2\)</span>: <span class="arithmatex">\(\det(2I_2)=\det\begin{pmatrix}2&amp;0\\0&amp;2\end{pmatrix}=4\neq2=2\det I_2\)</span>. (En general, <span class="arithmatex">\(\det(2A)=4\det A\)</span> para <span class="arithmatex">\(2\times 2\)</span>.)</li>
+</ol>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>Verdaderas: 1, 5, 6, 7. Falsas: 2, 3, 4, 8.
+</code></pre>
+<hr />
+<h2 id="aplicaciones">Aplicaciones</h2>
+<h3 id="apl-01">Problema 14</h3>
+<p>Una ecuación <span class="arithmatex">\(\det(\cdots)=0\)</span> puede describir un objeto geométrico.</p>
+<ol>
+<li>Desarrolle
+$<span class="arithmatex">\(\det\begin{pmatrix}x^2+y^2&amp;x&amp;y&amp;1\\0&amp;0&amp;0&amp;1\\4&amp;2&amp;0&amp;1\\4&amp;0&amp;2&amp;1\end{pmatrix}=0\)</span>$
+(filas formadas por <span class="arithmatex">\((x^2+y^2,x,y,1)\)</span> con los puntos <span class="arithmatex">\((0,0)\)</span>, <span class="arithmatex">\((2,0)\)</span>, <span class="arithmatex">\((0,2)\)</span>) e identifique la curva.</li>
+<li>Desarrolle
+$<span class="arithmatex">\(\det\begin{pmatrix}x&amp;y&amp;z&amp;1\\1&amp;0&amp;0&amp;1\\0&amp;1&amp;0&amp;1\\0&amp;0&amp;1&amp;1\end{pmatrix}=0\)</span>$
+e identifique el plano que pasa por <span class="arithmatex">\((1,0,0)\)</span>, <span class="arithmatex">\((0,1,0)\)</span>, <span class="arithmatex">\((0,0,1)\)</span>.</li>
+<li>Repita la parte 1 con los puntos <span class="arithmatex">\((0,0)\)</span>, <span class="arithmatex">\((1,1)\)</span>, <span class="arithmatex">\((2,2)\)</span>, que están alineados. ¿Qué curva obtiene?</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong> La fila <span class="arithmatex">\(2\)</span> es <span class="arithmatex">\((0,0,0,1)\)</span>: solo el <span class="arithmatex">\(1\)</span> de la posición <span class="arithmatex">\((2,4)\)</span> contribuye, con signo <span class="arithmatex">\((-1)^{6}=+\)</span>.</p>
+<div class="arithmatex">\[\det=\det\begin{pmatrix}x^2+y^2&amp;x&amp;y\\4&amp;2&amp;0\\4&amp;0&amp;2\end{pmatrix}=(x^2+y^2)\cdot4-x\,(8-0)+y\,(0-8)=4(x^2+y^2)-8x-8y.\]</div>
+<p>La ecuación es <span class="arithmatex">\(x^2+y^2-2x-2y=0\)</span>, es decir <span class="arithmatex">\((x-1)^2+(y-1)^2=2\)</span>: la circunferencia de centro <span class="arithmatex">\((1,1)\)</span> y radio <span class="arithmatex">\(\sqrt2\)</span>, que pasa por los tres puntos.</p>
+<p><strong>Parte 2.</strong> Por la fila <span class="arithmatex">\(1\)</span>:</p>
+<div class="arithmatex">\[x\det\begin{pmatrix}0&amp;0&amp;1\\1&amp;0&amp;1\\0&amp;1&amp;1\end{pmatrix}-y\det\begin{pmatrix}1&amp;0&amp;1\\0&amp;0&amp;1\\0&amp;1&amp;1\end{pmatrix}+z\det\begin{pmatrix}1&amp;0&amp;1\\0&amp;1&amp;1\\0&amp;0&amp;1\end{pmatrix}-1\cdot\det I_3.\]</div>
+<p>Los determinantes valen <span class="arithmatex">\(1\)</span>, <span class="arithmatex">\(-1\)</span>, <span class="arithmatex">\(1\)</span> (triangular) y <span class="arithmatex">\(1\)</span>. Entonces
+<span class="arithmatex">\(x+y+z-1=0\)</span>: el plano <span class="arithmatex">\(x+y+z=1\)</span>.</p>
+<p><strong>Parte 3.</strong> Las filas son <span class="arithmatex">\((x^2+y^2,x,y,1)\)</span>, <span class="arithmatex">\((0,0,0,1)\)</span>, <span class="arithmatex">\((2,1,1,1)\)</span>, <span class="arithmatex">\((8,2,2,1)\)</span>. Desarrollando por la fila <span class="arithmatex">\(2\)</span> (signo <span class="arithmatex">\(+\)</span>):</p>
+<div class="arithmatex">\[\det\begin{pmatrix}x^2+y^2&amp;x&amp;y\\2&amp;1&amp;1\\8&amp;2&amp;2\end{pmatrix}=(x^2+y^2)(2-2)-x\,(4-8)+y\,(4-8)=4x-4y.\]</div>
+<p>El coeficiente de <span class="arithmatex">\(x^2+y^2\)</span> se anula, y queda <span class="arithmatex">\(4x-4y=0\)</span>, es decir la <strong>recta</strong> <span class="arithmatex">\(y=x\)</span>.</p>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $x^2+y^2-2x-2y=0$: circunferencia de centro $(1,1)$ y radio $\sqrt2$.
+2. $x+y+z=1$.
+3. $y=x$: una recta (el "círculo" degenera porque los puntos están alineados).
+</code></pre>
+<hr />
+<h3 id="apl-02">Problema 15</h3>
+<p>Sea <span class="arithmatex">\(M(n)\)</span> el número de multiplicaciones que usa el desarrollo por cofactores de una matriz <span class="arithmatex">\(n\times n\)</span> cuando cada submatriz se vuelve a desarrollar. Hay <span class="arithmatex">\(n\)</span> submatrices <span class="arithmatex">\((n-1)\times(n-1)\)</span> y <span class="arithmatex">\(n\)</span> productos "elemento por cofactor", así que</p>
+<div class="arithmatex">\[M(1)=0,\qquad M(n)=n\,M(n-1)+n.\]</div>
+<ol>
+<li>Calcule <span class="arithmatex">\(M(2),\dots,M(5)\)</span>.</li>
+<li>Demuestre que <span class="arithmatex">\(\dfrac{M(n)}{n!}=\displaystyle\sum_{k=1}^{n-1}\frac1{k!}\)</span> y deduzca que <span class="arithmatex">\(M(n)\ge n!\)</span> para <span class="arithmatex">\(n\ge2\)</span>.</li>
+<li>Para <span class="arithmatex">\(n=20\)</span> se tiene <span class="arithmatex">\(M(20)/20!\approx1{,}718\)</span> y <span class="arithmatex">\(20!\approx2{,}43\times10^{18}\)</span>. Si un computador hace <span class="arithmatex">\(10^{9}\)</span> multiplicaciones por segundo, ¿cuánto tarda en calcular un determinante <span class="arithmatex">\(20\times20\)</span> así?</li>
+</ol>
+<details class="note">
+<summary>Ver desarrollo</summary>
+<p><strong>Parte 1.</strong></p>
+<div class="arithmatex">\[M(2)=2\cdot0+2=2,\quad M(3)=3\cdot2+3=9,\quad M(4)=4\cdot9+4=40,\quad M(5)=5\cdot40+5=205.\]</div>
+<p><strong>Parte 2.</strong> Dividiendo la recurrencia por <span class="arithmatex">\(n!\)</span>:</p>
+<div class="arithmatex">\[\frac{M(n)}{n!}=\frac{M(n-1)}{(n-1)!}+\frac{n}{n!}=\frac{M(n-1)}{(n-1)!}+\frac1{(n-1)!}.\]</div>
+<p>Con <span class="arithmatex">\(M(1)/1!=0\)</span> y sumando desde <span class="arithmatex">\(n=2\)</span> queda <span class="arithmatex">\(\dfrac{M(n)}{n!}=\sum_{k=1}^{n-1}\dfrac1{k!}\)</span>. Para <span class="arithmatex">\(n\ge2\)</span> el primer sumando ya vale <span class="arithmatex">\(1\)</span>, así que <span class="arithmatex">\(M(n)\ge n!\)</span>. (Verificación: <span class="arithmatex">\(M(4)/4!=1+\tfrac12+\tfrac16=\tfrac{40}{24}\)</span>. ✓) Además, la suma se acerca a <span class="arithmatex">\(e-1\approx1{,}718\)</span>.</p>
+<p><strong>Parte 3.</strong> <span class="arithmatex">\(M(20)\approx1{,}718\times2{,}43\times10^{18}\approx4{,}18\times10^{18}\)</span> multiplicaciones. A <span class="arithmatex">\(10^9\)</span> por segundo son <span class="arithmatex">\(4{,}18\times10^{9}\)</span> segundos, es decir unos</p>
+<div class="arithmatex">\[\frac{4{,}18\times10^{9}}{3{,}15\times10^{7}}\approx132\ \text{años}.\]</div>
+</details>
+<p>!!! success "Solución"</p>
+<pre><code>1. $2,\ 9,\ 40,\ 205$.
+2. $M(n)/n!=\sum_{k=1}^{n-1}1/k!\to e-1$; en particular $M(n)\ge n!$.
+3. Aproximadamente $132$ años.
+</code></pre>
+<p>!!! danger "Moraleja"</p>
+<pre><code>Para una matriz $20\times20$ sin ceros, el desarrollo por cofactores es inviable, mientras que los métodos de eliminación que verá más adelante necesitan del orden de $n^3/3\approx2660$ multiplicaciones. Los cofactores sirven para entender el determinante y para matrices pequeñas o con estructura (como las de los Problemas 4, 9 y 10), no para el cálculo masivo.
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Pie" >
+        
+          
+          <a href="../problemas_bloque_3_web/" class="md-footer__link md-footer__link--prev" aria-label="Anterior: Factorización A=LU">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Anterior
+              </span>
+              <div class="md-ellipsis">
+                Factorización A=LU
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../problemas_bloque_5_web/" class="md-footer__link md-footer__link--next" aria-label="Siguiente: Propiedades del determinante">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Siguiente
+              </span>
+              <div class="md-ellipsis">
+                Propiedades del determinante
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.top", "navigation.footer", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../../javascripts/quiz.js"></script>
+      
+    
+  </body>
+</html>
